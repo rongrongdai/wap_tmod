@@ -1,0 +1,103 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/share';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/common_header_v1';
+@import '../component/card/message-img-alert';
+@include global-reset;
+
+
+$bg-1            : '../img/baskin/baskbg.png';
+$bg-2            : '../img/baskin/baskbg1.png';
+
+$bgx-1            : '../img/baskin/icon_peo1x.png';
+$bgtiem-1       : '../img/baskin/timebg2x.png';
+
+$iconba-1       : '../img/baskin/icon_xia2x.png';
+$iconpic-1       : '../img/baskin/icon_pic2x.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32     : 16px;
+
+body {
+	//background: #fff;
+	
+}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+   @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+    display: block;
+    position: absolute;
+    background: url("../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+.textAreaCon{
+   -webkit-appearance: none;
+    overflow-y: visible;
+    resize: none;
+    outline: none;
+    border: none;
+    @include rem(( width:100%, height:366px, padding:20px 0 0 20px));
+    @include font-dpr($font-size-30);
+}
+
+.upload_box{
+    @include rem(( margin:20px 0 0 10px));
+}
+.upload_box .tsimg {
+   @include rem(( width:140px,  height:140px));
+}
+
+.w_all {
+    width: 94%;
+    @include rem(( margin: 60px auto)); 
+}
+
+.w_all .btn_con {
+    background-color: #5cb531;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+   @include font-dpr($font-size-32);
+    @include rem((height: 100px, border-radius: 50px,  -moz-border-radius: 50px, -webkit-border-radius: 50px ));
+}
+
+
+.imghtps{
+    @include rem(( width: 120px, height: 120px));
+}

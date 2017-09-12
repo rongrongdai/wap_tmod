@@ -1,0 +1,9 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/animation';
+@import '../component/card/special-recommend-card';
+@import '../component/card/topic-item-card';
+@import '../component/button/button-like-v';
+@include global-reset;
+

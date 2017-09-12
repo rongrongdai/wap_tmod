@@ -1,0 +1,70 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/swiper';
+@import '../../../../sass/share';
+@import '../../../../sass/animation';
+
+$font-size-24 :13px;
+
+@media only screen
+  and (min-device-width: 961px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.sweephead{
+			 @include rem(( width: 640px))
+	}
+}
+
+.sweephead{
+			 padding-top: 0px !important;
+			 background: white;
+	}
+
+.qqw_head_box{
+	 @include rem((  height:79px ))
+}
+.qqw_head{ 
+        bottom: 0; top:0;  
+        @include rem((  height:77px ))
+        border-bottom: 1px #e6e6e6 solid; 
+        background: white;    
+        z-index: 10000;
+}
+// .sweephead { 
+// 	// overflow: inherit;    
+//        @include rem((		
+// 			height: 60px
+// 	              ))
+// }
+
+.sweephead .header_ul{   @include rem((  height:75px ,min-width:750px  ))  background: white; color:white; display: -webkit-inline-box;
+}
+.sweephead .header_li { 
+	 @include rem((  height: 74px, line-height: 74px));
+	 @include font-dpr($font-size-24);
+	text-align: center;  
+	flex-shrink: initial;
+	background: #8497b8; 
+	color:white;
+       
+	 }
+.sweephead .header_li  a{ 
+	 @include rem((  height: 74px,  line-height: 74px));
+	 @include font-dpr($font-size-24);
+	text-align: center;  
+	flex-shrink: initial;
+	background: #8497b8; color:white;
+	 }
+
+.sweephead .header_lpdq{
+	 // border-bottom: 4px solid #5cb531; 
+	 background: #5d729a;
+	}
+.z_index{
+	z-index:100;
+}	
+
+
+
+

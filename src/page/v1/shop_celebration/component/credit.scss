@@ -1,0 +1,130 @@
+$bg-tg            : '../../img/shop_celebration/icon_cgdrmore3x.png';
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+$font-size-22    : 11px;
+
+
+$up1:'../../img/tip22@2x.png';
+$up2:'../../img/tip22@2x.png';
+
+
+
+.credit_all{
+     @include rem(( margin-top: 20px));
+     background-color: #ffffff;
+     @include flex-container();
+     justify-content: flex-start;
+
+   .nickname{ 
+          width: 100%;
+          position: relative; 
+          .nick_img{ 
+                   @include rem(( width: 60px, height: 60px , margin: 20px 25px 0 40px, border-radius: 50%));}
+          .nick_name{   
+                    @include rem((top: 40px, ));
+                    @include font-dpr($font-size-22); 
+                    position: absolute;
+                    display: inline-block;
+                    color: #333333;
+                  }
+        }
+
+
+   .c_left{
+         .le_img{ @include rem(( width: 230px, height: 154px, margin: 25px));}
+     }
+
+    .c_center{ 
+        @include rem(( width: 340px));
+        @include font-dpr($font-size-24, 1.9);
+        color: #333333;
+        .tes{ color: #999999;}
+        .t_coy{ color: #ab2b2b;}
+    }
+
+    .c_right{
+      @include rem(( width: 120px)); 
+      .colr{ text-align: center; color: #ab2b2b;  @include font-dpr($font-size-24);}
+    }
+
+
+   .c_righty{
+      @include rem(( width: 130px,  height: 202px)); 
+      background-color: #ab2b2b;
+      position: relative;
+     .colr{  
+        color: #ffffff; 
+        @include font-dpr($font-size-26); 
+        position: absolute;
+        @include rem((width: 70px, top:65px,left: 42px));
+         }
+   }
+
+
+ }
+
+
+.share-img{
+    @include rem ((
+        background-size:100% !important,
+    ));
+    @include background-dpr($up1,$up1,$up2,center,center);
+}
+
+
+ 
+.codebg{ 
+    display: none;
+  position: fixed;
+   @include rem((
+          left: 0,
+          top: 0,
+          background-color: rgba(0,0,0,0.5),
+          z-index: 10000,
+          width: 100%,
+          height: 100%,
+        ));
+}
+.code{
+  @include rem((
+          width: 440px,
+          margin:260px auto,
+          z-index: 10000,
+        ));
+  position: relative;
+}
+.closebtn{
+  position: absolute;
+  @include rem((
+          bottom: 36px,
+          left: 0px,
+          z-index: 10000,
+          width: 539px,
+          height: 116px,
+        ));
+}
+.codeimg{
+ @include rem((
+          width: 539x,
+          height: 615px,
+        ));
+}
+.codeimg span{
+  @include rem((
+          width: 100%,
+          height: 100%,
+        ));
+     display: block;
+}

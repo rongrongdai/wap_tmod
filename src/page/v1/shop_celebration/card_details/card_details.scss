@@ -1,0 +1,141 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+
+@import '../component/credit.scss';
+@include global-reset;
+
+
+
+$bg-tg            : '../../img/shop_celebration/icon_cgdrmore3x.png';
+$bg-fh            : '../../img/shop_celebration/rderdecon_phone.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+$font-size-22     : 11px;
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+body {
+	background: #f9f9f9;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+
+.card_all{ 
+  
+  .card_conw{
+        .cdconw{
+              @include rem(( margin-top: 20px, padding-bottom: 15px));
+              background-color: #ffffff;
+
+             .cona:after{  content:".";  height:0;  visibility:hidden;  display:block;  clear:both;  }
+             .cona{ 
+                 @include rem(( width: 92%, margin:0 auto, padding-top: 20px));
+                 @include font-dpr($font-size-24);
+                 color: #333333;
+                .tes{ color: #ab2b2b; }
+               }
+
+         }
+     
+       .con_jf{  
+                  @include font-dpr($font-size-22,2.5);
+                   color: #999999;
+                  @include rem(( width: 92%, margin:0 auto));
+               }
+
+      .cdconter{  
+                background-color: #ffffff;  
+                @include rem((  padding: 15px 0));
+                @include font-dpr($font-size-22,2);
+                color: #666666;
+                p{  @include rem(( width: 92%, margin:0 auto));}
+              }         
+  }
+
+
+
+.ca_give{
+          @include rem(( margin-top: 20px, padding-bottom: 15px));
+          background-color: #ffffff;
+         .cona:after{  content:".";  height:0;  visibility:hidden;  display:block;  clear:both;  }
+         .cona{ 
+                 @include rem(( width: 92%, margin:0 auto, padding-top: 20px));
+                 @include font-dpr($font-size-24);
+                 color: #333333;
+               }
+}
+
+
+
+.cd_customer{
+      @include rem(( margin-top: 20px)); 
+      background-color: #ffffff;
+     .cona:after{  content:".";  height:0;  visibility:hidden;  display:block;  clear:both;  }
+     .cona{ 
+                     @include rem(( width: 92%, margin:0 auto, padding:20px 0));
+                     @include font-dpr($font-size-24);
+                     color: #333333;
+                     .phone{
+                          border: 1px #e6e6e6 solid; 
+                          @include rem((  padding:15px));
+                          span{
+                                    @include rem((width: 26px, height: 30px,  top: 7px,right: 5px));
+                                    display: inline-block;
+                                    @include background-dpr($bg-fh ,$bg-fh ,$bg-fh  , center, center);
+                                    background-size: 100% 100% !important;
+                                    position: relative;
+                              }
+                     }
+                    .time{   
+                         @include rem((  padding:20px 0));
+                    } 
+             }
+  }
+
+
+
+ }

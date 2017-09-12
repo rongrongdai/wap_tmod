@@ -1,0 +1,15 @@
+{
+"ret": "0",
+"msg": "操作成功",
+"data": {
+"card_id": "2",
+"card_type": "1",
+"card_name": "青年卡1",
+"amount": "1001.00",
+"score": "101",
+"picture": "http://7xp9qs.com1.z0.glb.clouddn.com/58ed890d7b62f.jpg",
+"card_desc": "这是青年卡青年卡青年卡青年卡"
+},
+"timestamp": 1491981179,
+"os": "app"
+}

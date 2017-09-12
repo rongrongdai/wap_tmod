@@ -1,0 +1,12 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+    "user": {
+    "uid": 1000615,
+    "face": "http://wx.qlogo.cn/mmopen/kvEYORDAicI2otI1MZVd2CgFL85xJxdAS45DfTCkJsHFqrcVvz87T3UEpp0nI5fDZwh4aWEBC6AEI1XkFVwzdIgicP4j81Wz7T/0",
+    "nickname": "郭然"
+}
+},
+"timestamp": 1483760380
+}

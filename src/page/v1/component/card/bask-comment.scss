@@ -1,0 +1,91 @@
+
+
+$font-size-24     : 12px;
+$font-size-20     : 10px;
+$font-size-28     : 14px;
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.commenta{
+     overflow: hidden;
+     @include rem(( padding: 25px 0, margin-bottom: 25px ));
+     border-bottom: 1px solid #e6e6e6;
+
+}
+
+.commenta .photo{
+      @include rem(( width: 62px, height: 62px , margin:0 20px));
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px #e6d6e6 solid;
+      img{
+      @include rem(( width: 62px, height: 62px));
+      background-size: 100% !important;
+      }
+}
+
+.commenta .eval_con{
+	width: 66%;
+}
+
+.commenta .eval_con .conp1{
+	@include rem((margin-bottom: 15px));
+}
+
+.eval_con .conp1 .c1{
+    @include font-dpr($font-size-24);
+    color: #323232;
+}
+
+.eval_con .conp1 .c2{
+    @include font-dpr($font-size-20);
+    color: #909090;
+    @include rem(( margin-left: 18px));
+}
+
+.eval_con .conp_share{ 
+   @include rem(( width: 35px, height: 35px, margin-right: 25px));
+   background-size: 100% 100% !important;
+   float: right;
+}
+
+
+
+
+.commenta .eval_con .conp2{
+   @include font-dpr($font-size-28, 1.5);
+    color: #323232;
+    @include rem((margin-bottom: 25px));
+}
+
+.commenta .eval_con .conp3{}
+.eval_con .conp3 span { 
+     display: inline-block; 
+    @include rem(( margin-left:10px));
+} 
+.eval_con .conp3 span img{
+	@include rem(( max-width:148px, height:158px));
+	border: 1px #e6e6e6 solid;
+}
+
+.eval_right{
+	@include rem(( margin-right: 20px));
+}
+.eval_right img{ @include rem((width: 35px, height: 35px));
+  background-size: 100% 100% !important;
+}
+
+.eval_right span{
+	 color: #323232;
+	 @include font-dpr($font-size-20);
+	 display: inline-block;
+	 @include rem(( top:-5px));
+	 position: relative;
+}
+
+
+

@@ -1,0 +1,29 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+        "count": "8",
+        "list": [
+            {
+                "doyen_id": "4",
+                "nickname": "Joanna",
+                "face": "http://7xr1wo.com2.z0.glb.qiniucdn.com/image/160725/xplgo5kgo.jpg-w180",
+                "show_picture": "http://7xr1wo.com2.z0.glb.qiniucdn.com/image/160725/umzl9h0fu.png-w640",
+                "name": "以木之名",
+                "slogan": "以匠人之心，定制木质好家",
+                "article_num": "8"
+            },
+            {
+                "doyen_id": "5",
+                "nickname": "PChouse家居杂志",
+                "face": "http://7xr1wo.com2.z0.glb.qiniucdn.com/image/160725/0oyfzovmb.jpg-w180",
+                "show_picture": "http://7xr1wo.com2.z0.glb.qiniucdn.com/image/160725/d7ezipu9q.png-w640",
+                "name": "PChouse家居杂志",
+                "slogan": "实用的家居灵感手册",
+                "article_num": "0"
+            }
+        ],
+       "pagecount" : "1"
+    },
+    "timestamp": 1472465962
+}

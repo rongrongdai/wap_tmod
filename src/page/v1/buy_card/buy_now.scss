@@ -1,0 +1,123 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/goods-list';
+@import '../component/women-day/qqw-women-head';
+@import '../component/women-day/qqw-women-sub-head';
+@import '../component/women-day/qqw-women-good-goods';
+@include global-reset;
+
+$up1:'../img/icon_back@2x.png';
+$up2:'../img/icon_back@3x.png';
+
+
+body {
+	background-color:#f3f3f3;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.font-pf{
+    font-family: "PingFang SC";
+    @include rem ((
+    font-size:28px,
+    ));
+    color: #323232
+}
+
+
+.user-details {
+    background-color: #fff;
+    @include rem ((
+        height: 88px,
+        margin:20px 0,
+    ));
+}
+
+.user-name{
+    @include rem ((
+        margin:31px 15px,
+    ))
+
+}
+.user-phone{ 
+    @include rem ((
+        margin:31px,
+    ))
+}
+.icon-back{
+    border: 0;
+    @include rem ((
+        width:28px,
+        height:28px,
+        margin:31px 15px,
+        background-size:100% !important,
+    ));
+    float: right;
+    @include background-dpr($up1,$up1,$up2,center,center);
+}
+
+.card{
+    clear: both;
+    background-color: #fff;
+    @include rem ((
+    height: 240px,
+    ))
+}
+
+.card-img{
+    @include rem ((
+        width:230px,
+        height:140px,
+        margin:50px 32px 50px 20px,
+    ))
+}
+
+.card-details{
+     @include rem ((
+         height:140px
+     ))
+}
+
+.cardb{
+    @include rem ((
+        margin:68px 0 50px 0,
+    ));
+}
+.cardj{
+    @include rem ((
+        margin:0 0 70px 0,
+    ))
+}
+
+.fixedbot{
+    position:fixed;
+    bottom:0;
+     @include rem ((
+        height:88px,
+        width:100%
+    ))
+}
+.bothj{
+    background-color: #fff;
+    width: 50%;
+     @include rem ((
+        height:88px,
+        line-height:88px
+    ))
+};
+.botbuy{
+    background-color: #5cb531;
+    width: 50%;
+     @include rem ((
+        height:88px,
+        line-height:88px
+    ))
+}
+.botbuy a  
+{  
+   color:#fff;  
+}  

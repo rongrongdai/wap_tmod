@@ -1,0 +1,17 @@
+$font-size-40 :19px;
+.qqw_head_content{
+    display: flex;
+    @include rem((height:88px));
+    background: #8497b8;
+    align-items: center;
+    @include font-dpr($font-size-40);
+    color: white;
+}
+.qqw_head_content .item{
+      flex-grow: 1;
+}
+
+.qqw_head_content .item span{
+	    display: block;
+	    @include rem((height:86px,line-height:86px !important));
+}

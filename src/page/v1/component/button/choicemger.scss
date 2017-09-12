@@ -1,0 +1,75 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import './button-like-lambert';
+@import './btn-choicemger.scss';
+
+$qqw-fontsize-m: 15px;	//30px;
+
+
+
+.mager1{
+	@include rem(( width: 345px , margin:0 12px 20px 12px , border-radius: 10px));
+	text-align: center;
+	border: 1px #e6e6e6 solid;
+	// background-color: white;
+}
+
+.mager1 .maimg{  
+         @include rem(( width: 345px , height: 345px, border: 1px #e6e6e6 solid , border-radius: 10px 10px 0 0));
+        
+}
+
+.mager1 .ma_p{
+         @include font-dpr(15px);
+         color: #323232;
+         @include rem(( margin:24px 0 14px 0));
+}
+
+.mager1 .ma_p1{ 
+	  @include font-dpr(12px);
+	   color: #909090;
+	   @include rem(( margin-bottom: 25px , height: 30px));
+	   overflow: hidden;
+             white-space: nowrap;
+             text-overflow: ellipsis;
+}
+
+.mager1 .ma_opt{ 
+	@include rem(( height: 60px, line-height:60px, width: 140px , margin-left: 103px ,border-radius: 8px  ,margin-bottom: 29px));
+	 border: 1px #5cb531 solid;
+	 //background: #5cb531;
+	background: white;
+	
+ }
+ .mager1 .chang_bg{ 
+	background: #5cb531 !important;	
+ }
+ .mager1 .chang_bg span{color:white !important; }
+
+.mager1 .ma_opt span{    @include font-dpr(15px ,0.7rem) ; 
+	//color:white; 
+	color:  #5cb531 ; 
+}
+.magerall{ 
+	@include flex-container();
+	justify-content: flex-start;
+}
+
+// .mager1 .maimg {
+// 	border-radius: 5px 5px 0px 0px;
+//     background-size: 100% !important;
+//     width: 100%;
+
+//     @include rem(( height: 300px));
+// }
+
+.maimg .opacity{
+    width: 46%;
+    background-color: rgba(98, 98, 98, 0.6);
+    position: absolute;
+    @include rem(( bottom: 22px,height: 50px));
+}

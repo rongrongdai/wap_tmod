@@ -1,0 +1,389 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+
+@include global-reset;
+$qqw-fontsize-xs: 11px;      // 20px
+$qqw-fontsize-s: 12px;      // 24px
+$qqw-fontsize-m: 14px;      // 28px
+$qqw-fontsize-l: 15px;      // 30px
+$qqw-fontsize-xl: 17px;      // 34px
+$qqw-fontsize-xxl: 24px;   // 48px;
+$arrow: '../../img/arrow1.png';
+body {
+  background: #f9f9f9;
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+.hide{display: none;}
+// 炫耀
+.share_con{
+   @include rem((
+        padding:50px,
+    ));
+}
+.share_con .card_img{
+  @include rem((
+        width: 650px,
+        height: 650px,
+        margin-bottom: 50px,
+    ));
+}
+.share_con .card_img img{
+  @include rem((
+        width: 100%,
+        height: 100%,
+    ));
+}
+.share_con .con{
+  color: #333;
+  @include font-dpr($qqw-fontsize-s,null);
+  @include rem((
+        line-height: 50px !important,
+        margin-bottom: 40px,
+    ));
+}
+.share_con .ad{
+  color: #5cb531;
+  @include font-dpr($qqw-fontsize-s,null);
+  @include rem((
+        line-height: 50px !important,
+    ));
+}
+.cardfoot{
+   position: fixed;
+   @include rem((
+       bottom: 0,
+       left: 0,
+       width: 100%,
+       z-index: 99,
+    ));
+   overflow: hidden;
+}
+.cardfoot .btn{
+   @include font-dpr($qqw-fontsize-xl,null);
+     @include rem((
+          height: 104px,
+          line-height: 104px !important,
+          width: 50%,
+        ));
+     text-align: center;
+}
+.cardfoot .focus{
+  color: #333;
+  background: #fff;
+  @include rem((
+          border-top:1px solid #d6d7dc,
+        ));
+}
+.cardfoot .send{
+  color: #fff;
+  background:#5cb531;
+}
+
+.codebg{
+  position: fixed;
+   @include rem((
+          left: 0,
+          top: 0,
+          background-color: rgba(0,0,0,0.5),
+          z-index: 1000,
+          width: 100%,
+          height: 100%,
+        ));
+}
+.code{
+  @include rem((
+          width: 440px,
+          margin:260px auto,
+          z-index: 10000,
+        ));
+  position: relative;
+}
+.closebtn{
+  @include font-dpr($qqw-fontsize-xxl,null);
+  position: absolute;
+  @include rem((
+          top: -100px,
+          right: -80px,
+          z-index: 10000,
+          width: 60px,
+          height: 60px,
+          line-height: 54px !important,
+          border:1px solid #d6d7dc,
+          border-radius: 50%,
+        ));
+  color: #333;
+  background: #fff;
+  text-align: center;
+}
+.codeimg{
+  background: #fff;
+ @include rem((
+          width: 440px,
+          height: 440px,
+        ));
+}
+.codeimg img{
+  @include rem((
+          width: 100%,
+          height: 100%,
+        ));
+}
+.codetext{
+  @include font-dpr($qqw-fontsize-m,null);
+  text-align: center;
+  color: #fff;
+   @include rem((
+          margin-top: 50px,
+          line-height: 40px !important,
+        ));
+}
+// 领卡结果
+.receive_con{
+  @include rem((
+         padding:80px 50px 50px,
+         margin-bottom: 50px,
+        ));
+  background: #fff;
+}
+.receive_con .state_img{
+  margin:0 auto;
+  @include rem((
+         height: 200px,
+         width: 200px,
+        ));
+}
+.receive_con .state_img img{
+  @include rem((
+         width: 100%,
+         height: 100%,
+        ));
+}
+.receive_con .receive_text{
+  color: #5cb531;
+  @include font-dpr($qqw-fontsize-l,null);
+  text-align: center;
+  @include rem((
+         margin:80px 0 50px,
+        ));
+}
+.receive_con .receive_text.receive_fail{
+  color: #cb2b2b;
+}
+.textinfo{
+  color: #333;
+  @include font-dpr($qqw-fontsize-s,null);
+  @include rem((
+         line-height: 40px !important,
+        ));
+}
+.notic_text{
+  color: #999;
+  @include font-dpr($qqw-fontsize-xs,null);
+  @include rem((
+         line-height: 60px !important,
+        ));
+}
+.receive_list{
+  @include rem((
+         padding:0 20px,
+        ));
+  overflow: hidden;
+}
+.receive_list .state{
+  @include rem((
+         height: 60px,
+         line-height: 60px !important,
+        ));
+   overflow: hidden;
+}
+.receive_list .state span{
+  color: #666;
+  @include font-dpr($qqw-fontsize-m,null);
+
+}
+.list_box{
+  position: relative;
+  @include rem((
+         padding-bottom: 500px,
+        ));
+}
+.list_box .circle{
+  position: absolute;
+  background: #fff;
+  @include rem((
+         left: 42px,
+         top: 0,
+         width: 9px,
+         height: 9px,
+         border: 1px solid #dadadf,
+         border-radius: 50%,
+         z-index: 9999,
+        ));
+}
+.con_box{
+    @include rem((
+           height: 240px,
+           width: 100%,
+           border-left: 1px solid #dadadf,
+           margin-left:46px,
+           padding: 20px 0,
+           z-index: 66,
+          ));
+    position: relative;
+}
+.con_box .photo{
+  @include rem((
+           left: -40px,
+           top: 30px,
+           width: 80px,
+           height: 80px,
+           border-radius: 50%,
+           border:1px solid #dadadf,
+          ));
+   overflow:hidden;
+   position:absolute;
+}
+.con_box .photo img{
+    @include rem((
+             width:100%,
+             height:100%,
+            ));
+}
+
+.card_info{
+  @include rem((
+           margin-left: 90px,
+           margin-top: 16px,
+           width: 480px,
+           padding:0 20px 40px,
+            border: 1px solid #dadadf,
+            border-radius: 5px,
+          ));
+  background: #fff;
+  position: relative;
+}
+.card_info .arrow{
+  @include rem((
+              width: 24px,
+              height: 16px,
+              top: 26px,
+              left: -15px,
+          ));
+  @include background-dpr($arrow, $arrow, $arrow, center, center)
+  position:absolute;
+}
+.card_info .name{
+  color:#5cb531;
+  @include font-dpr($qqw-fontsize-m,null);
+  @include rem((
+           height: 50px,
+           line-height: 50px !important,
+           border-bottom: 1px solid #dadadf,
+          ));
+  text-align: left;
+}
+.card_info .info_box{
+  @include rem((
+           margin-top:30px,
+          ));
+  overflow: hidden;
+}
+.cardname{
+  color: #999;
+  @include font-dpr($qqw-fontsize-s,null);
+}
+.info{
+  @include rem((
+           margin-left:20px,
+          ));
+}
+.info .cardimg{
+  @include rem((
+           margin-right:20px,
+           width: 80px,
+           height: 80px,
+          ));
+}
+.info .cardimg img{
+  @include rem((
+           width: 100%,
+           height: 100%,
+          ));
+}
+.info .nameinfo{
+  @include font-dpr($qqw-fontsize-l,null);
+  color: #333;
+  @include rem((
+           width: 274px,
+          ));
+}
+
+// 领卡
+.userinfo{
+  @include rem((
+          margin: 30px 0 20px,
+          ));
+  overflow: hidden;
+}
+.userinfo .user_photo{
+  @include rem((
+         width: 98px,
+         height: 98px,
+         border:1px solid #e7e7e7,
+         border-radius: 50%,
+          ));
+  overflow: hidden;
+}
+.userinfo .user_photo img{
+  @include rem((
+         width: 100%,
+         height: 100%,
+          ));
+}
+.user_info{
+  @include rem((
+         width: 500px,
+          margin-left: 40px,
+          ));
+}
+.user_info .username{
+  @include font-dpr($qqw-fontsize-xl,null);
+  color: #333;
+  @include rem((
+        height: 60px,
+         line-height: 60px !important,
+          ));
+}
+.message{
+  @include font-dpr($qqw-fontsize-s,null);
+  color: #666666;
+  @include rem((
+    margin-top: 10px,
+         line-height: 50px !important,
+          ));
+}
+.receive_btn{
+  background: #5cb531;
+  display: block;
+  text-align: center;
+  @include font-dpr($qqw-fontsize-m,null);
+  color: #fff;
+  @include rem((
+         margin:40px auto 110px,
+         width: 220px,
+         height: 60px,
+         line-height: 60px !important,
+         border-radius: 5px,
+          ));
+}
+.card_type{
+  text-align: center;
+   @include font-dpr($qqw-fontsize-l,null);
+   color: #cb2b2b;
+}

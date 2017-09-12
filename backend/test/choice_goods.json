@@ -1,0 +1,40 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "list": [
+      {
+        "goods_id": "3123",
+        "goods_name": "美记杭椒",
+        "goods_attr": "美记杭椒",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58d8decac94fc.png",
+        "goods_number": "2",
+        "shop_price": "0.03",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      },
+       {
+        "goods_id": "3123",
+        "goods_name": "美记杭椒",
+        "goods_attr": "美记杭椒",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58d8decac94fc.png",
+        "goods_number": "2",
+        "shop_price": "0.03",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      },
+      {
+        "goods_id": "3124",
+        "goods_name": "J-Aji牛奶味小蛋酥150g",
+        "goods_attr": "美记杭椒",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58d4ed55d4367.png",
+        "goods_number": "1",
+        "shop_price": "0.10",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      }
+    ]
+  },
+  "timestamp": 1494225673,
+  "os": "app"
+}

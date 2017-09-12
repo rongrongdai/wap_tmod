@@ -1,0 +1,128 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+// @import '../../../../sass/swiper';
+@import '../../../../sass/share';
+// @import '../../../../sass/animation';
+
+$font-size-30 :15px;
+$font-size-22 :11px;
+
+$clo-gouwudai : #fb2b6a;
+$clo-topic    : #8b49de;
+$clo-huodong  : #f57717;
+
+$clo-e6     : #e6e6e6;
+$clo-font-66: #666666;
+
+
+$img-icon-topic-1:'../img/homepage/icon-gouwudai@2x.png';
+$img-icon-topic-2:'../img/homepage/icon-gouwudai@2x.png';
+$img-icon-topic-3:'../img/homepage/icon-gouwudai@3x.png';
+
+
+$img-icon-huati-1:'../img/homepage/icon_huati@2x.png';
+$img-icon-huati-2:'../img/homepage/icon_huati@2x.png';
+$img-icon-huati-3:'../img/homepage/icon_huati@3x.png';
+
+
+$img-icon-huodong-1:'../img/homepage/icon_huodong@2x.png';
+$img-icon-huodong-2:'../img/homepage/icon_huodong@2x.png';
+$img-icon-huodong-3:'../img/homepage/icon_huodong@3x.png';
+
+// .qqw_head{ position: relative; 
+//         bottom: 0; top:0;  
+//         @include rem((  height:77px ))
+//         border-bottom: 1px #e6e6e6 solid; 
+//         background: white;    
+//         z-index: 10000;
+// }
+
+
+.qqw-hompage-float-bar{
+	@include rem(( height: 147px , width: 100%));
+}
+
+.qqw-hompage-float-bar .head_fix{
+	position: relative; 
+	@include rem(( height: 125px , width: 100%));
+  z-index: 0 !important;
+	@include flex-container();
+           justify-content: flex-start;
+           background-color: white;
+           border-bottom: 1px solid #e6e6e6;
+}
+.qqw-hompage-float-bar .head_cto_hack{
+  @include rem(( width: 240px !important));
+}
+
+.qqw-hompage-float-bar .head_cto{
+	@include rem(( height: 147px , width: 255px )); position: relative;
+    .img{
+       float: left;
+       width: 24%;
+       background-size: 100% !important;
+       @include rem((height: 150px, margin-left: 20px,margin-right:20px));
+    } 
+    .right{
+        float: left;
+        width:59%;
+        text-align: left;
+        @include rem((margin-top: 38px, height: 85px));
+         border-right: $clo-e6 1px solid;
+        .name{
+          color:$clo-gouwudai;
+        }
+        .name1{
+          color:$clo-topic ;
+        }
+        .name2{
+          color:$clo-huodong;
+        }
+        .describe{
+
+        }
+    }
+
+    .none_border{
+          border-right: 0px !important;
+
+    }   
+    .large{
+    @include font-dpr($font-size-30);
+    font-weight: bold !important;
+        }
+    .middle{
+    @include font-dpr($font-size-22);
+    color: $clo-font-66;
+    @include rem((margin-top: 6px));
+        }
+    .topic{
+    @include background-dpr($img-icon-topic-1, $img-icon-topic-2, $img-icon-topic-3, center, center);
+    }
+    .zhuanlan{
+    @include background-dpr($img-icon-huati-1, $img-icon-huati-2, $img-icon-huati-3, center, center);
+    }  
+    .top20{
+      @include background-dpr($img-icon-huodong-1, $img-icon-huodong-2, $img-icon-huodong-3, center, center);
+    }   
+}
+
+
+.qqw-hompage-float-bar .head_cto .head_img{ @include rem(( height: 147px , width: 230px ,border-radius: 10px)); }
+
+.qqw-hompage-float-bar .head_cto .head_p{ 
+    @include font-dpr($font-size-22);
+    color: white;
+    position: absolute;
+    @include rem(( top:58px , left: 40px));
+
+}
+
+
+
+
+
+
+
+

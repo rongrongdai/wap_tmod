@@ -1,0 +1,106 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/goods-list';
+@import '../component/women-day/qqw-women-head';
+@import '../component/women-day/qqw-women-sub-head';
+@import '../component/women-day/qqw-women-good-goods';
+@include global-reset;
+
+$up1-1:'../img/icon_fail@2x.png';
+$up1-2:'../img/icon_fail@3x.png';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+	background-color:#f3f3f3;
+	margin: 0 auto;
+    width: 100%;
+
+}
+
+.suc-box{
+    @include rem ((
+        height:286px,
+        width:100%
+    ));
+    text-align: center;
+    
+}
+
+.suc-icon{
+    display: inline-block;
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:62px 0 18px 0,
+        background-size:100% !important,
+    ));
+    @include background-dpr($up1-1,$up1-1,$up1-2,center,center);
+};
+
+.green-text{
+    display: block;
+    color: #5cb531;
+    @include rem ((
+        font-size:26px,
+        margin:0 0 60px 0,
+    ));
+}
+.order-detail{
+    @include rem ((
+        height:140px,
+        padding: 30px 20px,
+    ));
+    background-color:#fff;
+}
+.order-num,
+.shop-num{
+    display: block;
+    @include rem ((
+        height:28px,
+        font-size:28px
+    ));
+    color: #323232;
+}
+.order-num{
+    @include rem ((
+        margin:0 0 28px 0
+    ))
+}
+.order-account{
+    display: block;
+    @include rem ((
+        height:176px,
+        padding:32px 20px 120px 20px,
+        font-size:24px,
+    ));
+    color:#909090;
+}
+.again-pay{
+    background-color: #ab2b2b;
+    text-align: center;
+    @include rem ((
+        height:88px,
+        width:90%,
+        font-size:28px,
+        line-height:88px,
+        border-radius: 20px,
+        margin:0 auto
+    ));
+    color: #fff;
+}
+
+
+.ordern,
+.ordersn{
+    @include rem ((
+        margin:0 0 0 70px,
+    ));
+}

@@ -1,0 +1,27 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+        "list": [
+            {
+                "cate_id": "29",
+                "name": "中国质造",
+                "ads": "大道匠心，工厂直供",
+                "images": "http://7xp9qs.com1.z0.glb.clouddn.com/57e61d15835ac.jpg"
+            },
+            {
+                "cate_id": "30",
+                "name": "全球好货",
+                "ads": "异国风物，步履拾光",
+                "images": "http://7xp9qs.com1.z0.glb.clouddn.com/57e61d15835ac.jpg"
+            },
+            {
+                "cate_id": "31",
+                "name": "品质研究所",
+                "ads": "品质生活，没那么贵",
+                "images": "http://7xp9qs.com1.z0.glb.clouddn.com/57e61d15835ac.jpg"
+            }
+        ]
+    },
+    "timestamp": 1481873554
+}

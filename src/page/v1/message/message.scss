@@ -1,0 +1,94 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/animation';
+@import './xitong.scss';
+@import './commont.scss';
+@import './sixin.scss';
+@include global-reset;
+.massage-box{
+	background: #f3f3f3;
+	text-align: center;
+}
+
+$qqw-fontsize-xs: 12px;   //24px
+$qqw-fontsize-m: 13px;      // 26px
+
+.qqw_head{ position: fixed; 
+        @include rem((  height:77px ))
+        border-bottom: 1px #d9d9d9 solid;    
+        z-index: 10000;
+}
+.default{
+  @include rem((
+          padding:110px 0,
+    ));
+}
+.default .img{
+    @include rem((
+         width:180px,
+         height:180px,
+         margin:0 auto,
+    ));
+}
+.default .img img{
+  @include rem((
+         width:100%,
+         height:100%,
+    ));
+}
+.default  p{
+     @include font-dpr($qqw-fontsize-m);
+      @include rem((
+               width:100%,
+               height:90px,
+               line-height: 90px !important,
+          ));
+      text-align:center;
+      color:#666666;
+}
+.content-box{
+    background-color: #fff;
+    @include rem((
+          // padding-bottom: 60px,
+          // padding-top:15px,
+    ));
+}
+.qqw_special_head{
+	@include rem(( height: 80px , width: 100%));
+  z-index: 2000;
+}
+
+.head_fix{
+	position: fixed; 
+	@include rem(( height: 80px , width: 100%));
+	@include flex-container();
+           justify-content: flex-start;
+           background-color: white;
+           border-bottom: 1px solid #e6e6e6;
+      z-index: 10000;     
+}
+
+.head_cto{
+  @include rem((
+         width: 33.3%
+         ));
+  text-align: center;
+  position: relative;
+  text-align: center;
+}
+.head_cto_name{
+       @include rem(( 
+          padding:18px 20px,
+        )); 
+       color: #999;
+      @include font-dpr($qqw-fontsize-m);
+}
+.checkd .head_cto_name{
+     @include rem(( border-bottom:4px #5cb531 solid,)); 
+      
+      color: #323232;
+      @include font-dpr($qqw-fontsize-m);
+
+}

@@ -1,0 +1,156 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+@include global-reset;
+
+
+
+$bg-top1  : '../../img/refund/icon_kefu2.png';
+$bg-top1x : '../../img/refund/icon_kefu3.png';
+
+$bg-top2 : '../../img/refund/icon_me2.png';
+$bg-top2x  : '../../img/refund/icon_me3.png';
+
+ 
+$bg-top3 : '../../img/refund/icon_tip2.png';
+$bg-top3x : '../../img/refund/icon_tip3.png';
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+$font-size-22     : 11px;
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+body {
+	background: #ffffff;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+
+
+.consult_top{}
+
+.sult_con:after{ content:".";  height:0;  visibility:hidden;  display:block;  clear:both;}
+
+.sult_con{  
+    @include rem(( width: 94%, margin:0 auto, padding: 20px 0));
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.con_left{ float: left;}
+.con_left .leone{
+      @include background-dpr($bg-top1 ,$bg-top1,$bg-top1x , center,center);
+       background-size: 100% 100% !important;
+      @include rem(( width: 27px, height: 30px)); 
+      display: inline-block;
+ }
+
+.con_left .letwo{ 
+   @include rem(( margin-left: 10px));
+   @include font-dpr($font-size-30);
+   color: #323232;
+ }
+
+.con_right{ 
+    float: right;
+    @include font-dpr($font-size-28);
+    color: #909090;
+}
+
+
+
+
+.con_left .leone1{
+    @include background-dpr($bg-top2 ,$bg-top2,$bg-top2x , center,center);
+       background-size: 100% 100% !important;
+      @include rem(( width: 27px, height: 30px)); 
+      display: inline-block;
+}
+
+
+.consu_cet{
+       @include rem(( padding: 20px 0));
+   .re_yi{
+       @include rem(( margin-left: 40px));
+   }
+   .re_img{
+        @include background-dpr($bg-top3 ,$bg-top3,$bg-top3x , center,center);
+         background-size: 100% 100% !important;
+        @include rem(( width: 27px, height: 30px)); 
+        display: inline-block;
+   }
+   .re_tk{
+       @include font-dpr($font-size-30);
+       @include rem(( margin-left: 10px));
+        color: #909090;
+   }
+}
+
+
+
+.consult_w{ @include rem((height: 20px)); background-color: #f3f3f3;}
+
+.sult_ye{ 
+  .tes{
+      border-bottom: 1px #e6e6e6 solid;
+      @include font-dpr($font-size-30,2);
+      color: #323232;
+  }
+  @include rem(( width: 94%, margin: 20px auto));
+  p{ @include font-dpr($font-size-28,2); color: #909090; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

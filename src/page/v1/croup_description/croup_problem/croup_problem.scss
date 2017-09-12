@@ -1,0 +1,143 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+
+
+@include global-reset;
+
+
+
+$bg-tg            : '../../img/shop_celebration/icon_cgdrmore3x.png';
+$bg-fh            : '../../img/shop_celebration/rderdecon_phone.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+$font-size-22     : 11px;
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+body {
+	background: #f9f9f9;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+
+
+
+
+.or_question{ 
+  background-color: #ffffff;
+  @include rem((padding-bottom: 30px));
+}   
+.problemP{ 
+   @include font-dpr($font-size-28);
+   color: #333333;
+   width: 92%;
+   @include rem(( margin:20px auto 0 auto));
+}
+.return_q{
+ background-color: #ffffff;
+  @include rem((padding-bottom: 30px));
+}
+.qeneral{ 
+  background-color: #ffffff;
+  @include rem((padding-bottom: 30px));
+}
+.problemImg{ 
+  width: 70%;
+ @include rem(( margin:10px 0 10px 32px)); 
+}
+.pro_imga:after{  content:".";  height:0;  visibility:hidden;  display:block;  clear:both;  }
+.pro_imga{ 
+  width: 92%;
+  @include rem(( margin:10px auto)); 
+}
+.problemIe , .problemrih{ width: 46%;}
+
+
+.page_q{
+       @include rem(( width: 92%, margin:0 auto, padding:20px 0 ));
+       border-bottom: 1px solid #ccc;
+       color: #333333;
+       @include font-dpr($font-size-28,2);
+       .kua{
+           display: inline-block;
+           @include rem((width: 40px, height: 40px,  margin-right: 20px, line-height: 40px  !important));
+           text-align: center;
+           color: #ffffff;
+           background-color: #5cb531;
+       }
+    }
+
+   .customer_yi{
+        @include rem(( width: 92%, margin:0 auto, padding:20px 0 30px 0 ));
+        color: #333333; 
+        h2{ 
+             @include font-dpr($font-size-24,2,bold);
+          }
+        p{
+            @include font-dpr($font-size-24,1.5);
+        }
+
+        .spag{ 
+         @include rem(( text-indent: 2px ));
+        }  
+
+        .yi_y{ @include rem(( margin-left: 20px));}
+        .yi_er{ @include rem(( margin-left: 34px));}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+

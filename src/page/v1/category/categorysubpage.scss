@@ -1,0 +1,40 @@
+
+$item-border-color: #e6e6e6;
+$item-color: #323232;
+$item-fontsize: 12px;			// 24px;
+
+.dicovery-banner {
+	display: block;
+	position: relative;
+	width: 100%;
+	@include rem((
+			height: 320px,
+			margin-bottom: 32px
+		));
+}
+
+.dicovery-banner-title {
+	@include centerer(true, true);
+}
+
+.discovery-item-container {
+	@include rem(padding, 0 16px 4px 16px);
+}
+
+.discovery-item {
+	display: inline-block;
+	@include rem((
+			height: 46px,
+			margin-right: 42px,
+			margin-bottom: 28px,
+			padding: 0 12px,
+			border-radius: 2px
+		));
+	border: 0.03rem solid $item-border-color;			// 1px
+	color: $item-color;
+	text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+	@include font-dpr($item-fontsize, 0.613333rem);
+}
+
+

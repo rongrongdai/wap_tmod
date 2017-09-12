@@ -1,0 +1,283 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "max_return": 27.9,
+    "return_money": 12.3,
+    "is_allow_refund": 0,
+    "return_type": [
+      {
+        "key": "1",
+        "value": "我要退款（无需退货）"
+      },
+      {
+        "key": "0",
+        "value": "我要退货退款"
+      }
+    ],
+    "goods_list": [
+      {
+        "goods_id": "4216",
+        "goods_name": "健力宝330ML/听",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58f9bca17b9db.jpg",
+        "goods_number": "1",
+        "goods_attr": "",
+        "shop_price": "2.70",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      },
+      {
+        "goods_id": "4352",
+        "goods_name": "邬辣妈素羊肉串90g/袋",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58f96c09d9b4d.jpg",
+        "goods_number": "1",
+        "goods_attr": "",
+        "shop_price": "3.20",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      },
+      {
+        "goods_id": "4354",
+        "goods_name": "邬辣妈素牛肉丸85g/袋",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58f96a99e60bd.jpg",
+        "goods_number": "2",
+        "goods_attr": "",
+        "shop_price": "3.20",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      },
+      {
+        "goods_id": "4579",
+        "goods_name": "冠云一品香牛肉118G/袋",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/58fdae240297f.jpg",
+        "goods_number": "1",
+        "goods_attr": "",
+        "shop_price": "15.60",
+        "fav_price": "0.00",
+        "fav_type": "2"
+      }
+    ],
+    "reason": [
+      {
+        "type_id": "25",
+        "parent_id": "0",
+        "type_name": "其他"
+      },
+      {
+        "type_id": "24",
+        "parent_id": "0",
+        "type_name": "发货慢/未收到货"
+      },
+      {
+        "type_id": "23",
+        "parent_id": "0",
+        "type_name": "物流慢/快递退回"
+      },
+      {
+        "type_id": "22",
+        "parent_id": "0",
+        "type_name": "发错/漏发"
+      },
+      {
+        "type_id": "21",
+        "parent_id": "0",
+        "type_name": "商品/包装破损"
+      },
+      {
+        "type_id": "20",
+        "parent_id": "0",
+        "type_name": "质量问题"
+      },
+      {
+        "type_id": "19",
+        "parent_id": "0",
+        "type_name": "与实物不符"
+      },
+      {
+        "type_id": "18",
+        "parent_id": "0",
+        "type_name": "七天无理由退货"
+      }
+    ],
+    "child_reason": {
+      "18": [
+        {
+          "type_id": "33",
+          "parent_id": "18",
+          "type_name": "电话错误,空号,停机，地址错误，联系不上客户"
+        },
+        {
+          "type_id": "2",
+          "parent_id": "18",
+          "type_name": "拍错了、买重了、多拍了、少拍了"
+        },
+        {
+          "type_id": "3",
+          "parent_id": "18",
+          "type_name": "不喜欢了、不想要了、已经买了"
+        },
+        {
+          "type_id": "4",
+          "parent_id": "18",
+          "type_name": "退了，参加活动或重新再下单"
+        },
+        {
+          "type_id": "6",
+          "parent_id": "18",
+          "type_name": "不愿意上传身份证"
+        },
+        {
+          "type_id": "42",
+          "parent_id": "18",
+          "type_name": "客户拒收"
+        }
+      ],
+      "19": [
+        {
+          "type_id": "17",
+          "parent_id": "19",
+          "type_name": "收到商品与描述或图片不符"
+        }
+      ],
+      "20": [
+        {
+          "type_id": "26",
+          "parent_id": "20",
+          "type_name": "临近保质期/过期"
+        },
+        {
+          "type_id": "30",
+          "parent_id": "20",
+          "type_name": "物品本身有瑕疵"
+        },
+        {
+          "type_id": "7",
+          "parent_id": "20",
+          "type_name": "认定是假货、质量不好"
+        },
+        {
+          "type_id": "8",
+          "parent_id": "20",
+          "type_name": "认为商品质量有问题（红屁股、漏尿、奶粉结晶、受潮等）"
+        }
+      ],
+      "21": [
+        {
+          "type_id": "10",
+          "parent_id": "21",
+          "type_name": "商品破损、磨损、包装污染、爆罐、漏粉等"
+        }
+      ],
+      "22": [
+        {
+          "type_id": "11",
+          "parent_id": "22",
+          "type_name": "商品错发、商品发错地方"
+        },
+        {
+          "type_id": "12",
+          "parent_id": "22",
+          "type_name": "商品少发，漏发，多发，无赠品"
+        }
+      ],
+      "23": [
+        {
+          "type_id": "28",
+          "parent_id": "23",
+          "type_name": "快递退回-商城原因"
+        },
+        {
+          "type_id": "29",
+          "parent_id": "23",
+          "type_name": "快递退回-客户退货拒收、地址错误"
+        },
+        {
+          "type_id": "14",
+          "parent_id": "23",
+          "type_name": "无物流信息（约定时间）或无物流信息跟新"
+        },
+        {
+          "type_id": "15",
+          "parent_id": "23",
+          "type_name": "快递一直未派送、虚假签收"
+        },
+        {
+          "type_id": "16",
+          "parent_id": "23",
+          "type_name": "超过到货周期"
+        }
+      ],
+      "24": [
+        {
+          "type_id": "27",
+          "parent_id": "24",
+          "type_name": "物流丢件"
+        },
+        {
+          "type_id": "5",
+          "parent_id": "24",
+          "type_name": "发货或到货时间太长（不愿意等）"
+        },
+        {
+          "type_id": "13",
+          "parent_id": "24",
+          "type_name": "未按约定时间发货"
+        }
+      ],
+      "25": [
+        {
+          "type_id": "37",
+          "parent_id": "25",
+          "type_name": "买家账号被封（保税区）"
+        },
+        {
+          "type_id": "41",
+          "parent_id": "25",
+          "type_name": "超卖"
+        },
+        {
+          "type_id": "40",
+          "parent_id": "25",
+          "type_name": "活动，抽奖"
+        },
+        {
+          "type_id": "39",
+          "parent_id": "25",
+          "type_name": "身份证号被封，信息错误，格式错误（保税区）"
+        },
+        {
+          "type_id": "38",
+          "parent_id": "25",
+          "type_name": "买家账号使用大于3次（保税区）"
+        },
+        {
+          "type_id": "31",
+          "parent_id": "25",
+          "type_name": "价格差价"
+        },
+        {
+          "type_id": "32",
+          "parent_id": "25",
+          "type_name": "异常订单"
+        },
+        {
+          "type_id": "34",
+          "parent_id": "25",
+          "type_name": "系统问题"
+        },
+        {
+          "type_id": "1",
+          "parent_id": "25",
+          "type_name": "缺货，不愿意等"
+        },
+        {
+          "type_id": "9",
+          "parent_id": "25",
+          "type_name": "活动差价，降价"
+        }
+      ]
+    }
+  },
+  "timestamp": 1494323741,
+  "os": "app"
+}

@@ -1,0 +1,189 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@include global-reset;
+
+$bg-2            : '../img/login/bg_photo@2x.webp';
+$bg-3            : '../img/login/bg_photo@3x.webp';
+$icon-close-2    : '../img/login/icon_close@2x.png';
+$icon-close-3    : '../img/login/icon_close@3x.png';
+$icon-logo-2     : '../img/login/icon_logo@2x.png';
+$icon-logo-3     : '../img/login/icon_logo@3x.png';
+$icon-password-2 : '../img/login/icon_password@2x.png';
+$icon-password-3 : '../img/login/icon_password@3x.png';
+$icon-phone-2    : '../img/login/icon_phone@2x.png';
+$icon-phone-3    : '../img/login/icon_phone@3x.png';
+$icon-qq-2       : '../img/login/icon_qq@2x.png';
+$icon-qq-3       : '../img/login/icon_qq@3x.png';
+$icon-wechat-2       : '../img/login/icon_wechat@2x.png';
+$icon-wechat-3       : '../img/login/icon_wechat@3x.png';
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+
+body {
+	background: #f3f3f3;
+	text-align: center;
+}
+
+.login-article {
+	background-color: #fff;
+	@include rem((
+        font-size: 26px
+		))
+}
+
+.content{
+	overflow: hidden;
+    @include background-dpr($bg-2, $bg-2, $bg-3, center, center);
+    background-size: 100% !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.box-close{
+	@include rem((
+	margin: 5px 35px,
+	));
+	text-align:right;
+}
+.btn-close{
+	@include background-dpr($icon-close-2 , $icon-close-2, $icon-close-3 , center, center)
+	border:0px;
+	@include rem((
+      width: 35px !important,
+      height: 35px !important
+     ));
+}
+.box-logo{
+	@include background-dpr($icon-logo-2 , $icon-logo-2, $icon-logo-3, center, center)
+	@include rem((
+      width: 100% !important,
+      height: 101px !important,
+      margin-top: 64px,
+      background-size: auto 101px !important
+     ));
+	position: relative;
+
+}
+.box-input{
+	width: 94.5%;
+	text-align:left;
+	border-bottom:1px $color-line solid;
+	@include rem((
+	      padding-bottom:32px,
+	      padding-top:82px,
+	      margin: 0 20px
+	     ));
+	.logo{
+          @include rem((
+	      width: 26px !important,
+	      height: 26px !important,
+	      background-size: 26px !important,
+	      margin-top: 74px,
+	      padding:20px
+	     ));
+	}
+	.phone{
+		  @include background-dpr($icon-phone-2 , $icon-phone-2, $icon-phone-3, center, center);
+		
+	}
+    .pass{
+		  @include background-dpr($icon-password-2 , $icon-password-2, $icon-password-3, center, center);
+	}
+	.input-content {
+    border: 0px solid white;
+     @include rem((
+	      padding: 5px !important,
+	     ));
+   @include font-dpr($font-size-26);
+    width: 80%;
+    }
+
+}
+
+.box-pass{
+		@include rem((
+	      padding-top:37px !important
+	     ));
+}
+
+.btn-submit {
+       @include rem((
+      width: 710px !important,
+      height: 88px !important,
+      margin-top: 70px,
+      border: 0px,
+      border-radius:50px
+        ));
+      background-color: $color-btn-bg;
+       @include font-dpr($font-size-26);
+      color: $color-white;
+}
+
+.register {
+	  @include rem((
+      margin-top: 50px,
+      margin-left: 35px
+      ));
+     text-align: left;
+     @include font-dpr($font-size-26);
+     color: $color-font-90;
+}
+
+.other-register{
+	  @include rem((
+	    margin-top: 80px
+      ));
+	 .line{
+       border-bottom:1px $color-line solid;
+        width: 94.5%;
+          @include rem((
+          margin-left: 20px
+          ));
+
+    }
+    .text-box{
+    width: 30%;
+    position: relative;
+    	  @include rem((
+	    top: -15px,
+	    margin-left: 263px
+      ));
+    background-color: white;
+    width: 30%;
+        .text{
+         @include font-dpr($font-size-24);
+        color: $color-font-66;
+        }
+    }
+}
+
+.btn-qq{
+       @include background-dpr($icon-qq-2 , $icon-qq-2, $icon-qq-3, center, center);
+       border:0px;
+      @include rem((
+      width: 68px !important,
+      height: 68px !important,
+      margin-top: 30px
+      ))
+      background-size: 100% !important;
+}
+
+.btn-wechat{
+       @include background-dpr($icon-wechat-2 , $icon-wechat-2, $icon-wechat-3, center, center);
+       border:0px;
+      @include rem((
+      width: 68px !important,
+      height: 68px !important,
+      margin-top: 30px
+      ))
+      background-size: 100% !important;
+}

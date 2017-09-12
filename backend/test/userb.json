@@ -1,0 +1,19 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "doyen": {
+      "uid": "507",
+      "nickname": "达人1",
+      "position": "金牌达人",
+      "position_type": "1",
+      "show_picture": "http://7xp9qs.com1.z0.glb.clouddn.com/57d8fca380fd4.jpg",
+      "brief": "下玩具睦十十十玩具二盱卢正雨地 卡地亚卡地亚于二士地二盱一f",
+      "article_num": "1",
+      "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57d8fca3a02a4.jpg",
+      "is_follow": true,
+      "userid":"1080751"
+    }
+  },
+  "timestamp": 1484753460
+}

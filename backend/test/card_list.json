@@ -1,0 +1,48 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "list": [
+      {
+        "order_id": "3",
+        "uid": "3",
+        "order_sn": "3333333333",
+        "quantity": "50",
+        "card_type": "1",
+        "card_id": "1",
+        "card_type_name": "实体卡",
+        "card_amount": "500.00",
+        "get_num": "2",
+        "get_code": "309375",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/56c42d850d41b.jpg"
+      },
+      {
+        "order_id": "3",
+        "uid": "3",
+        "order_sn": "3333333333",
+        "quantity": "50",
+        "card_type": "2",
+        "card_id": "1",
+        "card_type_name": "实体卡",
+        "card_amount": "500.00",
+        "get_num": "2",
+        "get_code": "309375",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/56c42d850d41b.jpg"
+      },
+      {
+        "order_id": "3",
+        "uid": "3",
+        "order_sn": "3333333333",
+        "quantity": "50",
+        "card_type": "3",
+        "card_id": "1",
+        "card_type_name": "实体卡",
+        "card_amount": "500.00",
+        "get_num": "2",
+        "get_code": "309375",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/56c42d850d41b.jpg"
+      }
+    ]
+  },
+  "timestamp": "1491991835"
+}

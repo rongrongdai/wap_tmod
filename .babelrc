@@ -1,0 +1,9 @@
+{
+  "presets": ["es2015-riot", "es2015", "stage-2", "stage-3"],
+  "plugins": ["transform-runtime", "transform-es2015-modules-commonjs"],
+  "retainLines": true,
+  "compact": true,
+  "comments": false,
+  "sourceMaps": false,
+  "comments": false
+}

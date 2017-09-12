@@ -1,0 +1,59 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+$choicn-1: '../img/choic/img_male2x.png';
+$choicn-2: '../img/choic/img_male2x.png';
+$choicn-3: '../img/choic/img_male2x.png';
+$choicn-4: '../img/choic/img_female2x.png';
+$choicn-5: '../img/choic/img_00x.png';
+$choicn-6: '../img/choic/img_70x.png';
+$choicn-7: '../img/choic/img_80x.png';
+$choicn-8: '../img/choic/img_90x.png';
+$choicn-9: '../img/choic/img_95x.png';
+$choicn-10: '../img/choic/img_none@2x.png';
+
+$choicnbg-1: '../img/choic/icon_select1@2x.png';
+$choicnbg-2: '../img/choic/icon_select1@2x.png';
+$choicnbg-3: '../img/choic/icon_select1@2x.png';
+
+
+
+
+
+.choiceAll{
+       position:relative;
+  }
+.choicera{
+        border: 1px #999999 solid;    
+        outline-style: none;
+        -webkit-appearance: none;
+        @include rem((
+		 width: 122px, height:122px
+		)); 
+       
+        border-radius: 50%;
+       @include background-dpr($choicn-1, $choicn-2, $choicn-3, center, center);
+         background-size: 100% 100% !important;
+         border: none;
+        
+}
+.choicadd{
+          @include rem((
+		 width: 122px, height:122px
+	)); 
+           top:3px;
+           left:5px;
+         @include background-dpr($choicnbg-1, $choicnbg-2, $choicnbg-3, center, center);
+         background-size: 100% 100% !important;
+         border: none;
+         position: absolute;
+         display: none;
+
+
+ }
+
+
+

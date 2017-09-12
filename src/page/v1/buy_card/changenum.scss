@@ -1,0 +1,233 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/goods-list';
+@import '../component/women-day/qqw-women-head';
+@import '../component/women-day/qqw-women-sub-head';
+@import '../component/women-day/qqw-women-good-goods';
+@include global-reset;
+
+
+$up1-1:'../img/1-green@2x.png';
+$up1-2:'../img/1-green@3x.png';
+
+$up2-1:'../img/2@2x.png';
+$up2-2:'../img/2@3x.png';
+
+$up3-1:'../img/3@2x.png';
+$up3-2:'../img/3@3x.png';
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+	background-color:#f3f3f3;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.step-div{
+    @include rem ((
+        height:278px,
+        width:100%
+    ));
+}
+.step-line:before{
+    content:"";
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    @include rem ((
+        left:13%,
+        top:189px,
+        width:550px,
+    ));
+    z-index: -1;
+}
+
+.green-icon{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 100px,
+        background-size:100% !important,
+    ));
+    float: left;
+    @include background-dpr($up1-1,$up1-1,$up1-2,center,center);
+};
+
+.white-iconI{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 125px,
+        background-size:100% !important,
+    ));
+    float: left;
+    @include background-dpr($up2-1,$up2-1,$up2-2,center,center);
+};
+.white-iconII{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 125px,
+        background-size:100% !important,
+    ));
+    float: left;
+    @include background-dpr($up3-1,$up3-1,$up3-2,center,center);
+};
+
+.step-text{
+    clear: both;
+    @include rem ((
+    font-size:26px,
+    ));
+}
+.green-text{
+    color: #5cb531;
+    @include rem ((
+    margin:0 0 0 100px,
+    ));
+}
+.white-text{
+    @include rem ((
+    margin:0 125px,
+    ));
+}
+.give-num{
+     @include rem((
+         height:110px,
+         padding:27px 20px,
+         margin:0 0 30px 0,
+     ));
+     background-color: #fff;
+}
+.every-num{
+     @include rem((
+         height:110px,
+         padding:27px 20px,
+     ));
+     background-color: #fff;
+}
+.mannum{
+    @include rem((
+        width:200px,
+        font-size:28px,
+        padding:14px 0,
+    ))
+}
+.numslect{
+    @include rem((
+        border-radius: 10px,
+    ));
+    border: 2px solid #dedede;
+
+}
+
+
+.input-number,
+.every-number {
+    display: inline-block;
+    @include rem((
+        width: 110px,
+        font-size:26px,
+        height:56px,
+        line-height:56px,
+    ));
+    border: none;
+    color: #666666;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number-decrement,
+.input-number-increment,
+.every-number-decrement,
+.every-number-increment{
+    border: 2px solid #dedede;
+    border-top: none;
+    border-bottom: none;
+    @include rem((
+        height: 56px
+    ));
+    user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment,
+.every-number-decrement,
+.every-number-increment{
+    display: inline-block;
+    @include rem((
+        width: 56px,
+        height:56px,
+        line-height: 56px,
+        font-size:35px
+    ));
+    background: #ededed;
+    color: #666666;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.input-number-decrement,
+.every-number-decrement {
+    border-left: none;
+    @include rem((
+        border-radius: 10px,
+    ));
+}
+
+.input-number-increment,
+.every-number-increment {
+    border-right: none;
+    @include rem((
+        border-radius: 10px,
+    ))
+}
+
+.leave{
+    display: inline-block;
+    @include rem((
+        height:80px,
+        width:100%,
+        line-height:80px,
+        font-size:28px,
+        padding:0 20px,
+    ));
+    color: #333333;
+}
+.input-leave{
+    @include rem((
+        height:300px,
+        width:100%,
+        font-size:28px,
+        padding:20px,
+        line-height:42px,
+    ));
+    background: #fff;
+    color: #999999;
+    border: none;
+    text-align:left;
+    resize : none;
+}
+.fixedbot{
+    display: block;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    background-color: #5cb531;
+     @include rem ((
+        height:88px,
+        width:100%,
+        line-height:88px,
+        font-size:28px,
+    ));
+    color: #ffffff;
+}

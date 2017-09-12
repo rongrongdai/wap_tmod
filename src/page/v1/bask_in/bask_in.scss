@@ -1,0 +1,234 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/share';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/common_header_v1';
+@import '../component/card/message-img-alert';
+@include global-reset;
+@import '../component/card/bask-comment.scss';
+
+$bg-1            : '../img/baskin/baskbg.png';
+$bg-2            : '../img/baskin/baskbg1.png';
+
+$bgx-1            : '../img/baskin/icon_peo1x.png';
+$bgtiem-1       : '../img/baskin/timebg2x.png';
+
+$iconba-1       : '../img/baskin/icon_xia2x.png';
+$iconpic-1       : '../img/baskin/icon_pic2x.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+
+body {
+	background: #fff;
+	
+}
+
+// .baskintop{
+//     width: 100%;
+//     @include rem(( height: 308px));
+//     @include background-dpr($bg-1 ,$bg-1,$bg-1 , center, center);
+//     background-size: 100% 100% !important;
+// }
+
+
+.baskintop1{
+   width: 100%;
+    @include rem(( height: 308px));
+    overflow: hidden;
+}
+.baskintop1 .bastopimgs{
+    width: 100%;
+    @include rem(( height: 308px));
+    position: relative;
+}
+
+.topcont{ 
+    @include rem((  height: 70px , padding:0 30px, margin-right: 20px, border-radius: 40px , line-height: 70px, top:-300px));
+    background-color: #000000;
+    float: right;
+    opacity: 0.7;
+    color:#909090;
+    text-align: center;
+    @include font-dpr($font-size-24,2.8);
+    position: relative;
+
+}
+
+.topcont .toimg{ 
+    @include rem(( height: 22px, width: 31px , margin-right:10px));
+    @include background-dpr($bgx-1 ,$bgx-1,$bgx-1 , center, center);
+    background-size: 100% 100% !important;
+    display: inline-block;
+}
+
+.topcont .tosjx{
+    position:absolute;
+    opacity: 0.7;
+   @include rem(( width: 0, height: 0, border-left: 20px solid transparent,  border-right: 20px solid transparent,  border-top: 25px solid #000000 , left:110px));
+
+}
+
+
+
+
+
+.baskintlower{
+    @include background-dpr($bgtiem-1 ,$bgtiem-1,$bgtiem-1 , center, center);
+    background-size: 100% 100% !important;
+    @include rem((height: 79px, width: 100%));
+}
+.baskintlower p{
+    @include font-dpr($font-size-26,3);
+    @include rem(( margin-left: 20px , line-height: 79px));
+     color:#5369a1;
+} 
+
+
+.baskintcont .cont_p{
+    @include font-dpr($font-size-40);
+    color: #323232;
+    @include rem(( margin:42px 0 30px 28px));
+}
+
+
+
+.baskintcont  .cont_p2{
+   @include rem(( margin:0 10px 20px 28px));
+   @include font-dpr($font-size-30,1.8);
+   overflow: hidden;
+}
+.baskintcont  .cont_p2 span { 
+  font-weight:bold;
+  display: block;
+ @include rem(( line-height: 50px));
+}
+
+#contents { 
+     @include rem(( line-height: 45px, margin:0 20px ));
+}
+
+.baskintcont  .cont_p3{
+   @include background-dpr($iconba-1 ,$iconba-1,$iconba-1 , center, center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 25px, height:11px , margin: 10px auto));
+   
+}
+
+
+.baskintcont .cont_con{ display: none;}
+
+
+
+.baskintcont .cont_con1{
+    @include rem(( height: 80px, line-height: 80px, margin-bottom: 30px,));
+    position: relative;
+}
+.baskintcont .cont_con1 .line{
+    position: absolute;
+    @include rem(( left: 28px,  top: 40px , width:93%, height: 1px));
+    background: #cfcfcf;
+}
+
+
+.baskintcont .cont_con1 .info{
+    @include rem((height: 44px , padding: 0 20px, line-height: 44px,   top:20px,  left:310px));
+    color: #999;
+    background: #ffffff;
+    text-align: center;
+    position: absolute;
+}
+
+
+.baskintcont .cont1_im {
+  @include rem(( width: 450px, height: 350px , margin:0 auto 46px auto));
+}
+
+.baskintcont .cont1_im img {
+  @include rem(( width: 100%, height:100%));
+  background-size: 100% 100% !important;
+}
+
+.baskintcont .cont_bar{
+  @include rem(( height: 15px, width: 100%));
+  background-color: #f9f9f9;
+
+}
+
+
+.baskmiddle{
+   @include flex-container();
+   border-bottom: 1px  #e6e6e6 solid;
+   justify-content: flex-start;
+   @include rem(( padding:30px 0 35px 0));
+}
+
+
+.baskmiddle .mid_left{ 
+   width: 62%; 
+   @include font-dpr($font-size-36); 
+}
+.baskmiddle .mid_left span{  
+    color: #323232;
+    font-weight:bold;
+    @include rem(( margin-left: 20px));
+  }
+
+.baskmiddle .mid_right{
+   @include font-dpr($font-size-30); 
+}
+
+.baskmiddle .mid_right .equal{
+   display: inline-block;
+   @include rem(( height: 40px, padding:10px 30px , border-radius: 30px , line-height: 40px));
+   border: 1px #e6e6e6 solid;
+   text-align: center;
+   color: #909090;
+}
+.baskmiddle .mid_right .tesu{
+   color: #323232;
+   background-color: #dddddd;
+}
+
+
+
+
+.bask_tail{
+    border: 1px #e6e6e6 solid;
+    position: fixed;
+    @include rem(( margin:0 auto, width: 280px , height: 85px, line-height: 85px, border-radius: 40px ,bottom:40px));
+    z-index: 1000;
+    background-color: #fcfbfb;
+    text-align: center;
+    @include font-dpr($font-size-30,3);
+    color: #5cb531;
+    left: 32%;
+}
+
+.bask_tail .tail_img{
+     @include background-dpr($iconpic-1 ,$iconpic-1,$iconpic-1 , center, center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 44px, height:36px ,margin-right: 10px));
+    display: inline-block;
+}
+
+
+.spdk{ display: none;}
+
+.hottest_hd{ display: none;}
+.hottest{ display: block;}

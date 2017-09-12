@@ -1,0 +1,39 @@
+{
+		"ret": "0",
+		"msg": "操作成功",
+		"data": {
+			"list": [{
+				"cat_id": "629",
+				"cat_name": "日化用品",
+				"cat_img": "/img/category_second/discover_img11@2x.png",
+				"level": 1,
+				"child":[{
+					"cat_id": "704",
+					"cat_name": "家用洗涤",
+					"cat_img": "http://7xp9qs.com1.z0.glb.clouddn.com/56dd3514981f9.jpg",
+					"level": 2
+				}, {
+					"cat_id": "636",
+					"cat_name": "日化护理",
+					"cat_img": "",
+					"level": 2
+				}]
+			}, {
+				"cat_id": "1002",
+				"cat_name": "母婴*",
+				"cat_img": "/img/category_second/discover_img09@2x.png",
+				"level": 1,
+				"child": [{
+					"cat_id": "1202",
+					"cat_name": "婴儿辅食",
+					"cat_img": "",
+					"level": 2
+				}, {
+					"cat_id": "1003",
+					"cat_name": "奶粉",
+					"cat_img": "",
+					"level": 2
+				}]
+			}]
+		}
+	}

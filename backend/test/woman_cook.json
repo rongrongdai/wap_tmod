@@ -1,0 +1,202 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "spec_id": "79",
+    "spec_cat_id":"88",
+    "spec_name": "职场女王",
+    "spec_desc": "职场女王不是一个人在战斗",
+    "banner_img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afe9ae726e5.png",
+    "goods_img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afef7795571.png",
+    "recommend_img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afec89000cd.png",
+    "head_img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afe9c9786f2.png",
+    "start_time": "1487865600",
+    "end_time": "1488988799",
+    "format_start_time":"2017-02-23 23:59:59",
+    "format_end_time":"2017-03-08 23:59:59",
+    "label": "1",
+    "list": [
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      },
+      {
+        "goods_id": "299",
+        "goods_sn": "90081749",
+        "uid": "217",
+        "goods_name": "保黛宝香水嫩白沐浴啫喱(魔红诱惑）",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/5809b2e20d0b4.jpg",
+        "goods_img": "",
+        "product_id": "30244",
+        "promote_price": "60.00",
+        "discount": "7.5",
+        "nickname": "贺志平",
+        "lv": "1",
+        "sex": "1",
+        "face": "http://wx.qlogo.cn/mmopen/PiajxSqBRaELibOzM0rzm69pkAdUBDSo0OgCgMhATpDibEUJrDF7iag9bHicmn4S9jHrz5nsahUH8AjWayn73zXicGoA/0"
+      }
+    ],
+    "count": "9",
+    "pagecount": "3",
+    "banner": [
+      {
+        "img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afe9c9786f2.png",
+        "spec_id": "84",
+        "url": "m.beta.quanqiuwa.com/marketing-special/getSpecialGoodsBySpec?spec_id=84"
+      },
+      {
+        "img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afee2c3a2e1.png",
+        "spec_id": "81",
+        "url": "m.beta.quanqiuwa.com/marketing-special/getSpecialGoodsBySpec?spec_id=81"
+      },
+      {
+        "img": "http://7xp9qs.com1.z0.glb.clouddn.com/58aff0829946a.png",
+        "spec_id": "83",
+        "url": "m.beta.quanqiuwa.com/marketing-special/getSpecialGoodsBySpec?spec_id=83"
+      },
+      {
+        "img": "http://7xp9qs.com1.z0.glb.clouddn.com/58aff1917eb7c.png",
+        "spec_id": "80",
+        "url": "m.beta.quanqiuwa.com/marketing-special/getSpecialGoodsBySpec?spec_id=80"
+      },
+      {
+        "img": "http://7xp9qs.com1.z0.glb.clouddn.com/58afefcf29d11.png",
+        "spec_id": "82",
+        "url": "m.beta.quanqiuwa.com/marketing-special/getSpecialGoodsBySpec?spec_id=82"
+      }
+    ]
+  },
+  "timestamp": 1487931306,
+  "os": "app"
+}

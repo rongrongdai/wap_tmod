@@ -1,0 +1,122 @@
+
+$bg-color: #f6f6f6;
+$border-color: #d6d7dc;
+$item-name-color: #323232;
+$qqw-common-strong-color: #5cb531;
+
+$qqw-fontsize-xs: 11px;   //24px
+$qqw-fontsize-xxs: 12px;  //24px
+$qqw-fontsize-m: 12px;  //24px
+$qqw-fontsize-m: 12px; 	//24px
+$qqw-fontsize-l: 15px;  //26px
+$qqw-fontsize-ll: 18px; 	//26px
+
+$bg-topic-first-banner: '../img/topic/bg-topic-first-banner@2x.png';
+
+$digit-0-2x: '../img/topic/0@2x.png';
+$digit-0-3x: '../img/topic/0@3x.png';
+$digit-1-2x: '../img/topic/1@2x.png';
+$digit-1-3x: '../img/topic/1@3x.png';
+$digit-2-2x: '../img/topic/2@2x.png';
+$digit-2-3x: '../img/topic/2@3x.png';
+$digit-3-2x: '../img/topic/3@2x.png';
+$digit-3-3x: '../img/topic/3@3x.png';
+$digit-4-2x: '../img/topic/4@2x.png';
+$digit-4-3x: '../img/topic/4@3x.png';
+$digit-5-2x: '../img/topic/5@2x.png';
+$digit-5-3x: '../img/topic/5@3x.png';
+$digit-6-2x: '../img/topic/6@2x.png';
+$digit-6-3x: '../img/topic/6@3x.png';
+$digit-7-2x: '../img/topic/7@2x.png';
+$digit-7-3x: '../img/topic/7@3x.png';
+$digit-8-2x: '../img/topic/8@2x.png';
+$digit-8-3x: '../img/topic/8@3x.png';
+$digit-9-2x: '../img/topic/9@2x.png';
+$digit-9-3x: '../img/topic/9@3x.png';
+
+.topic-head-box {
+  background-color:$bg-color;
+     @include rem((padding-bottom:15px));
+}
+
+.img-banner{
+    width: 100%;
+    @include background-dpr($bg-topic-first-banner,$bg-topic-first-banner,$bg-topic-first-banner,center,center);
+    background-size: 100% !important;
+    @include rem((height:693px,width:100%));
+    .content{
+        text-align: center;
+        @include rem((padding-top: 94px));
+        .font-time{
+         text-align: center;
+         @include font-dpr($qqw-fontsize-ll);
+         color: $item-name-color
+        }
+        .img-time{
+            text-align:center;
+            .ten{
+                 background-size: 100% !important;
+                 @include rem((height:186px,width:120px));
+                 display: -webkit-inline-box;
+                 
+            }
+            .digit{
+                  background-size: 100% !important;
+                  @include rem((height:172px,width:115px));
+                  display: -webkit-inline-box;
+            }
+            .number0{
+               @include background-dpr($digit-0-2x,$digit-0-2x,$digit-0-3x,center,center);
+            }
+            .number1{
+               @include background-dpr($digit-1-2x,$digit-1-2x,$digit-1-3x,center,center);
+            }
+            .number2{
+               @include background-dpr($digit-2-2x,$digit-2-2x,$digit-2-3x,center,center);
+            }
+            .number3{
+               @include background-dpr($digit-3-2x,$digit-3-2x,$digit-3-3x,center,center);
+            }
+            .number4{
+               @include background-dpr($digit-4-2x,$digit-4-2x,$digit-4-3x,center,center);
+            }
+            .number5{
+               @include background-dpr($digit-5-2x,$digit-5-2x,$digit-5-3x,center,center);
+            }
+            .number6{
+               @include background-dpr($digit-6-2x,$digit-6-2x,$digit-6-3x,center,center);
+            }
+            .number7{
+               @include background-dpr($digit-7-2x,$digit-7-2x,$digit-7-3x,center,center);
+            }
+            .number8{
+               @include background-dpr($digit-8-2x,$digit-8-2x,$digit-8-3x,center,center);
+            }
+            .number9{
+               @include background-dpr($digit-9-2x,$digit-9-2x,$digit-9-3x,center,center);
+            }
+
+        }
+
+    }
+}
+.title-box{
+   @include rem((padding:30px,padding-top:15px,padding-bottom:15px));
+   border-bottom: 2px #f6f6f6 solid;
+   background-color:white;
+    @include font-dpr($qqw-fontsize-l);
+    color:$item-name-color;
+   .left{
+     display:inline-block;
+     width: 49%;
+   }
+   .right{
+     width: 49%;
+     display:inline-block;
+     text-align: right;
+     color: $item-name-color;
+   }
+}
+
+
+

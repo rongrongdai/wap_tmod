@@ -1,0 +1,183 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/swiper';
+@import '../../../sass/common';
+@import '../../../sass/share';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/common_header_v1';
+@include global-reset;
+@import '../component/button/countdown.scss';
+@import '../component/card/goods-list';
+
+
+
+
+$iconbd-1       : '../img/baskin/re_head.png';
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32     : 16px;
+body {
+	background: #fff;
+	
+}
+.bannerwrap{
+  display:block;
+}
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+   @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+    display: block;
+    position: absolute;
+    background: url("../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+
+.top_nav .header_right{
+    @include rem(( height: 95px, line-height: 90px !important, width: 90px, background-size: 36px 37px !important , right: 10px));
+    display: block;
+    position: absolute;
+    top: 0;
+    background: url("../img/special_details/icon_index.png") no-repeat center center;
+  }
+
+.top_as{ @include rem((height:90px));}
+
+
+.woc_bg{
+    @include rem(( height: 680px, width: 100%));
+    background-size: 100% 100% !important;
+    background: url("../img/special_details/bg_woman.png") no-repeat center center;
+}
+
+
+.wm_classification{
+     @include rem(( height: 4724px, width: 100%));
+     background-size: 100% 100% !important;
+    background: url("../img/special_details/dax.png") no-repeat center center;
+    position: relative;
+}
+.wm_classification a{ display: block;    position:absolute;}
+
+.wm_classification .cation_1{  
+    @include rem(( width:330px, height:320px ,  top:40px,  left: 20px)); 
+}
+
+.wm_classification .cation_2{
+    @include rem(( width:330px, height:370px ,  top:440px,  left: 20px)); 
+}
+
+.wm_classification .cation_3{
+    @include rem(( width:300px, height:370px ,  top:340px,  left: 420px)); 
+}
+
+.wm_classification .cation_4{
+     @include rem(( width:350px, height:370px ,  top:860px,  left: 27px));
+     z-index: 200;
+}
+
+.wm_classification .cation_5{
+    @include rem(( width:300px, height:330px ,  top:740px,  left: 420px)); 
+}
+
+.wm_classification .cation_6{
+    @include rem(( width:600px, height:230px ,  top:1160px,  left: 100px)); 
+    z-index: 100;
+}
+
+.wm_classification .cation_7{
+     @include rem(( width:330px, height:340px ,  top:1410px,  left: 20px)); 
+}
+
+.wm_classification .cation_8{
+    @include rem(( width:340px, height:370px ,  top:1840px,  left: 25px)); 
+}
+
+.wm_classification .cation_9{
+    @include rem(( width:320px, height:370px ,  top:1740px,  left: 400px)); 
+}
+
+.wm_classification .cation_10{
+    @include rem(( width:340px, height:370px ,  top:2240px,  left: 25px)); 
+    z-index: 200;
+}
+
+.wm_classification .cation_11{
+    @include rem(( width:320px, height:370px ,  top:2140px,  left: 404px)); 
+}
+
+.wm_classification .cation_12{
+    @include rem((  width:600px, height:230px ,  top:2580px,  left: 80px));
+    z-index: 100; 
+}
+
+.wm_classification .cation_13{
+     @include rem(( width:330px, height:280px ,  top:2850px,  left: 20px)); 
+}
+
+.wm_classification .cation_14{
+     @include rem(( width:330px, height:420px ,  top:3200px,  left: 20px)); 
+}
+.wm_classification .cation_15{
+    @include rem(( width:320px, height:400px ,  top:3130px,  left: 404px)); 
+}
+.wm_classification .cation_16{
+     @include rem(( width:330px, height:380px ,  top:3630px,  left: 20px)); 
+}
+.wm_classification .cation_17{
+    @include rem(( width:320px, height:300px ,  top:3560px,  left: 404px)); 
+}
+.wm_classification .cation_18{
+     @include rem(( width:330px, height:300px ,  top:4075px,  left: 20px)); 
+}
+.wm_classification .cation_19{
+    @include rem(( width:320px, height:400px ,  top:3940px,  left: 404px)); 
+}
+.wm_classification .cation_20{
+    @include rem((  width:600px, height:200px ,  top:4420px,  left: 120px));
+}
+
+
+
+.tail_web img{ width:100%;}
+
+.tail_img{ @include rem(( margin-top: -4px));}
+
+.return_head{ 
+  @include rem(( width: 78px, height: 78px , bottom: 130px, border-radius: 50% , left: 84%));
+     position: fixed;
+  @include background-dpr($iconbd-1  ,$iconbd-1 ,$iconbd-1  , center, center);
+    background-size: 100% 100% !important;
+    display: none;
+    z-index: 1000;
+}
+//底部banner
+.qqw-banner-top {
+  @include rem((height: 350px,));
+}

@@ -1,0 +1,229 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/recommend-card';
+@import '../component/qqw-swiper/qqw-swiper';
+@import './qqw-active-good-goods';
+
+@include global-reset;
+
+$up-2: '../img/up2@2x.png';
+$up-3: '../img/up2@3x.png';
+$down-2: '../img/up1@2x.png';
+$down-3: '../img/up1@3x.png';
+$qqw-fontsize-l: 15px;			// 30px
+$qqw-fontsize-m: 12px;			// 24px
+
+
+
+
+
+
+// .geek-article {
+// 	@include rem((
+// 		margin-bottom: 20px
+// 		));
+// }
+body {
+	background: #fff;
+	text-align: center;
+}
+.special-article {
+	background-color: #fff;
+	@include rem((
+		margin-bottom: 20px
+		))
+}
+.goods-list-nav{
+	 @include font-dpr($qqw-fontsize-m, null);
+	@include rem((
+		height:50px,
+		line-height: 50px !important,
+		border-bottom: 1px solid #e6e6e6,
+		padding-left: 30px,
+		))
+	color: #909090;
+	text-align:left;
+}
+.article-facecard-item-container {
+	overflow: hidden;
+	width: calc((100% - 0.68rem)/2);			// 51
+	width: -webkit-calc((100% - 0.58rem)/2);
+}
+
+.article-special-btn {
+	border: none;
+	display: inline-block;
+	@include rem((
+		margin: 0 auto 20px,
+		width: 50px,
+		height: 50px,
+		background-size: 50px 50px !important
+		));
+}
+
+.article-special-btn--up {
+	@include background-dpr($up-2, $up-2, $up-3, center, center)
+}
+
+.article-special-btn--down {
+	@include background-dpr($down-2, $down-2, $down-3, center, center)
+}
+
+@include keyframes(fadeInDown) {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@include keyframes(fadeOutUp) {
+	from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.article-special-more {
+	height: 0;
+	overflow: hidden;
+}
+
+.article-facecard-more--active {
+	@include animation('fadeInDown 1s 1');
+}
+.article-facecard-more--inactive {
+	@include animation('fadeOutUp 600ms 1');
+}
+.goods-category-picture{ width:100%};
+
+.baby-head{
+	.banner{
+        @include background-dpr('/static/css/wap/img/active/baby-banner.png', '/static/css/wap/img/active/baby-banner.png', '/static/css/wap/img/active/baby-banner.png', center, center)
+        background-size:100% !important;
+        @include rem((height:914px));
+        width: 100%;
+        position:relative;
+         .goShop{
+
+          @include rem((
+          height:164px, 
+          margin-top: 565px,
+          width: 100%,
+          bottom: 179px,
+          left:0px
+          	));
+          display: block;
+          position:absolute; 
+          
+           }
+          .goBooking{
+          @include rem((height:164px, margin-top: 15px,
+               bottom:0,
+               left:0,
+          	));
+          
+          width: 100%;
+          display: block;
+           position:absolute; 
+          }
+      
+	}
+	.title{
+		display: inline-block;
+		width: 100%;
+        @include rem((height:86px));
+	}
+	.goodslist{
+		 position: relative;
+		 @include rem((left: -1px,height:524px,top: -4px));
+         @include background-dpr( '/static/css/wap/img/active/baby-goods-bg.png',  '/static/css/wap/img/active/baby-goods-bg.png',  '/static/css/wap/img/active/baby-goods-bg.png', center, center)
+         background-size:102% !important;
+	}
+}
+
+
+.home-head{
+	background-color:#fbece7;
+	.banner{
+        @include background-dpr('/static/css/wap/img/active/home-banner.png', '/static/css/wap/img/active/home-banner.png', '/static/css/wap/img/active/home-banner.png', center, center)
+        background-size:100% !important;
+        @include rem((height:530px));
+        width: 100%;
+	}
+	.title{
+        @include rem((margin: 10px));
+        width: 65%;
+	}
+	.goods{
+		    position: relative;
+		    width: 100%;
+		    @include rem(( left: -1px,padding-bottom: 25px));
+	}
+	.goodslist{
+         @include rem((padding-bottom:1px));
+
+	}
+}
+
+.specialty-head{
+	background-color:#ffcb43;
+	.banner{
+        @include background-dpr('/static/css/wap/img/active/wa-special-banner.png', '/static/css/wap/img/active/wa-special-banner.png', '/static/css/wap/img/active/wa-special-banner.png', center, center)
+        background-size:100% !important;
+        @include rem((height:530px));
+        width: 100%;
+	}
+	.title{
+        margin: 30px;
+	}
+	.goodslist{
+         @include rem((padding-bottom:1px));
+
+	}
+}
+
+
+
+
+.mmbb_head{
+       @include background-dpr('/static/css/wap/img/active/mmbb.png', '/static/css/wap/img/active/mmbb.png', '/static/css/wap/img/active/mmbb.png', center, center)
+        background-size:100% 100% !important;
+        @include rem((height:2287px));
+        width: 100%;
+        position: relative;
+
+       a{ display: block; position: absolute;}
+
+      .mm_upper{ 
+          @include rem(( width:300px, height: 339px, left: 64px, top:758px));
+       }
+       
+      .mm_midder{
+      	@include rem(( width:300px, height: 339px, left: 388px, top:758px));
+      }
+
+      .mm_lower-middle{
+      	@include rem(( width:300px, height: 330px, left: 30px, top:1365px));
+       }
+
+
+      .mm_lower{
+      	@include rem(( width:300px, height: 330px, left: 418px, top:1365px));
+      }
+
+}
+

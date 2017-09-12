@@ -1,0 +1,39 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+$qqw-fontsize-m: 15px;	//30px;
+
+
+.magerb{
+	@include rem(( width: 345px , height: 769px ,  margin:0 15px 15px 15px));
+	text-align: center;
+	background-color: white;
+}
+
+.magerb img{  
+         @include rem(( width: 345px , height: 420px, border: 1px #666666 solid));
+        
+}
+
+.magerb .ma_p{
+         @include font-dpr(15px);
+         color: #323232;
+         @include rem(( margin:40px 0 40px 0));
+}
+
+.magerb .ma_p1{ 
+	  @include font-dpr(12px);
+	   color: #909090;
+	   @include rem(( margin-bottom: 60px));
+}
+
+.magerb .ma_opt{ 
+	@include rem(( height: 60px,  width: 140px , margin-left: 103px ,border-radius: 2px));
+	border: 1px #5cb531 solid;
+	
+	
+ }
+.magerb .ma_opt span{    @include font-dpr(15px ,0.7rem) ; color: #5cb531;   }

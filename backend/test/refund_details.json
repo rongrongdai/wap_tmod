@@ -1,0 +1,84 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "id": "187",
+    "return_sn": "1705264089432626",
+    "order_sn": "1704954859319540",
+    "return_goods_amount": "12.30",
+    "user_id": "1003572",
+    "reason": "",
+    "reason_type": "1",
+    "return_type": "1",
+    "reason_child_type": "0",
+    "desc": "",
+    "reason_type_name": "缺货，不愿意等",
+    "reason_child_type_name": "",
+    "return_type_name": "我要退货退款",
+    "goods_list": [
+      {
+        "id": "231",
+        "return_sn": "1705264089432626",
+        "goods_id": "4216",
+        "product_id": "34359",
+        "goods_name": "健力宝330ML/听",
+        "goods_thumb": "",
+        "goods_attr": "",
+        "goods_return_number": "1",
+        "goods_buy_number": "1",
+        "goods_return_good_qty": "0",
+        "goods_return_bad_qty": "0",
+        "goods_price": "2.70",
+        "is_return": "0",
+        "order_sn": "1704954859319540",
+        "return_discount": "0.00",
+        "discount_type": "0"
+      },
+      {
+        "id": "232",
+        "return_sn": "1705264089432626",
+        "goods_id": "4352",
+        "product_id": "34495",
+        "goods_name": "邬辣妈素羊肉串90g/袋",
+        "goods_thumb": "",
+        "goods_attr": "",
+        "goods_return_number": "1",
+        "goods_buy_number": "1",
+        "goods_return_good_qty": "0",
+        "goods_return_bad_qty": "0",
+        "goods_price": "3.20",
+        "is_return": "0",
+        "order_sn": "1704954859319540",
+        "return_discount": "0.00",
+        "discount_type": "0"
+      },
+      {
+        "id": "233",
+        "return_sn": "1705264089432626",
+        "goods_id": "4354",
+        "product_id": "34497",
+        "goods_name": "邬辣妈素牛肉丸85g/袋",
+        "goods_thumb": "",
+        "goods_attr": "",
+        "goods_return_number": "2",
+        "goods_buy_number": "2",
+        "goods_return_good_qty": "0",
+        "goods_return_bad_qty": "0",
+        "goods_price": "3.20",
+        "is_return": "0",
+        "order_sn": "1704954859319540",
+        "return_discount": "0.00",
+        "discount_type": "0"
+      }
+    ],
+    "img_list": [
+      {
+        "img_url": "http://www.quanqiuwa.com/pic/test.png"
+      }
+    ],
+    "info": "您已发起退款申请，客服同意后会在1-3个工作日将退回到您的账户",
+    "status": 0
+  },
+  "timestamp": 1494385832,
+  "os": "app"
+}

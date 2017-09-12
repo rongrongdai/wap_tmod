@@ -1,0 +1,140 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": [
+        {
+            "id": "14789",
+            "order_id": "14788",
+            "order_sn": "1604210725952121",
+            "parent_id": "",
+            "is_child": "0",
+            "uid": "206",
+            "order_type": "1",
+            "order_status": "0",
+            "shipping_type": "1",
+            "shipping_status": "0",
+            "pay_status": "0",
+            "comment_status": "0",
+            "shipping_fee": "0.00",
+            "discount": "0.00",
+            "pay_id": "0",
+            "goods_amount": "399.00",
+            "order_amount": "399.00",
+            "pay_fee": "0.00",
+            "create_time": "1459521072",
+            "receipt_time": "0",
+            "confirm_time": "0",
+            "pay_time": "0",
+            "shipping_time": "0",
+            "comment_time": "0",
+            "remark": "",
+            "is_delete": "0",
+            "partner_id": "0",
+            "butler_id": "0",
+            "company_id": "0",
+            "invite_id": "0",
+            "is_visable": "1",
+            "status": "等待付款",
+            "status_style": 100,
+            "status_code": [
+                {
+                    "code": 100,
+                    "title": "取消订单",
+                    "btnClass": "btnCancel"
+                },
+                {
+                    "code": 100,
+                    "title": "立即付款",
+                    "btnClass": "btnPayment"
+                }
+            ],
+            "goods_list": [
+                {
+                    "rec_id": "295",
+                    "uid": "206",
+                    "order_id": "294",
+                    "order_sn": "1602108105581006",
+                    "sku_id": "479",
+                    "goods_id": "327",
+                    "product_id": "30148",
+                    "goods_name": "可口原味干捞快熟面",
+                    "goods_number": "1",
+                    "shop_price": "13.80",
+                    "goods_attr": "",
+                    "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/56c56e9ae2945.jpg",
+                    "package_id": "0",
+                    "is_gift": "0",
+                    "activity_id": "0",
+                    "activity_price": "0.00",
+                    "fav_price": "0.00",
+                    "fav_type": "2"
+                }
+            ]
+        },
+        {
+            "id": "14789",
+            "order_id": "14788",
+            "order_sn": "1604210725952121",
+            "parent_id": "",
+            "is_child": "0",
+            "uid": "206",
+            "order_type": "1",
+            "order_status": "0",
+            "shipping_type": "1",
+            "shipping_status": "0",
+            "pay_status": "0",
+            "comment_status": "0",
+            "shipping_fee": "0.00",
+            "discount": "0.00",
+            "pay_id": "0",
+            "goods_amount": "399.00",
+            "order_amount": "399.00",
+            "pay_fee": "0.00",
+            "create_time": "1459521072",
+            "receipt_time": "0",
+            "confirm_time": "0",
+            "pay_time": "0",
+            "shipping_time": "0",
+            "comment_time": "0",
+            "remark": "",
+            "is_delete": "0",
+            "partner_id": "0",
+            "butler_id": "0",
+            "company_id": "0",
+            "invite_id": "0",
+            "is_visable": "1",
+            "status": "等待付款",
+            "status_style": 100,
+            "status_code": [
+                {
+                    "code": 100,
+                    "title": "立即付款",
+                    "btnClass": "btnPayment"
+                }
+            ],
+            "goods_list": [
+                {
+                    "rec_id": "295",
+                    "uid": "206",
+                    "order_id": "294",
+                    "order_sn": "1602108105581006",
+                    "sku_id": "479",
+                    "goods_id": "327",
+                    "product_id": "30148",
+                    "goods_name": "可口原味干捞快熟面",
+                    "goods_number": "1",
+                    "shop_price": "13.80",
+                    "goods_attr": "",
+                    "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/56c56e9ae2945.jpg",
+                    "package_id": "0",
+                    "is_gift": "0",
+                    "activity_id": "0",
+                    "activity_price": "0.00",
+                    "fav_price": "0.00",
+                    "fav_type": "2"
+                }
+            ]
+        }
+    ],
+    "timestamp": 1471347085
+}

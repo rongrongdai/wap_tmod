@@ -1,0 +1,267 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/share';
+@import '../../../../sass/animation';
+@include global-reset;
+
+$back-2: '../img/nav_icon_back.png';
+$back-3: '../img/nav_icon_back.png';
+$goback-2: '../img/nav_icon_back3.png';
+$goback-3: '../img/nav_icon_back3.png';
+$qqw-fontsize-xs: 11px; 	//22px
+$qqw-fontsize: 12px;			// 24px
+$qqw-fontsize-m: 14px;			// 28px
+$qqw-fontsize-l: 19px;      // 38px
+$head-title-fontsize: 17px;		// 34px;
+//header样式
+body {
+	background: #f9f9f9;
+	color:#323232;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.hide{ 
+	display:none;
+}
+//无相关数据
+.unlist{
+	@include rem((
+		margin:300px auto,
+		width:100%,
+		))
+}
+.unlist .notic{
+	@include font-dpr($qqw-fontsize, null);
+	color:#323232;
+	text-align:center;
+	@include rem((
+		line-height: 80px !important,
+		height:80px,
+		width:100%,
+		))
+}
+//card-nav样式
+.card-nav{
+	position: fixed;
+	left:0;
+	top: 0;
+	width:100%;
+	height:auto;
+}
+.state_nav{
+	@include rem((
+		width: 100%,
+		height: 110px,
+		))
+	overflow: hidden;
+	background:#fff;
+}
+.state_nav .state_btn{
+	float: left;
+	width:33.3%;
+	text-align: center;
+	@include rem((
+		line-height: 110px !important,
+		height: 110px,
+		))
+	color: #666;
+	@include font-dpr($qqw-fontsize, null);
+
+}
+.state_nav .state_active{
+	color:#fff;
+	background-color:#5cb531;
+}
+// .state_center{
+// 	@include rem((
+// 		margin: 10px 0,
+// 		height:90px,
+// 		width:33%,
+// 		border-right: 1px solid #e6e6e6,
+// 		border-left: 1px solid #e6e6e6,
+// 	))
+// }
+.state_txt{
+	display:inline-block;
+	@include rem((
+		margin: 10px 0,
+		height:90px,
+		line-height: 90px !important,
+		width:100%,
+		border-right: 1px solid #e6e6e6,
+		border-left: 1px solid #e6e6e6,
+	))
+	text-align:center;
+}
+//card-list样式
+.card-list{
+	@include rem((
+		margin:130px 0,
+		))
+}
+.lookfor{
+	color:#5cb531;
+}
+.cardbox{
+	display:block;
+}
+.cardlist{
+	@include rem((
+		width:96%,
+		margin-top:20px,
+		padding:0 2%,
+		))
+	display:block;
+	background:#fff;
+	overflow: hidden;
+}
+.cardlist .cardid{
+	@include font-dpr($qqw-fontsize-xs, null);
+	@include rem((
+			height:68px,
+			line-height: 68px !important,
+			border-bottom:1px solid #e6e6e6,
+			))
+	text-align:left;
+	color:#323232;
+}
+.cardcon{
+	@include rem((
+			padding:20px 0,
+			))
+	display: flex;
+}
+.card {
+	@include rem((
+			width:230px,
+			height:154px,
+			margin-right: 22px,
+			))
+
+}
+.card img{
+	@include rem((
+			width:100%,
+			height:100%,
+			))
+}
+.instructions{
+	@include rem((
+			width:440px,
+			))
+	
+}
+.instructions p{
+	@include rem((
+			margin:20px 0 24px,
+			))
+	overflow: hidden;
+	color: #323232;
+	
+}
+.presented{
+	color: #999;
+}
+// .info{
+// 	overflow: hidden;
+// 	@include rem((
+// 			margin-bottom:20px,
+// 			))
+// }
+// .info a{
+// 	color:#323232;
+// 	@include font-dpr($qqw-fontsize, null);
+// }
+.instructions span{
+	@include font-dpr($qqw-fontsize, null);
+	
+}
+.card_state{
+	@include rem((
+			height:60px,
+			padding-bottom: 10px,
+			border-top:1px solid #e6e6e6,
+			))
+}
+.card_state span{
+	@include font-dpr($qqw-fontsize, null);
+	@include rem((
+			line-height: 60px !important,
+			))
+	color:#323232;
+}
+.card_state .remain{
+	color:#ab2b2b;
+}
+.card_operation{
+	color:#e6e6e6;
+	@include rem((
+		           border-top:1px solid #e6e6e6,
+		            padding:10px 0,
+			))
+}
+.card_operation .btn{
+	@include font-dpr($qqw-fontsize, null);
+	display:inline-block;
+	@include rem((
+		            height:70px,
+		            width:50%,
+			line-height: 70px !important,
+			))
+	text-align:center;
+	color:#323232;
+}
+.card_operation span.send{
+	@include rem((
+		            width:48%,
+		            border-left:1px solid #e6e6e6,
+			))
+}
+
+.codebg{
+  position: fixed;
+   @include rem((
+          left: 0,
+          top: 0,
+          background-color: rgba(0,0,0,0.5),
+          z-index: 1000,
+          width: 100%,
+          height: 100%,
+        ));
+}
+.code{
+  @include rem((
+          width: 440px,
+          margin:260px auto,
+          z-index: 10000,
+        ));
+  position: relative;
+}
+.closebtn{
+  position: absolute;
+  @include rem((
+          bottom: 0px,
+          left: 0px,
+          z-index: 10000,
+          width: 539px,
+          height: 116px,
+        ));
+}
+.codeimg{
+ @include rem((
+          width: 539x,
+          height: 615px,
+        ));
+}
+.codeimg img{
+  @include rem((
+          width: 100%,
+          height: 100%,
+        ));
+}

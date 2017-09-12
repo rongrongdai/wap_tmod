@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*CSS public 2015.12.3*/
+//sass
+//图片路径
+$imgUrl:'../../img/';
+//图标默认大小
+.iconfont{font-size:(16rem/20);}
+//背景色
+$bGray:#f3f4f5;
+$bBlack:#272729;
+//总体大小
+$mainSize:20px;
+html{font-size:$mainSize;}
+//颜色
+$cGreen:#252525;
+$cRed:#f14545;
+.cGreen{color:$cGreen!important;}
+.cRed{color:$cRed!important;}
+//运算
+@function u($px){
+  @return $px/$mainSize/2*1rem;
+}
+//按钮格式化
+input[type=button],input[type=submit],button{
+  -webkit-appearance:none;
+  outline:none
+}
+/*标签格式化*/
+body{margin:0;padding:0;font:u(20px)/1.5 'Helvetica Neue',Helvetica,Arial,微软雅黑,sans-serif;color:#555555;text-align:center;}
+.w{max-width:u(640px);margin:0 auto;}
+input,button,textarea,select{font-family:微软雅黑,arial;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,figure,button{padding:0;margin:0;}
+ol,ul{list-style:none;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+em,i{font-style:normal;}
+/*链接样式*/
+a{color:#555555;text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{color:#d01162;text-decoration:none;}
+a:active{color:#d01162;}
+/*字体颜色*/
+.cGreen,.cGreen:visited,.cGreen a,.green{color:#6b9333;}
+.cBlue,.cBlue:visited,.cBlue a{color:#1E50A2;}
+/*框架布局*/
+.fl{float:left;}
+.fr{float:right;}
+.ovH{overflow:hidden;}
+.poR{position:relative;}
+/*文本对齐*/
+.tL{text-align:left;}
+.tR{text-align:right;}
+/*清除浮动*/
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix {display: block;}
+//fontIco
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1454493199_7901232.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1454493199_7901232.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1454493199_7901232.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1454493199_7901232.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1454493199_7901232.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.fIco{
+  font-family:"iconfont" !important;
+  font-size:u(16px);
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing:grayscale;
+}
+//兼容
+//iphone 6
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+  html{font-size:($mainSize*1.17);}
+}
+//iphone6 plus
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+  html{font-size:($mainSize*1.29);}
+}
+//iphone6 plus
+@media screen and (min-width:800px){
+  html{font-size:($mainSize*1.6);}
+}
+//间距
+.mt20{
+  margin-top:u(20px);
+}
+//displayFlex
+.disFlexF{
+  display:-webkit-box!important;display:-webkit-flex!important;display:-ms-flexbox!important;display:flex!important;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+}
+.disFlexZ{
+  -webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex:1;-webkit-flex-basis:0;-ms-flex-preferred-size:0;
+}

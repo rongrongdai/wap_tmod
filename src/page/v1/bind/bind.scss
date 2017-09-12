@@ -1,0 +1,159 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@include global-reset;
+
+$bg-2            : '../img/bind/img_logo2x.png';
+
+
+$user_icon   :'../img/bind/phone12x.png';
+$user_iconf  :'../img/bind/phone22x.png';
+$login_box    :'../img/bind/message12x.png';
+$login_boxf   :'../img/bind/message22x.png';
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+
+body {
+	background: #fff;
+	
+}
+
+.bindtop{
+   @include rem(( width:140px , margin: 98px auto 85px auto));
+   text-align: center;
+   
+}
+.bindtop img{
+  @include rem(( width: 128px, height: 128px));
+  border-radius: 50%;
+  border: 1px  $color-line solid;
+}
+
+.bindtop .bindt_p{
+   @include font-dpr( $font-size-26 );
+   color: #323232;
+   @include rem((margin-top: 20px));
+}
+
+
+.bindcontent{
+  width: 94%;
+  margin:0 auto;
+}
+
+.contao{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px #e6e6e6 solid;
+    @include rem(( padding-bottom:40px));
+}
+
+.contao .user_icon{
+    @include background-dpr($user_icon ,$user_icon,$user_icon , center, center);
+    @include rem((width: 32px !important , height: 34px !important));
+    display: inline-block;
+    background-size: 100% 100% !important;
+}
+
+.contao .bind_text{
+  @include rem(( margin-left: 50px , height: 36px , width: 600px));
+  @include font-dpr($font-size-26);
+   border: none;
+  outline: none;
+}
+
+
+
+.contaotw{
+    width: 100%;
+    @include flex-container();
+    justify-content: flex-start;
+    border-bottom: 1px #e6e6e6 solid;
+    @include rem(( padding-bottom:40px , padding-top: 40px));
+}
+
+.contaotw  .taotw_left { width: 70%;}
+
+.contaotw  .taotw_left .login_box{
+    @include background-dpr($login_box ,$login_box, $login_box , center, center);
+    @include rem((width: 32px !important , height: 34px !important));
+    display: inline-block;
+    background-size: 100% 100% !important;
+}
+
+.contaotw  .taotw_left .bind_text1{
+   @include rem(( margin-left: 50px , height: 36px , width:400px));
+   @include font-dpr($font-size-26);
+   border: none;
+   outline: none;
+}
+
+.contaotw  .taotw_right { width: 30%; 
+   @include rem(( height: 50px , line-height: 50px !important , border-radius: 4px));
+   text-align: center;
+   @include font-dpr($font-size-24);
+   background: #cccccc;
+   color: #ffffff;
+}
+
+.contaotw .taotw_right_enable{
+   width: 30%; 
+   @include rem(( height: 50px , line-height: 50px !important , border-radius: 4px));
+   text-align: center;
+   @include font-dpr($font-size-24);
+   background:#5bc531;
+   color: #ffffff;
+
+}
+
+.btn-submit{
+  width: 100%;
+  @include rem((height: 88px !important, margin-top: 80px, margin-bottom: 291px , border-radius: 8px));
+   border: 0px;
+   background-color: #5bc531;
+   @include font-dpr($font-size-28);
+   color: #b9ddb9;
+}
+
+
+//鼠标选中文字的时候
+.contao:hover  .user_icon{
+    @include background-dpr($user_iconf ,$user_iconf,$user_iconf , center, center);
+    @include rem((width: 32px !important , height: 34px !important));
+    display: inline-block;
+    background-size: 100% 100% !important;
+}
+
+//鼠标键入文字的时候
+.contaotw:hover .login_box{
+    @include background-dpr($login_boxf ,$login_boxf, $login_boxf , center, center);
+    @include rem((width: 32px !important , height: 34px !important));
+    display: inline-block;
+    background-size: 100% 100% !important;
+}
+
+
+
+
+
+.bind_tail{
+   @include rem(( margin-left:90px , margin-right:73px , height: 132px));
+   @include background-dpr($bg-2 ,$bg-2, $bg-2 , center, center);
+    background-size: 100% 100% !important;
+
+}
+
+
+
+
+

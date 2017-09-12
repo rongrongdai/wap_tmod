@@ -1,0 +1,94 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+        "pagecount": 10,
+        "uid": 10001,
+        "nickname": "蛙蛙1032",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+        "sex": 0,
+        "list": [
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10002",
+                "nickname": "蛙蛙10325",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57ee0889dd509.jpg",
+                "newnum": "5",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            },
+            {
+                "uid": "10003",
+                "nickname": "蛙蛙10328",
+                "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+                "newnum": "3",
+                "dateline": "1481350566",
+                "lastmsg": "你好，认识一下"
+            }
+        ]
+    },
+    "timestamp": "1481350566"
+}

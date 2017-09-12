@@ -1,0 +1,57 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+// @import '../../../../sass/swiper';
+@import '../../../../sass/share';
+// @import '../../../../sass/animation';
+
+$font-size-24 :13px;
+
+
+.qqw_head{ position: fixed; 
+        bottom: 0; top:0;  
+        @include rem((  height:77px ))
+        border-bottom: 1px #e6e6e6 solid; 
+        background: white;    
+        z-index: 10000;
+}
+
+
+.qqw_special_head{
+	@include rem(( height: 187px , width: 100%));
+  z-index: 2000;
+}
+
+.head_fix{
+	position: fixed; 
+	@include rem(( height: 187px , width: 100%));
+	@include flex-container();
+           justify-content: flex-start;
+           background-color: white;
+           border-bottom: 1px solid #e6e6e6;
+      z-index: 10000;     
+}
+
+.head_cto{
+	@include rem(( height: 147px , width: 213px , margin:16px )); position: relative;
+
+}
+
+
+.head_cto .head_img{ @include rem(( height: 147px , width: 230px ,border-radius: 10px)); }
+
+.head_cto .head_p{ 
+    @include font-dpr($font-size-24);
+    color: white;
+    position: absolute;
+    @include rem(( top:58px , left: 40px));
+
+}
+
+
+
+
+
+
+
+

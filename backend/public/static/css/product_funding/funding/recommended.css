@@ -1,0 +1,195 @@
+.talent_nav{ background: #fff; color: #333; border-bottom: solid 1px #d6d7dc;}
+.talent_nav .header_left {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.177333rem;
+    height: 1rem;
+    background: url(app_img/back@2x.png) no-repeat 0.40rem center;
+    background-size: 0.24rem 0.40rem;
+}
+.top_nav .header_right {
+    display: block;
+    height: 0.36rem;
+    width: 0.36rem;
+    background: url("app_img/search_btn.png") no-repeat;
+    background-size: 0.36rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    padding-right: 0.4rem;
+    color: inherit;
+}
+
+.talent{  background: #f9f9f9;}
+/*创客推荐主页*/
+#talentList{ margin-bottom: 1.8rem;}
+.search_box{ background: #fff; width:7.5rem; padding-top: 0.2rem; height: 0.76rem;}
+.search_box .search_bar{margin:0 0.2rem 0.2rem; width: 7.1rem; height: 0.68rem; line-height: 0.68rem; background: #f4f4f4; border-radius: 0.04rem;
+text-align: center; color: #646464; font-size: 0.26rem;}
+.search_box .search_bar span{ width: 0.26rem; height: 0.26rem; display: inline-block; background: url("app_img/search_btn.png") no-repeat; background-size: 0.26rem; padding-right: 0.1rem;}
+.switch_box{ height: 0.54rem; line-height: 0.54rem; background: #fff; width: 100%; border-bottom: 0.01rem solid #c1c0bd;}
+.switch_box .tit{ width: 50%; text-align: center;}
+.switch_box .tit span{ padding: 0.12rem 0.3rem; color: #666666;}
+.switch_box .selected span{border-bottom: 0.04rem solid #5cb531; color: #323232;}
+.talentCon{overflow: hidden; padding: 0.2rem; padding-top: 0; }
+.talentCon .tj_class{height: 0.7rem; line-height: 0.7rem; overflow: hidden;}
+.talentCon .tj_class .all{ color: #666;}
+.talentCon .box { width: 3.33rem; height:5.08rem; border: 0.01rem solid #e6e6e6; margin-bottom: 0.2rem; background: #fff; display: block; border-radius: 0.1rem; overflow: hidden; padding-bottom: 0.1rem;}
+.talentCon .box .img{ width: 3.33rem; height:2.7rem; margin: 0; padding: 0; line-height: 0; position: relative; margin-bottom: 0.6rem;}
+.talentCon .box .img img{ width: 100%; height: 100%; margin: 0; padding: 0; border: none;}
+.talentCon .box .photo{ position: absolute; width: 100%; height: 1.2rem; top: 2.0rem; left: 0rem;}
+.talentCon .box .img .useimg{ width: 1.0rem; height:1.0rem; border-radius: 50%; border: 0.1rem solid rgba(255,255,255,0.8); overflow: hidden; margin: 0 auto;}
+.talentCon .box .img .useimg img{ width: 100%; height: 100%;}
+.talentCon .box .desc{ padding: 0 0.3rem;}
+.talentCon .box .desc p{text-align: center; color: #666; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;}
+.talentCon .box .desc .usename{color: #323232; font-weight:600;}
+.talentCon .box .desc .tit{color: #323232; font-weight:600;}
+
+.more{ height: 0.8rem; line-height: 0.8rem; position: relative; margin-bottom: 0.3rem;
+
+}
+.more .line{ position: absolute; left: 1.3rem; top: 0.4rem; width:4.8rem; height: 0.02rem;background: #cfcfcf; }
+.more .info{ width: 2.4rem; height: 0.44rem; color: #999; padding: 0 0.2rem; background: #f9f9f9; line-height: 0.44rem; text-align: center; position: absolute; top: 0.2rem; left: 2.40rem;}
+
+/*文章列表*/
+/*.article_list{margin: 0; padding: 0;}*/
+/*.article_list .main_figure{ width:100%; line-height: 0; height: 3.75rem; position: relative; }*/
+/*.article_list .useinfo{ height: 2.6rem;  width:100%; position: absolute; top: 0.8rem; left: 0;}*/
+/*.article_list .useinfo .useimg{ width: 1.0rem; height:1.0rem; border-radius: 50%; border: 0.1rem solid rgba(255,255,255,0.8); overflow: hidden; margin: 0 auto;}*/
+/*.article_list .useinfo .useimg img{ width: 100%; height: 100%;}*/
+/*.article_list .useinfo .usename{ text-align: center; color: #fff; margin-bottom: 0.1rem;}*/
+/*.article_list .useinfo .identity{ text-align: center; color: #fff;}*/
+/*.article_list .project_box{ padding: 0.45rem 0.2rem 0.35rem; background: #fff;}*/
+/*.article_list .project_box .titbox{ border: 0.01rem solid #323232; padding: 0.36rem 0.44rem; position: relative;}*/
+
+
+.main_figure{ width:100%; line-height: 0; height: 4.5rem; position: relative; }
+.useinfo{ height: 2.6rem;  width:100%; position: absolute; top: 0.8rem; left: 0;}
+.useinfo .useimg{ width: 1.0rem; height:1.0rem; border-radius: 50%; border: 0.1rem solid rgba(255,255,255,0.8); overflow: hidden; margin: 0 auto;}
+.useinfo .useimg img{ width: 100%; height: 100%;}
+.useinfo .usename{ text-align: center; color: #fff; margin-bottom: 0.1rem;}
+.useinfo .identity{ text-align: center; color: #fff;}
+.project_box{ padding: 0.45rem 0.2rem 0.4rem; background: #fff;}
+.project_box .titbox{ border: 0.01rem solid #323232; padding: 0.36rem 0.44rem; position: relative;}
+
+.project_box .titbox .article_number{ width: 100%; height: 0.6rem; position: absolute; left: 0; bottom: -0.3rem;}
+.project_box .titbox .article_number .num{ padding: 0.1rem 0.2rem; max-width: 1.4rem; height: 0.4rem; line-height: 0.4rem;  margin: 0 auto; background: #fff; text-align: center;overflow: hidden;text-overflow: ellipsis;  white-space: nowrap;}
+.project_list{padding: 0.3rem 0.2rem; position: relative; display: block;}
+.project_list .triangle{ position: absolute; width: 0.32rem; height: 0.32rem; text-align: center;top: -0.16rem; left: 3.5rem; }
+.project_list .triangle .con{width:0;  height:0;  border-left:0.18rem solid transparent; border-right:0.18rem solid transparent;  border-bottom:0.2rem solid #f9f9f9;}
+
+.factory_content1{ height: 3.75rem; position:relative; overflow: hidden;}
+.factory_content1 .fa_con1{ height: 3.75rem; display: block;}
+.factory_content1 .fa_con1 img{width: 100%; height: 3.75rem;}
+.factory_content1 .fa_con2{ height: 3.75rem; position: relative; top:-3.75rem;  color: white; text-align: center; display: block;}
+.fa_con2 img{ padding-top: 0.88rem; width: 0.42rem; height: 0.28rem; padding-bottom: 0.03rem;}
+.fa_con2 .p1{ border-bottom: 0.03rem white solid; border-top: 0.03rem white solid; width:3.81rem; margin: 0 auto; padding: 0.15rem; font-size: 0.4rem;}
+.fa_con2 .p2{ font-size: 0.26rem; padding-top: 0.2rem;}
+.factory_content1 .like_box{ position: absolute; right: 0.4rem; top:-0.1rem; width: 0.7rem; height: 1.0rem; background: rgba(0,0,0,0.6); border-radius: 0.1rem;}
+.factory_content1 .like_box .like_icon{ width: 0.42rem; height: 0.42rem; margin:  0.2rem auto 0.05rem;}
+.factory_content1 .like_box .like_icon img{ width: 100%; height: 100%;}
+/*.factory_content1 .like_box .like_icon .dian_show{ display: block;}*/
+/*!*.factory_content1 .like_box .like_icon .dian_hide{ display: none;}*!*/
+.factory_content1 .like_box .like_num{ margin: 0 auto; width: 0.42rem; height: 0.26rem;
+    line-height: 0.26rem; font-weight: normal; text-align: center; overflow: hidden;text-overflow: ellipsis;  white-space: nowrap;  color: #fff; font-size: 0.24rem;}
+
+/*文章详情*/
+.article_detail{ margin-bottom: 0; padding: 0;}
+.article_detail .recommended{width: 7.5rem; height: 4.45rem; margin: 0.8rem 0; background: url("app_img/background@2x.png") no-repeat; background-size: 100%; padding-top: 0.4rem;}
+.article_detail .recommended .atcon{height: 4.15rem; width: 6.7rem; margin: 0.4rem; margin-top: 0; border-radius: 0.1rem; overflow: hidden; position: relative; background:#fff; }
+.article_detail .recommended .atcon img{ width: 100%; height: 2.26rem; margin-bottom: 0.3rem}
+.article_detail .recommended .atcon  p{ text-align: center; width: 100%; color: #323232;  overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;}
+.article_detail .recommended .atcon  p.tit{ font-size: 0.32rem;}
+.article_detail .recommended .atcon  p.Introduction{ font-size: 0.30rem;}
+.article_detail .recommended .atcon  p.at_title{ font-size: 0.28rem;}
+
+
+
+
+
+.article_detail .main_figure{ width:100%; height: 4.5rem; margin-bottom: 0.4rem; position: relative; }
+ .main_figure img{ width: 100%; height:4.5rem;}
+.main_figure .photo{position: absolute; bottom: -0.6rem; left: 0; width: 100%; height: 1.26rem;}
+.main_figure .usephoto{ margin: 0 auto; width: 1.0rem; height: 1.0rem; border: 0.1rem solid rgba(255,255,255,0.6); border-radius: 50%; overflow: hidden;}
+.main_figure .usephoto img{ width: 100%; height: 100%;}
+.main_figure .usename{ height: 0.6rem; font-size: 0.26rem; line-height: 0.6rem; text-align: center; margin-top: 0.3rem;}
+
+.article_detail .talentIntroduce{ width: 100%; height: auto;}
+.talentIntroduce .tit{ width:100%; height: auto;}
+.talentIntroduce .tit .tit1{ font-size: 0.3rem;}
+.talentIntroduce .tit .tit2{ font-size: 0.32rem;}
+.talentIntroduce .tit p{ text-align: center;}
+.talentIntroduce .tit .line{ width: 3.76rem; height: 0.02rem; background: #d6d7dc; margin: 0.15rem auto;}
+.introduceCon{ padding: 0.68rem 0.2rem 0rem 0.2rem;}
+.introduceCon .titCon{ color:#323232; margin-bottom: 0.24rem;}
+.introduceCon .goodstit{color: #323232; font-size: 0.30rem; margin:0.46rem 0; text-align: center; font-weight: bold;}
+.talentIntroduce img{ width: 100%; height: auto; margin-bottom: 0.24rem; line-height: 0;}
+.introduceCon .goodsintroduce{ padding:0 0 0.24rem 0;}
+.introduceCon .goodsintroduce span{ display: inline-block; width: 0.15rem; height: 0.15rem; background: url("app_img/home_pro_img_tri@2x.png") no-repeat; background-size: 0.15rem; padding-right: 0.12rem;}
+.goodslist .goodsRelated{ height: 0.5rem; line-height: 0.5rem;}
+.goodslist .goodsRelated .btn{ width: 1.4rem; margin-left: 0.58rem;  height: 0.5rem; font-size: 0.24rem; text-align: center; line-height: 0.5rem; border-radius: 0.05rem; background: #5bc531; color: #fff;}
+.goodslist .goodsRelated .collection em{ display: inline-block; width: 0.24rem; height: 0.24rem; background: url("app_img/home_pro_icon_collect@2x.png") no-repeat; background-size: 0.24rem; padding-right: 0.12rem;}
+
+.article_detail .qqwTj{ margin: 0.6rem 0 0.7rem 0;}
+.qqwTj .tit{ width:100%; height: 0.88rem; line-height:0.88rem; text-align: center; border-top: 0.01rem solid #dedfe3; border-bottom: 0.01rem solid #dedfe3; }
+.qqwTj .goodslist{ margin-bottom: 0.42rem;}
+.qqwTj .tit span{display: inline-block; width: 0.2rem; height: 0.2rem; background: url("app_img/home_pro_icon_like@2x.png") no-repeat; background-size: 0.2rem;}
+.titCon p{ margin: 0.24rem 0;}
+.titCon p span{ width: 0.28rem; height: 0.28rem; text-align: center; line-height: 0.28rem; border-radius: 50%; background: #5bc531; display: inline-block; color: #fff; margin-right: 0.1rem;}
+
+ .memberslink{ display: block; padding: 0 0.2rem; height: auto;}
+.memberslink img{ width:100%; height: auto;}
+
+.goodsTj{margin-bottom: 1.76rem;}
+.goodsTj .tjtit{ height: 0.74rem; line-height: 0.74rem; margin-bottom: 0.2rem; position: relative;}
+.goodsTj .tjtit .line{ position: absolute; left: 1.9rem; top:0.37rem; width: 3.38rem; height: 0.02rem; background: #d6d7dc;}
+.goodsTj .tjtit .con{ height: 0.74rem; line-height: 0.74rem; position: absolute; left: 2.8rem; top:0.02rem; padding: 0 0.22rem; background: #fff;}
+.goodsTj .goodsbox{position: relative; overflow: hidden; z-index: 1;}
+.goodsTj .goodsbox {position: relative; overflow: hidden; z-index: 1; height: 2.18rem;}
+.goodsTj .goodsbox .list{ width: 7.5rem; height: 2.18rem; }
+.goodsTj .goodsbox li{ margin-right:0.2rem; width: 3.55rem; height: auto; border-radius: 0.05rem;}
+.goodsTj .goodsbox li img{ width: 100%; height:auto;}
+
+
+.evalBar{ width:99%; padding: 0 0.5%;  height: 0.8rem; line-height: 0.8rem; background: #fff; position: fixed; left: 0; bottom: 0; border-top: 0.01rem solid #d6d7dc; z-index: 9999999; }
+.evalBar .btn{ width: 50%; color: #323232;}
+.evalBar .btn .icon{ width: 0.42rem; height: 0.42rem; margin: 0.2rem 0.1rem 0 1.5rem;}
+.evalBar .thumb .icon{ background: url("app_img/home_pro_icon_like02@2x.png") no-repeat; background-size: 0.38rem;}
+.evalBar .share .icon{ background: url("app_img/home_pro_icon_share@2x.png") no-repeat; background-size: 0.38rem;}
+.evalBar .eval .icon{ background: url("app_img/home_pro_icon_conversation@2x.png") no-repeat; background-size: 0.38rem;}
+
+/*专题精选*/
+.useinfo .project_tit{  border-bottom: 0.03rem white solid; border-top: 0.03rem white solid; width: 3.81rem;  margin: 0.2rem auto;  padding: 0.4rem;  font-size: 0.4rem; color: #fff;}
+.useinfo .annotation{font-size: 0.26rem; height: 0.4rem; line-height: 0.4rem; margin: 0 auto; text-align: center; color: #fff;}
+.talentCon.talentCon1{ padding-top: 0.2rem;}
+
+/*评价列表*/
+.article_eval{ padding: 0 0.2rem; background: #fff; margin-top: 0.2rem; }
+.article_eval .eval_list{ overflow: hidden; padding:0.25rem 0;border-bottom: 0.01rem solid #e6e6e6;}
+.article_eval .eval_list .photo{ width:0.62rem; height: 0.62rem;  border-radius: 50%; overflow: hidden;}
+.article_eval .eval_list .photo img{ width: 100%; height: 100%;}
+.article_eval .eval_list .eval_con{width: 6.4rem;}
+.article_eval .eval_con .tit{overflow:hidden; height: 0.46rem; line-height: 0.46rem;}
+.article_eval .eval_con .tit .time{color: #909090;}
+.article_eval .eval_con .tit .name{color: #323232;}
+.article_eval .eval_con .con{ width: 100%; color: #323232; overflow: hidden;display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 2;  word-break: break-all;  overflow: hidden; }
+.eval_Bar{width:100%; display: table;  min-height: 0.8rem; background: #fff; position: fixed; left: 0; bottom: 0; border-top: 0.01rem solid #d6d7dc; z-index: 9999999; }
+.eval_Bar .evalinput{ width:80%;}
+.eval_Bar .evalinput .con{ resize: none;    outline: none;  height: auto;  border-radius: 0.1rem;  border: 0.01rem solid #e6e6e6; /* padding: 0.1rem; */  line-height: 0.35rem;  margin: 0.13rem 0.3rem;  width: 90%;  overflow-y: auto;}
+.eval_Bar .eval_btn{display:block; width: 10%; margin-top: 0.2rem; height: auto; vertical-align:middle; display: table-cell;border: none; }
+table td{ border: none; vertical-align: center; }
+
+
+/*达人介绍*/
+.talent_introduce{ margin: 0; padding: 0;}
+.talent_introduce img{ margin: 0; padding: 0; width: 100%; height:auto; border: none; line-height: 0; display: block;}
+.talent_introduce .becomeBtn{ display: block;}
+
+
+
+
+
+
+

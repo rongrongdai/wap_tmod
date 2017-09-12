@@ -1,0 +1,92 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+
+
+
+.letter_conleft{
+  @include rem((width: 90%, margin:0 auto ));
+}
+
+
+.letter_conleft .cont_p ,.letter_conright .cont_p{
+  text-align: center;
+  color: #333333;
+   @include font-dpr($font-size-24);
+   @include rem(( margin:20px 0));
+}
+
+
+.letter_conleft  .cont_con{
+   @include flex-container();
+    justify-content: flex-start;
+    @include rem(( padding-bottom: 20px));
+}
+
+
+.letter_conleft .cont_con .cont_img, 
+.letter_conright .cont_con .cont_img{
+   @include rem(( width: 90px, height: 90px, border-radius: 50%));
+}
+
+.letter_conleft  .cont_con .cont_chat{ 
+   @include rem(( margin-left: 20px));
+   @include flex-container();
+    justify-content: flex-start;
+}
+
+.letter_conleft  .cont_con .cont_chat .p_sjx{
+    width: 0;
+    height: 0;
+    @include rem(( border-top: 15px solid transparent, border-right: 20px solid #fff, border-bottom: 15px solid transparent , margin-top: -15px , margin-right: -2px));  
+}
+
+.letter_conleft  .cont_con .cont_chat .p_cont{ 
+   @include rem(( max-width: 340px, border-radius: 10px, padding:20px 15px));
+   background-color: #fff;
+   color: #909090;
+   @include font-dpr($font-size-26,1.5);
+    word-wrap:break-word;
+}
+
+
+
+
+
+.letter_conright{
+   @include rem((width: 90%, margin:0 auto ));
+}
+
+.letter_conright .cont_con{
+   @include flex-container();
+    justify-content: flex-end;
+    @include rem(( padding-bottom: 20px));
+}
+
+.letter_conright  .cont_con .cont_chat{ 
+   @include rem(( margin-right: 20px));
+   @include flex-container();
+    justify-content: flex-start;
+}
+
+.letter_conright  .cont_con .cont_chat .p_cont{ 
+   @include rem(( max-width: 340px, border-radius: 10px, padding:20px 15px ));
+   background-color: #5cb531;
+   color: #fff;
+   @include font-dpr($font-size-26,1.5);
+    word-wrap:break-word;
+}
+
+.letter_conright  .cont_con .cont_chat .p_sjx{
+    width: 0;
+    height: 0;
+    @include rem(( border-top: 15px solid transparent, border-left: 20px solid #5cb531, border-bottom: 15px solid transparent , margin-top: -15px,  margin-left: -2px));  
+}

@@ -1,0 +1,101 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "business_count": "3",
+    "my_rank_of_business": 1,
+    "ranklist": [
+      {
+        "business_id": "1",
+        "total": "5",
+        "uid": "1076345",
+        "nickname": "zou 123",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584629e9e9100.png"
+      },
+      {
+        "business_id": "2",
+        "total": "2",
+        "uid": "1076311",
+        "nickname": "我是管家",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/5807432ebedfc.png"
+      },
+      {
+        "business_id": "1",
+        "total": "5",
+        "uid": "1076345",
+        "nickname": "zou 123",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584629e9e9100.png"
+      },
+      {
+        "business_id": "2",
+        "total": "2",
+        "uid": "1076311",
+        "nickname": "我是管家",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/5807432ebedfc.png"
+      },
+      {
+        "business_id": "1",
+        "total": "5",
+        "uid": "1076345",
+        "nickname": "zou 123",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584629e9e9100.png"
+      },
+      {
+        "business_id": "2",
+        "total": "2",
+        "uid": "1076311",
+        "nickname": "我是管家",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/5807432ebedfc.png"
+      },
+      {
+        "business_id": "1",
+        "total": "5",
+        "uid": "1076345",
+        "nickname": "zou 123",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584629e9e9100.png"
+      },
+      {
+        "business_id": "2",
+        "total": "2",
+        "uid": "1076311",
+        "nickname": "我是管家",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/5807432ebedfc.png"
+      },
+      {
+        "business_id": "3",
+        "total": "2",
+        "uid": "1076360",
+        "nickname": "zz",
+        "lv": "1",
+        "sex": "0",
+        "amounts": "1054.00",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584a1f7da1531.png"
+      }
+    ]
+  },
+  "timestamp": 1483427237
+}

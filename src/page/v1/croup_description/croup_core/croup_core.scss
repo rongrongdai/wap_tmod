@@ -1,0 +1,129 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+
+
+@include global-reset;
+
+
+
+$bg-tg            : '../../img/shop_celebration/icon_cgdrmore3x.png';
+$bg-fh            : '../../img/shop_celebration/rderdecon_phone.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+$font-size-22     : 11px;
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+body {
+	background: #f9f9f9;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+
+
+
+
+
+.page_link{ 
+     background-color: #ffffff;
+     @include rem((margin-top: 20px));
+    .croup_page{
+       @include rem((width: 92%, margin:0 auto,  line-height: 70px  !important, ));
+       color: #333333;
+    }
+    .page_cor{
+      @include rem(( width: 92%, margin:0 auto,  line-height: 70px  !important, ));
+       border-bottom: 1px solid #ccc;
+       color: #333333;
+       position: relative;
+       .right-arrow1 {
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            right: 0;
+            @include rem((top: 20px,
+                  border-top: 15px transparent dashed,
+                  border-right: 14px transparent dashed,
+                  border-bottom: 15px transparent dashed,
+                  border-left: 15px white solid
+              ));
+
+          
+            overflow: hidden;
+        }
+        .right-arrow2{
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            right: 0;
+            @include rem((top: 20px,
+               border-top: 15px transparent dashed,
+               border-right: 15px transparent dashed,
+               border-bottom: 15px transparent dashed,
+               border-left: 15px white solid
+
+              ));
+           
+            overflow: hidden;
+          }
+         .right-arrow1 {
+            @include rem(( border-left: 15px #333333 solid));
+            
+        } 
+     
+    }
+}
+
+
+
+
+
+
+
+

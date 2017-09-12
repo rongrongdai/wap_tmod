@@ -1,0 +1,76 @@
+$font-size-xl: 15px;
+$font-size-xxl: 16px;
+
+html {
+  @include rem-baseline;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+
+@media only screen
+  and (min-device-width: 961px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  body{
+    width: 640px;
+  }
+}
+
+.fIco {
+  font-family:"iconfont" !important;
+  font-size: 0.4rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.qqw-nav {
+  position: relative;
+  background-color: #fff;
+}
+
+.qqw-nav-return {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: inline-block;
+  @include rem((
+    width: 88px,
+    height: 88px,
+  ));
+  color: #000;
+  &:before {
+    position: absolute;
+    width: auto;
+    height: auto;
+    @include rem((
+      top: 28px,      // (88 - 16) / 2
+      left: 16px,
+    ));
+    content:'\e621';
+    @extend .fIco;
+    @include font-dpr($font-size-xxl);
+    background-color:#FFF;
+  }
+}
+
+.qqw-nav-title {
+  position: relative;
+  z-index: 8;
+  text-align: center;
+  @include font-dpr($font-size-xl, 1.173333rem, bold);
+}
+
+.hr-header-1px {
+  position: absolute;
+  z-index: 199;
+  margin: 0;
+  @include rem(top, 88px);
+  width: 100%;
+  background-color: #e6e6e6;
+}

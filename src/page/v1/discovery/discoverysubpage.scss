@@ -1,0 +1,39 @@
+@import '../component/card/qqw-card.scss';
+
+$qqw-common-color: #909090;
+$qqw-common-strong-color: #5cb531;
+$qqw-common-h-color: #323232;
+$qqw-common-l-color: #666666;
+
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize: 13px;			// 26px
+$qqw-fontsize-m: 14px;			// 28px
+$headline-title-fontsize: 17px;		// 34px;
+
+$icon-more-2: '../img/category_second/icon_more@2x.png';
+
+.discovery-subpage {
+	@include rem((
+		// margin-top: 88px,
+		margin-bottom: 108px
+		));
+}
+
+.discovery-sub-title {
+	@include font-dpr($qqw-fontsize, 1.25rem);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	height: 1.25rem;
+	padding-left: 0.328125rem;
+}
+
+.discovery-sub-action {
+	@include font-dpr($qqw-fontsize-xs, 1.25rem);
+	@include background-dpr($icon-more-2, $icon-more-2, $icon-more-2, right, center);
+	@include rem(background-size, 10px 20px !important);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-l-color;
+	height: 1.25rem;
+	padding-right: 0.25rem;			// 10 + 6
+	margin-right: 0.328125rem;
+}

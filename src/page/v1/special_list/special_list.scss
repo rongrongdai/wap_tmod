@@ -1,0 +1,46 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/swiper';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@include global-reset;
+$iconbd-1       : '../img/baskin/re_head.png';
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 16px;			// 32px
+$qqw-fontsize-l: 18px;			// 36px
+.classcon{
+	@include rem((
+		margin: 0,
+		padding:0,
+		));
+}
+.classbanner{
+	display:block;
+	@include rem((
+		width:100%,
+		height:460px,
+		margin-bottom: 20px,
+		));
+	overflow:hidden;
+	position: relative;
+}
+.classbanner img{
+	@include rem((
+		width:100%,
+		height:100%,
+		));
+}
+
+.return_head{ 
+  @include rem(( width: 78px, height: 78px , bottom: 130px, border-radius: 50% , left: 84%));
+     position: fixed;
+  @include background-dpr($iconbd-1  ,$iconbd-1 ,$iconbd-1  , center, center);
+    background-size: 100% 100% !important;
+    display: none;
+    z-index: 1000;
+}

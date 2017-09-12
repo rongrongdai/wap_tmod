@@ -1,0 +1,215 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/goods-list';
+@import '../component/women-day/qqw-women-head';
+@import '../component/women-day/qqw-women-sub-head';
+@import '../component/women-day/qqw-women-good-goods';
+@include global-reset;
+
+
+$up1-1:'../img/1@2x.png';
+$up1-2:'../img/1@3x.png';
+
+$up2-1:'../img/2-green@2x.png';
+$up2-2:'../img/2-green@3x.png';
+
+$up3-1:'../img/3@2x.png';
+$up3-2:'../img/3@3x.png';
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+	background-color:#f3f3f3;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.step-div{
+    @include rem ((
+        height:278px,
+        width:100%
+    ));
+}
+.step-line:before{
+    content:"";
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    @include rem ((
+        left:100px,
+        top:189px,
+        width:550px,
+    ));
+    z-index: -1;
+}
+
+.green-icon{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 100px,
+        background-size:100% !important,
+    ));
+    float: left;
+    @include background-dpr($up1-1,$up1-1,$up1-2,center,center);
+};
+
+.white-iconI{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 125px,
+        background-size:100% !important,
+    ));
+    float:left;
+    @include background-dpr($up2-1,$up2-1,$up2-2,center,center);
+};
+.white-iconII{
+    @include rem ((
+        width:100px,
+        height:100px,
+        margin:51px 0 19px 125px,
+        background-size:100% !important,
+    ));
+    float: left;
+    @include background-dpr($up3-1,$up3-1,$up3-2,center,center);
+};
+
+.step-text{
+    clear: both;
+    @include rem ((
+    font-size:26px,
+    ));
+}
+.green-text{
+    color: #5cb531;
+    @include rem ((
+    margin:0 125px,
+    ));
+}
+.white-text{
+    @include rem ((
+        margin:0 0 0 100px
+    ));
+}
+.order-detail,
+.give-detail{
+         @include rem((
+         height:88px,
+         padding:0 20px,
+         font-size:26px,
+         line-height:88px,
+     ));
+     color: #323232;
+}
+.give-detail{
+    background-color: #fff;
+}
+
+.card{
+    clear: both;
+    background-color: #fff;
+    @include rem ((
+    height: 240px,
+    ))
+}
+
+.card-img{
+    @include rem ((
+        width:230px,
+        height:140px,
+        margin:50px 32px 50px 20px,
+    ))
+}
+
+.card-details{
+     @include rem ((
+         height:140px
+     ))
+}
+
+.cardb{
+    @include rem ((
+        font-size:28px,
+        margin:68px 0 50px 0,
+    ));
+}
+.cardj{
+    @include rem ((
+        font-size:28px,
+        margin:0 0 70px 0,
+    ))
+}
+.order-account{
+    display: block;
+    @include rem((
+        height:85px,
+        padding:33px 20px 28px,
+        line-height:24px,
+        font-size:24px,
+    ));
+    color: #909090;
+}
+.leave{
+    display: inline-block;
+    @include rem((
+        height:28px,
+        width:100%,
+        line-height:28px,
+        font-size:28px,
+        padding:0 20px,
+        margin:0 0 30px 0,
+    ));
+    color: #333333;
+}
+.input-leave{
+    overflow:hidden;
+    display: block;
+    @include rem((
+        height:220px,
+        width:100%,
+        font-size:28px,
+        padding:35px 20px,
+        line-height:42px,
+    ));
+    background: #fff;
+    color: #999999;
+    border: none;
+    text-align:left;
+}
+
+.fixedbot{
+    position:fixed;
+    bottom:0;
+     @include rem ((
+        height:88px,
+        width:100%,
+        font-size:28px
+    ))
+}
+.bothj{
+    background-color: #fff;
+    width: 50%;
+     @include rem ((
+        height:88px,
+        line-height:88px
+    ))
+};
+.botbuy{
+    background-color: #5cb531;
+    width: 50%;
+     @include rem ((
+        height:88px,
+        line-height:88px
+    ))
+}
+.botbuy a  
+{  
+   color:#fff;  
+}  

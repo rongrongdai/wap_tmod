@@ -1,0 +1,78 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+
+@include global-reset;
+$qqw-fontsize-m: 15px;      // 30px
+$head-title-fontsize: 24px;   // 48px;
+$font-size-32    : 16px;
+body {
+	background: #fff;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px))}
+.state_con{
+  @include rem((
+       padding:20px 0 160px 0,
+       border-bottom:1px solid #ececec,
+    ))
+}
+.notic{
+  @include font-dpr($head-title-fontsize, null);
+  color:#019a01;
+  @include rem((
+       padding:60px 0,
+    ))
+  text-align:center;
+}
+
+.notic1{
+  @include font-dpr($head-title-fontsize, null);
+  color:#c70102;
+  @include rem((
+       padding:60px 0,
+    ))
+  text-align:center;
+}
+.instruction{
+  @include font-dpr($qqw-fontsize-m, null);
+  color:#333333;
+  @include rem((
+       padding:10px 0,
+    ))
+  text-align:center;
+}
+.page_link{
+  @include font-dpr($qqw-fontsize-m, null);
+   color:#008cfb;
+   text-decoration: underline;
+}

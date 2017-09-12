@@ -1,0 +1,283 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/share';
+@import '../../../sass/common_header_v1';
+@include global-reset;
+
+@import '../component/card/bask-comment-sp.scss';
+
+$bg-1            : '../img/baskin/baskbg.png';
+$bg-2            : '../img/baskin/baskbg1.png';
+
+$bgx-1            : '../img/baskin/icon_peo1x.png';
+$bgtiem-1       : '../img/baskin/timebg2x.png';
+
+$iconba-1       : '../img/baskin/icon_xia2x.png';
+$iconpic-1       : '../img/baskin/icon_ed2x.png';
+
+$iconba-1       : '../img/baskin/home_pro_icon1.png';
+$iconbb-2       : '../img/baskin/home_pro_icon.png';
+$iconbc-3       : '../img/baskin/icon_edit.png';
+
+$iconbd-1       : '../img/baskin/re_head.png';
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-22     : 11px;
+$font-size-44     : 22px;
+$font-size-16     : 8px;
+$font-size-31     : 15.5px;
+$font-size-20     :10px;
+body {
+	background: #fff;
+	
+}
+
+
+.spColumn{ 
+  @include rem((margin: 0 17px))
+}
+.spColumn .sp_top{
+  @include rem(( margin:28px 0 24px 0));
+}
+.sp_top span{
+  display: inline-block;
+  @include font-dpr($font-size-22);
+  color: #ffffff;
+  background-color: #a1bbff;
+  @include rem(( padding:10px , border-radius: 5px))
+}
+
+.spColumn .sp_title{
+   @include font-dpr($font-size-44);
+   color: #323232;
+   @include rem(( margin:0 0 38px 0));
+}
+
+.spColumn .sp_time{
+   @include rem(( margin:0 0 38px 0));
+   @include font-dpr($font-size-28);
+   color: #666666;
+}
+.spColumn .sp_time span{
+  @include font-dpr($font-size-30);
+   color: #4f6190;
+  @include rem(( margin-left: 10px));
+}
+
+.spColumn .sp_summary{
+  @include font-dpr($font-size-28);
+   color: #666666;
+   @include rem(( margin:0 0 128px 0));
+}
+
+.spColumn .sp_summary .tes{
+   @include rem((height: 21px, border:3px #686868 solid , margin-right:15px, top:4px));
+   display: inline-block;
+   position: relative;
+}
+
+.spColumn .sp_content{
+    @include rem(( margin-bottom: 140px));
+}
+.spColumn .sp_content p{
+   @include font-dpr($font-size-31,1.7);
+   color: #323232;
+}
+.spColumn .sp_content img{ width: 100%}
+
+
+
+
+.spColumn .sp_end{
+  @include rem(( margin-bottom: 138px));
+  @include font-dpr($font-size-28);
+   color: #323232;
+   text-align: center;
+}
+
+.spColumn .sp_end em{
+  @include rem((width: 25px , top:-10px));
+  border: 2px #666666 solid;
+  display: inline-block;
+  position: relative;
+}
+.spColumn .sp_end span{
+  @include rem(( margin:0 15px));
+}
+
+
+
+.spColumn .sp_end1{ 
+  text-align: center;
+   @include font-dpr($font-size-24);
+   color: #666666;
+   }
+
+.spColumn .sp_end1 .p1{ 
+  @include rem((margin-bottom: 65px));
+}
+
+.spColumn .sp_end1 .p2{
+  @include rem((margin-bottom: 138px));
+}
+
+.spColumn .sp_end1 .p3{
+  @include rem((margin-bottom: 50px));
+}
+
+.sp_colute{ width: 100%;
+
+  @include rem((  height: 30px));
+
+    background-color: #f9f9f9;
+}
+
+.discuss{
+   @include font-dpr($font-size-28);
+    color: #323232;
+   @include rem(( margin:28px 28px 58px 28px));
+}
+.spColumn .discuss span{
+  @include font-dpr($font-size-24);
+    color: #909090;
+    display: inline-block;
+   @include rem(( margin-left: 10px));
+}
+
+
+
+.return_head{ 
+  @include rem(( width: 78px, height: 78px , bottom: 130px, border-radius: 50% , left: 84%));
+   position: fixed;
+   @include background-dpr($iconbd-1  ,$iconbd-1 ,$iconbd-1  , center, center);
+    background-size: 100% 100% !important;
+    display: none;
+}
+
+
+.special_pall{  display: block;}
+.sp_taill{
+      @include flex-container();
+      justify-content: flex-start;
+      border: 1px #e6e6e6 solid;
+      position: fixed;
+      @include rem(( width: 480px,height: 85px, line-height: 85px, bottom: 40px,  border-radius: 40px));
+    // @include rem((width: 140px, height: 78px,  bottom: 40px,   border-radius: 40px));
+      background-color: #fcfbfb;
+      z-index: 1000;
+      text-align: center;
+      left: 18%;
+      //left: 46%; 
+}
+
+.sp_taill .taill_left{
+  //width: 100%;
+  //@include rem(( margin-right: 70px, margin-top:32px));
+  @include rem(( margin-right: 20px, margin-top:10px , margin-left: 55px));
+}
+
+
+.taill_left  .leftcont1{
+    @include rem(( height: 38px, width: 37px ,margin-top:30px));
+    @include background-dpr($iconba-1  ,$iconba-1 ,$iconba-1  , center, center);
+    background-size: 100% 100% !important;
+    display: inline-block;
+}
+
+
+.taill_left  .leftcont2{
+    @include rem(( height: 38px, width: 37px ,margin-top:30px));
+    @include background-dpr($iconbb-2  ,$iconbb-2,$iconbb-2  , center, center);
+    background-size: 100% 100% !important;
+    display: inline-block;
+}
+
+
+.taill_left  .leftcont3{
+    @include rem(( height: 38px, width: 37px ,margin-top:30px));
+    @include background-dpr($iconbc-3  ,$iconbc-3 ,$iconbc-3  , center, center);
+    background-size: 100% 100% !important;
+    display: inline-block;
+}
+
+.taill_left img{ @include rem((width: 35px, height: 35px , background-size: 100% 100% !important))}
+
+
+.taill_left  span{
+  position: relative;
+  @include rem(( top:-20px));
+  @include font-dpr($font-size-20);
+   color: #666666;
+}
+
+
+.special_pl{   display: none;}
+
+.eval_Bar{ 
+    width: 100%;
+    @include rem(( min-height: 100px));
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #d6d7dc;
+    z-index: 9999999;
+    display: table;
+}
+
+.eval_Bar .evalinput {
+    width: 80%;
+}
+
+.eval_Bar .evalinput .con {
+    @include rem(( padding: 15px 0 15px 15px, border-radius: 10px,  margin:13px 30px , max-height:50px));
+    border: 1px solid #ccc;
+    width: 90%;
+    -webkit-appearance: none;
+    overflow-y: visible;
+    resize: none;
+    outline: none;  
+    @include font-dpr($font-size-30,1.5);
+}
+
+.eval_Bar .eval_btn {
+    display: block;
+    width: 10%;
+    @include rem(( margin-top: 20px));
+    height: auto;
+    vertical-align: middle;
+    display: table-cell;
+    border: none;
+   
+}
+
+
+.eval_Bar .eval_btn button{
+    @include font-dpr($font-size-24);
+    background: #5cb531;
+    @include rem(( height: 80px ,line-height: 80px , border-radius: 10px));
+    color: white;
+    text-align: center;
+    border: none;
+    width: 90%;
+}
+
+
+
+
+
+

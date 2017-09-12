@@ -1,0 +1,20 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "tid": "5",
+    "module_name": "123123",
+    "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+    "gift_picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+    "joins": "123",
+    "description": "asdfadfa",
+    "content": "dadfasdfqwer2344124234234",
+    "addmsg": "adsfadfa",
+    "btnmsg": "asdfads",
+    "visible": "1",
+    "starttime": "1483372800",
+    "endtime": "1489075200",
+    "addtime": "0"
+  },
+  "timestamp": 1483949431
+}

@@ -1,0 +1,15 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import './choicemgerb.scss';
+@import './choicemger.scss';
+$qqw-fontsize-m: 15px;	//30px;
+
+
+.magerall{ 
+	@include flex-container();
+	justify-content: flex-start;
+}

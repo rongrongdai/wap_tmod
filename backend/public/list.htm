@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1"><meta http-equiv=x-dns-prefetch-control content=on><meta name=renderer content=webkit><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>全球蛙 -- 订单列表</title><script type=text/javascript>window.startTime = new Date().getTime();</script><link type=text/css rel=stylesheet href=/static/css/common.css><link type=text/css rel=stylesheet href=/static/css/orderList.css></head><body class="qqw_main qqw_goodsList"><header class="topNavTitle white">{if $data['type']==7} <a href=/mobile-integral-main/exchange class="fl return"></a> {else} <a href=/mobile-user-main class="fl return"></a> {/if}<h1>全部订单</h1></header><div class=goodsList><ul id=U-orderList></ul><input type=hidden name="" id=U-isWechat value="{$data['iswechat']}"></div><script src=static/js/zepto-1.2.0.min.js></script><script src=static/js/fastclick-1.0.6.min.js></script><script src=static/js/layer.js></script><script>var User = {}; // 命名空间
+User.Order = {};
+User.Order.list = true;
+User.Order.$data = 1;
+// UserOrderList.$data = 1;
+// User.Order.$data = $data['type'];
+// orderList.init({
+//     $data['type']
+// });</script><script src=/static/js/app/detail.js></script></body></html>

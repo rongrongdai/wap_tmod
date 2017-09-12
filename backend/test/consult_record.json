@@ -1,0 +1,33 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "id": "187",
+    "return_sn": "1705264089432626",
+    "order_sn": "1704954859319540",
+    "return_goods_amount": "12.30",
+    "user_id": "1003572",
+    "reason": "",
+    "reason_type": "1",
+    "return_type": "1",
+    "reason_child_type": "0",
+    "create_time": "2017-05-09 18:40:08",
+    "desc": "",
+    "return_type_name": "我要退货退款",
+    "log_list": [
+      {
+        "time": "2017-05-09 00:00:00",
+        "msg": "财务状态：申请退款,退单申请状态：未审核",
+        "type": 1
+      },
+      {
+        "time": "2017-05-09 00:00:00",
+        "msg": "财务状态：退款处理中,退单申请状态：同意",
+        "type": 1
+      }
+    ],
+    "reason_type_name": "缺货，不愿意等"
+  },
+  "timestamp": 1494384908,
+  "os": "app"
+}

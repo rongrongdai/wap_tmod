@@ -1,0 +1,348 @@
+/*公用样式*/
+.fl{ float: left;}
+.fr{ float: right;}
+.hide{ display: none;}
+/*样式重置*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei";
+  line-height: 1.5;
+  font-size: 0.28rem;
+  color: #000;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  -webkit-appearence: none;
+  -ms-appearence: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: 0; color:#909090;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+iframe {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+/*容器限制大小*/
+.wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  max-width: 7.5rem;
+}
+
+
+
+/*
+*公共头部样式一  简单的：
+*/
+.top_navon{height:0.98rem ; width: 100%;}
+/*.top_nav {*/
+  /*height:0.88rem ;*/
+  /*line-height: 0.88rem;*/
+  /*text-align: center;*/
+  /*font-size: 0.36rem;*/
+  /*position: relative; left:0; top:0; width:100%;*/
+  /*background:#fff;*/
+  /*color:#323232; border-bottom:solid 1px #d6d7dc;*/
+/*}*/
+.top_nav {
+  height:0.98rem ;
+  line-height: 0.98rem;
+  text-align: center;
+  font-size: 0.36rem;
+  background:#fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1222;
+  color:#323232; border-bottom:solid 1px #d6d7dc;
+}
+
+.top_nav .header_left {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.88rem;
+  height: 0.88rem;
+  background: url(app_img/nav_icon_back.png) no-repeat 0.35rem center;
+  background-size: 0.24rem 0.40rem;
+}
+
+.top_nav .header_left2{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.177333rem;
+  height: 1.0rem;
+  background:url(app_img/pro_icon_collect.png) no-repeat 0.40rem center;
+  background-size: 0.40rem 0.40rem;
+}
+.top_nav .header_right {
+  display: block;
+  /*font-size: initial;*/
+  font-size:0.3rem ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 0.4rem;
+  color: inherit;
+}
+
+
+/*
+*公共头部样式二  复杂点的：
+*/
+.top_navbag{ background: #ed4c1b;}
+
+.nav_cone1{
+  height:1.4rem ;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.36rem;
+  position: relative;
+  background: #ed4c1b;
+  color: white;
+}
+
+.nav_cone1 .nav_dimg{
+  display: block;
+  position: absolute;
+  top:0.3rem;
+  right: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("app_img/home2_icon_date.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.nav_cone1 .nav_dimg1{
+  display: block;
+  position: absolute;
+  top:0.3rem;
+  right: 0.7rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("app_img/moneyimgtx.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.nav_cone2:after{  content:".";  height:0;  visibility:hidden;  display:block;  clear:both;  }
+.nav_cone2{ height: 1.8rem; width:100% ; text-align: center; color: white; }
+
+.nav_cone2 .con2_coen{ height: 1.7rem; float: left; width: 30%; overflow: hidden; margin-left: 0.2rem;}
+.nav_cone2 .con2_coen p{ font-size: 0.52rem;}
+.nav_cone2 .con2_coen p span{font-size:0.3rem ;}
+.nav_cone2 .con2_coen span{ font-size: 0.24rem;}
+
+
+
+
+/*
+*公共尾部样式
+*/
+.m-footer{ background: #ed4c1b; width: 100%; position: fixed; bottom: 0; z-index:1009; height: 1.0rem; clear:both; overflow: hidden;padding-top: 0.1rem;}
+
+.m-footer a{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.22rem;
+  text-align: center;
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+}
+
+
+
+.m-footer a span {
+	 
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  margin: 0.08rem auto;
+  position: relative;
+}
+
+.m-footer .special{ background-color:#cf3100; border-radius:8px;}
+
+
+
+.m-footer a p {
+  font-size: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+
+
+.m-footer a.all_home span {
+  background:url(app_img/icon_home.png) no-repeat center center;
+  background-size: contain;
+}
+.m-footer a.all_member span {
+  background:url(app_img/icon_member.png) no-repeat  center center;
+  background-size: contain;
+}
+
+.m-footer a.all_commodity span {
+  background:url(app_img/icon_product.png) no-repeat center center;
+  background-size: contain;
+}
+
+.m-footer a.all_order span {
+  background: url(app_img/icon_order.png) no-repeat center center;
+  background-size: contain;
+}
+
+.m-footer a.all_commission span {
+  background: url(app_img/icon_money.png) no-repeat center center;
+  background-size: contain;
+}
+
+
+
+/*公用筛选样式*/
+
+.screeningTit{ height: 0.9rem; line-height: 0.9rem; background: #fff;}
+.screeningTit li{ width: 25%; text-align: center;}
+.screeningTit li span{ position: relative; display: inline-block; padding-right: 0.2rem;}
+.screeningTit li span:before,.screeningTit li span:after{position:absolute;content:'';border-width:3px;width:0;height:0;font-size:0;line-height:0;right:0;}
+.screeningTit li span:before{top:0.26rem; border-color:transparent transparent #666 transparent;border-style:dashed dashed solid dashed;}
+.screeningTit li span:after{bottom:0.26rem;border-color:#666 transparent transparent transparent;border-style:dashed dashed dashed solid;}
+.screeningTit li span.height:before{border-color:transparent transparent #ed4b1c transparent;}
+.screeningTit li span.low:after{border-color:#ed4b1c transparent transparent transparent;}
+.screeningTit .sxBtn em{display: inline-block; width: 0.26rem; height: 0.26rem; background:url(/pro_icon_screen.png) 0.02rem 0.06rem  no-repeat; background-size: 0.26rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

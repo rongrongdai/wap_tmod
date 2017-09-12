@@ -1,0 +1,30 @@
+
+$prompt-bg-2: '../img/userb/tankuang2x.png';
+$prompt-bg-3: '../img/userb/tankuang3x.png';
+.mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index:99999;
+}
+.hide{display:none;}
+.maskbox{
+  @include rem((
+    max-width: 960px,
+              min-width: 320px,
+      ));
+      
+      overflow: hidden;
+}
+.prompt{
+       @include rem((
+    min-width:520px,
+    min-height:850px,
+    margin: 40px auto
+      ));
+    background-size:70%  !important;
+    @include background-dpr($prompt-bg-2 , $prompt-bg-2 , $prompt-bg-3 ,  134px,203px);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>全球蛙 -- 订单列表</title>
+    <script type="text/javascript">window.startTime = new Date().getTime();</script>
+    <script type="text/javascript">
+    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("欢迎来到全球蛙！");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+
+<body class="">
+    <!--顶部导航-->
+<!--     <header class="topNavTitle white">
+        {if $data['type']==7}
+        <a href="/mobile-integral-main/exchange" class="fl return"></a>
+        {else}
+        <a href="/mobile-user-main" class="fl return"></a>
+        {/if}
+    </header>
+  -->   <!--顶部导航End-->
+
+    <!--内容导航-->
+    <div class="order-nav" id="orderNav">
+        <span class="order-nav-item order-nav-item--active" data-nav="1">全部</span>
+        <span class="order-nav-item" data-nav="2">待付款</span>
+        <span class="order-nav-item" data-nav="3">待发货</span>
+        <span class="order-nav-item" data-nav="4">已发货</span>
+        <span class="order-nav-item" data-nav="5">待评价</span>
+    </div>
+    <!--内容导航End-->
+
+
+
+    <!--商品列表-->
+
+    <div id="U-orderList" class="order-list-container">
+    </div>
+    <input type="hidden" name="" id="U-isWechat" value="{$data['iswechat']}">
+    <!--商品列表End-->
+
+<!--取消订单的理由-->
+     <div class="cancelOrder hidden" id="cancelOrderForm">
+            <div class="orderAll">
+                <h4 class="clickReason">请选择取消点单的理由</h4>
+                <div class="orderReason">
+                    <p><span>我不想买了</span><input class="or_item1" type="radio" name="item" value="0"></p>
+                    <p><span>信息填写错误，重新下单</span><input class="or_item1" type="radio" name="item" value="1" checked></p>
+                    <p><span>下错单了</span><input class="or_item1" type="radio" name="item" value="2"></p>
+                    <p><span>其它原因</span><input class="or_item1" type="radio" name="item" value="3"></p>
+                </div>
+                <div class="but_confirm">
+                    <input class="but but1" type="button" value="取消" id="cancelBtn"><input class="but" type="button" value="确定" id="confirmCancelBtn">
+                </div>
+            </div>
+     </div>
+<!--取消订单的理由End-->
+
+    <section id="cancelOk" class="hidden">
+        <img class="apply-ok-img" src="/static/css/img/order/cart/icon_sucessed@2x.png">
+        <span class="custom-service-apply-ok-title">取消成功！</span>
+        <p class="custom-service-apply-ok-desc custom-service-apply-ok-line" id="cancelReason">您取消的理由：</p>
+        <div>
+            <a id="checkCancelDetail" class="check-detail--btn">查看详情</a>
+            <a id="backOrderList" href="javascript: history.back();" class="check-order-detail--btn">返回我的订单</a>
+        </div>
+    </section>
+
+<!--确定取消订单-->
+     <!--<div class="confirmOrder" style="display:none;">-->
+         <!--<div class="orderAll2">-->
+             <!--<p class="clickReason2">是否确认取消订单？</p>-->
+             <!--<div class="but_confirm2">-->
+                 <!--<input class="but2 but1" type="button" value="是">-->
+                 <!--<input class="but2" type="button" value="否">-->
+             <!--</div>-->
+         <!--</div>-->
+     <!--</div>-->
+<!--确定取消订单End-->
+
+    <script src="/static/js/qqw-rzf.js"></script>
+    <!-- <script type="text/javascript" src="/static/js/zepto.touch.template.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js?v=1.0"></script>
+    <script type="text/javascript" src="/static/js/user/order.js?v=1.0"></script> -->
+    <script>
+    var User = {}; // 命名空间
+    User.Order = {};
+    User.Order.list = true;
+    User.Order.data = 1;
+    // UserOrderList.$data = 1;
+    // User.Order.$data = $data['type'];
+    // orderList.init({
+    //     $data['type']
+    // });
+    </script>
+</body>
+
+</html>

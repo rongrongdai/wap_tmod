@@ -1,0 +1,198 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/goods-list';
+@import '../component/women-day/qqw-women-head';
+@import '../component/women-day/qqw-women-sub-head';
+@import '../component/women-day/qqw-women-good-goods';
+@include global-reset;
+
+$up1-1:'../img/图层-2@2x.png';
+$up1-2:'../img/图层-2@3x.png';
+
+$up2-1:'../img/img_unknow@2x.png';
+$up2-2:'../img/img_unknow@3x.png';
+
+body {
+	background-color:#f3f3f3;
+	margin: 0 auto;
+    width: 100%;
+}
+
+.shopinfo{
+    @include rem ((
+        height:198px,
+        margin:20px 0 0 0,
+        padding:0 20px,
+    ));
+    background-color:#fff;
+}
+.shopimg{
+        @include rem ((
+        height:150px,
+        width:150px,
+        margin:24px 20px 0 0,
+    ));
+    float: left;
+}
+
+.shoptext{
+	float: left;
+    @include rem ((
+        width:533px,
+        padding:25px 0 0 0,
+    ));
+}
+.shopname{
+	display: inline-block;
+    @include rem ((
+        height:64px,
+        line-height:34px,
+    ))
+}
+.tgrs{
+    @include rem ((
+        margin:18px 0
+    ))
+}
+
+.tejia{
+    color: #cb2b2b;
+}
+.yuanjia{
+    text-decoration:line-through;
+}
+
+.ctbox{
+     @include rem ((
+        width:100%,
+    ));
+    background-color:#fff;
+    
+}
+
+.cticon{
+     @include rem ((
+        width:100%,
+     ));
+    background-color:#fff;
+}
+
+ .headicon{
+	position: relative;
+	@include rem ((
+		height:146px,
+	));
+	text-align: center;
+}
+.colonel{
+	@include rem ((
+		width:100px,
+        height:100px,
+		margin:26px 10px 20px 0,
+		border-radius: 50px,
+	));
+		overflow: hidden;
+	    vertical-align: bottom;
+}
+
+.coloneltext{
+	    position: absolute;
+	@include rem ((
+		height:34px,
+		width:60px,
+		line-height:34px,
+		font-size:20px,
+		border-radius: 10px,
+		top:24px,
+		left:43%,
+	));
+		color: #fff;
+		display:inline-block;
+		background: #5cb531;
+		text-align: center;
+}
+
+.hicon{
+		display: inline-block;
+	    @include rem ((
+        width:100px,
+        height:100px,
+		margin:26px 0 20px 10px,
+        background-size:100% !important,
+    ));
+    @include background-dpr($up2-1,$up2-1,$up2-2,center,center);
+}
+
+.clockbbox{
+	text-align: center;
+	@include rem ((
+		margin:38px 0,
+	));
+}
+.clockbox{
+	@include rem ((
+		height:40px,
+		padding:0 0 9px 0,
+	));
+}
+.clockblock{
+	display: inline-block;
+	@include rem ((
+		height:40px,
+		width:40px,
+		line-height:40px,
+		border-radius:4px,
+	));
+	text-align: center;
+	color: #fff;
+	background-color:#333333;
+}
+.sharebox{
+    @include rem ((
+        padding:0 0 26px 0,
+    ));
+    text-align:center;
+}
+.shareicon{
+    display: inline-block;
+    @include rem ((
+        height:80px,
+        line-height:80px,
+        width:92%,
+        border-radius: 4px,
+    ));
+    color: #ffffff;
+    background: #5cb531;
+    text-align: center;
+}
+
+.ptxz{
+	@include rem ((
+		padding:0 20px 10px 20px,
+		margin: 20px 0 0 0,
+	));
+	background-color:#fff;
+};
+.ptxzt{
+		@include rem ((
+			height:50px,
+			line-height:50px,
+		));
+		color:#333333;
+		
+}
+
+.ptts{
+	text-align: center;
+	@include rem ((
+		font-size:26px,
+		height:40px,
+		line-height:40px,
+	));
+	color: #666666;
+}
+

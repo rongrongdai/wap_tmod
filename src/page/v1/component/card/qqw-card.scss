@@ -1,0 +1,95 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 14px;			// 28px
+
+.qqw-card-layout {
+	@include flex-container(left);
+	@include rem(padding, 0 10px 20px);
+	background-color: #fff;
+}
+
+.card-item-container {
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	background-color: #fbfbfb;
+	border: 0.03rem solid #e6e6e6;
+	@include rem((
+		border-radius: 10px,
+		margin: 20px 10px 0,
+		background-size: 100% 270px
+		));
+	text-align: center;
+}
+
+.card-item-container--fix {
+	@include rem(margin, 20px 12px 0 10px);
+}
+
+.card-item-face-container {
+	z-index: 8;
+	display: block;
+	position: absolute;
+	@include rem((
+		top: 210px,
+		width: 120px,
+		height: 120px
+		));
+	background-color: rgba(255,255,255, 0.6);
+	border-radius: 50%;
+	// border-radius: 0.9375rem 0.9375rem 0 0;
+	// -webkit-border-radius: 0.9375rem 0.9375rem 0 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+
+.card-item-container-bg {
+	position: absolute;
+	width: 100%;
+	@include rem(height, 270px);
+	top: 0;
+}
+
+.card-item-face {
+	z-index: 9;
+	position: relative;
+	border-radius: 50%;
+	@include rem((
+			width: 100px,
+			height: 100px,
+			margin-top: 222px
+		));
+}
+
+.card-item-name {
+	@include font-dpr($qqw-fontsize-xs, null, bold);
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	@include rem(margin-top, 18px);
+}
+.card-item-title {
+	@include font-dpr($qqw-fontsize-m, null, bold);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	@include rem(margin-top, 18px);
+}
+.card-item-subtitle {
+	@include rem((margin-top: 18px, padding: 0 12px));
+}
+.card-item-subtitle, .card-item-tip {
+	@include font-dpr($qqw-fontsize-xs);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-color;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-item-tip {
+	@include rem(margin, 15px auto 8px);
+}

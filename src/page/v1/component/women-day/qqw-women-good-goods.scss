@@ -1,0 +1,48 @@
+$font-size-24 :13px;
+@media only screen
+  and (min-device-width: 961px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.sweephead{
+			 @include rem(( width: 640px))
+	}
+}
+.qqw_goods_content{
+    @include flex-container();
+    img{
+        border-radius: 3%;
+        @include rem((margin:7px));
+    }
+    .hide-box{
+       @include rem((margin-left:-14px));
+    }
+    .box{
+    	display: flex;
+    	.right-box {
+    		 @include rem((width:360px));
+    		 .item{
+    		    @include rem((width:360px,height:220px));
+			    	}
+    	}
+        .item{
+                @include rem((width:345px,height:460px));
+        }   
+     }
+	.box:nth-of-type(2){
+        .item{
+            @include rem((width:230px,height:308px));
+        }   
+    }
+    .box:nth-of-type(3){
+         background: center center no-repeat;
+         display: flex;
+         background-size: 96%;
+         @include rem((width:100%));
+        .item{
+                display: flex;
+                @include rem((height:500px));
+			    width: 50%;
+        }   
+
+    }
+}

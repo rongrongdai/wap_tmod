@@ -1,0 +1,327 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem'; 
+@import '../../../../sass/common';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/share';
+@import '../../../../sass/animation';
+@import '../../component/card/goods-list';
+@include global-reset;
+// 定义样式
+$check-1: '../../img/icon_normal.png';
+$check-2:'../../img/icon_sel.png';
+$icon_camera-1:'../../img/icon_camera.png';
+$icon_ProSel-1:'../../img/icon_ProSel.png';
+$icon_tuikuan_sel-1:'../../img/icon_tuikuan_sel.png';
+$qqw-fontsize-xs: 12px;			// 24px文字大小设置
+$qqw-fontsize-ls: 13px;			// 26px
+$qqw-fontsize-s: 14px;			// 28px
+$qqw-fontsize-m: 15px;			// 30px
+
+body {
+	background: #f3f3f3;
+	margin:0;
+}
+.hide{
+	display:none;
+} 
+.refundbox { 
+	background-color: #fff;
+	@include rem((
+		margin-bottom: 100px,
+		))
+}
+.goodsbox {
+	background-color: #fff;
+	@include rem((
+		padding-bottom: 20px,
+		padding-left: 20px,
+		margin-bottom:20px,
+		))
+}
+.goodsbox .tit{
+	@include font-dpr($qqw-fontsize-s, null);
+	color:#333;
+	@include rem((
+		height:66px,
+		line-height: 66px !important,
+		))
+	text-align:left;
+}
+.imgbox{
+	overflow:hidden;
+}
+.imglist{
+	overflow:hidden;
+	@include rem((
+		width:624px,
+		))
+}
+.goodsphoto{
+	@include rem((
+		height:140px,
+		width: 140px,
+		margin-right:16px,
+		))
+	overflow: hidden;
+}
+.goodsphoto img{
+	@include rem((
+		width:100%,
+		height:100%,
+		))
+}
+.select_more{
+	@include background-dpr($icon_ProSel-1, $icon_ProSel-1, $icon_ProSel-1, center, center)
+	@include rem((
+		height:40px,
+		width: 27px,
+		background-size: 40px 27px,
+		margin:50px 30px 0,
+		))
+}
+.applybox{
+	background:#fff;
+	@include rem((
+		padding:30px 22px,
+		))
+}
+.options{
+	background:#f0f0f0;
+	@include rem((
+		width:670px,
+		padding:0 20px,
+		height:88px,
+		line-height: 88px !important,
+		margin-bottom:16px,
+		))
+
+}
+.text{
+	@include rem((
+		height:266px,
+		))
+}
+.morenum{
+	text-align:right;
+	color:#999;
+	@include font-dpr($qqw-fontsize-xs, null);
+	@include rem((
+		height:66px,
+		line-height: 66px !important,
+		))
+}
+.pz_img{
+	@include rem((
+		width:710px,
+		))
+}
+.proof_picture{
+	background: #fff;
+	overflow:hidden;
+	@include rem((
+		width:668px,
+		height:84px,
+		border:1px dashed #b2b2b2, 
+		))
+}
+.picbox{
+	overflow:hidden;
+}
+.removeimg{
+	overflow:hidden;
+	position:relative; 
+	float: left;
+	@include rem(( 
+		height:120px,
+		width: 120px,
+		margin:0 11px,
+		))
+}
+.removeimg .deleteImg{
+	position:absolute;
+	@include rem((
+		width:20px,
+		height:20px,
+		right:0px,
+		top:0px,
+		))
+}
+.removeimg .img{
+	@include rem((
+		width:100%,
+		height:100%,
+		))
+}
+.arrowicon{
+	@include background-dpr($icon_tuikuan_sel-1, $icon_tuikuan_sel-1, $icon_tuikuan_sel-1, center, center)
+	@include rem((
+		width:26px,
+		height:12px,
+		background-size: 100%,
+		margin-top: 38px,
+		))
+}
+.why{
+	@include rem((
+		width:158px,
+		))
+	color:#999;
+}
+.instructions{
+	@include rem((
+		width:500px,
+		))
+}
+.why span{
+	color:#ab2b2b;
+}
+.reason{
+	@include rem((
+		width:420px,
+		margin:0 10px,
+		height:88px,
+		))
+	overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	text-align:center;
+	color:#333;
+}
+.amout .reason{
+	@include rem((
+		width:256px,
+		margin:0 10px,
+		height:88px,
+		padding-left:44px,
+		))
+	overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	text-align:center;
+	color:#333;
+}
+.intext{
+	color:#999;
+	@include font-dpr($qqw-fontsize-xs, null);
+	@include rem((
+		width:180px,
+		height:88px,
+		line-height: 88px !important,
+		))
+	text-align:right;
+}
+.textarea{
+	@include rem((
+		width:100%,
+		height:120px,
+		))
+}
+.textarea .textcon{
+	@include font-dpr($qqw-fontsize-xs, null);
+	display: block;
+	@include rem((
+		width:100%,
+		height:100%,
+		line-height: 30px !important,
+		))
+	resize:none;
+	outline:none;
+	background:none;
+	border:none;
+}
+//遮罩弹窗
+.fixed_bg{
+	@include rem((
+		width:100%,
+		height:100%,
+		    left: 0,
+		    right: 0,
+		    top: 0,
+		    background-color: rgba(0,0,0,0.4),
+		    z-index: 10,
+		))
+	    position: fixed;
+
+}
+.reason_list{
+	@include rem((
+		width:530px,
+		height:auto,
+		 z-index:14,
+		 margin:258px auto 0,
+		 border-radius: 5px,
+		 padding-bottom:30px,
+		))
+	position:relative;
+	background:#fff;
+}
+.reason_list .tit{
+	color:#323232;
+	@include font-dpr($qqw-fontsize-ls, null);
+	@include rem((
+		width:100%,
+		height:78px,
+		line-height: 78px !important,
+		))
+	text-align:center;
+}
+.listcon{
+	overflow:hidden;
+              @include rem((
+		padding: 0 30px,
+		height:88px,
+		line-height: 88px !important,
+		border-top: 1px solid #e6e6e6,
+		))
+}
+.listcon .con{
+	@include rem((
+		width:390px,
+		height:88px,
+		line-height: 88px !important,
+		))
+	overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	text-align:left;
+	color:#323232;
+}
+.listcon input[type=radio]{
+	@include background-dpr($check-1, $check-1, $check-1, center, center)
+	@include rem((
+		height:25px,
+		width: 25px,
+		background-size: 100%,
+		margin-top:34px,
+		))
+	border: none;
+	    outline-style: none;
+    -webkit-appearance: none;
+}
+.listcon input[type=radio]:checked{
+	@include background-dpr($check-2, $check-2, $check-2, center, center)
+	@include rem((
+		height:25px,
+		width: 25px,
+		background-size: 100%,
+		margin-top:34px,
+		))
+	border: none;
+	    outline-style: none;
+    -webkit-appearance: none;
+}
+.fotbar{
+	background-color: #5cb531;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	@include font-dpr($qqw-fontsize-s, null);
+	@include rem((
+		width:100%,
+		height: 88px,
+		line-height: 88px !important,
+		bottom: 0,
+		left: 0,
+		z-index:2000,
+		))
+}

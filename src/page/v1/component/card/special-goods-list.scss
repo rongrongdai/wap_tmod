@@ -1,0 +1,165 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+$qqw-common-more-color: #666666;
+
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 14px;			// 28px
+$qqw-fontsize-l: 15px;			// 30px
+
+
+$prompt-more-bg-2: '../img/bg_more_large2x.png';
+$prompt-anoyher-more-2: '../img/index_icon_another_more@2x.png';
+
+.goods-list-layout {
+	@include flex-container(left);
+	@include rem(padding, 0 10px 20px);
+	background-color: #fff;
+}
+.newgoods-list{
+	@include rem((
+		padding-top: 20px,
+		));
+}
+.goods-list{
+	background:#fff;
+	@include rem((
+		padding-top: 20px,
+		));
+}
+.goods-list-bg-color{
+	background:#f9f9f9;
+}
+.goods-list-container {
+	overflow: hidden;
+	text-decoration: none;
+	background-color: #fbfbfb;
+	border: 0.03rem solid #e6e6e6;
+	@include rem((
+		border-radius: 10px,
+		margin: 0px 10px 20px,
+		background-size: 100% 270px
+		));
+	// text-align: center;
+	display: inline-block;
+	float:left;
+}
+.goods-list-container p{ 
+	@include rem(padding, 0px 16px 0 16px);
+}
+.goods-list-container--fix {
+	@include rem(margin, 20px 12px 0 10px);
+}
+
+
+
+.goods-list-container-bg {
+	width: 100%;
+	@include rem((height:350px));
+	// height:334px !important;
+	top: 0;
+}
+.goods-list-container-bg img{
+	width:100%;
+	height:100%;
+}
+
+.user-face {
+	float: left;
+	border-radius: 50%;
+	@include rem((
+			width: 50px,
+			height: 50px,
+		));
+}
+.card-goodsname {
+	   @include font-dpr($qqw-fontsize-m, null);
+	  -webkit-font-smoothing: antialiased;
+		color: $qqw-common-h-color;
+		@include rem((margin-top:18px));
+		text-align:left;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+}
+.card-item-title {
+	@include font-dpr($qqw-fontsize-m, null, bold);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	@include rem(margin-top, 18px);
+}
+.goods-item-user {
+	@include rem(( margin: 18px 0px, height:50px,  line-height:50px, ));
+	@include font-dpr(15px);
+}
+.goods-item-user .user-name{
+	float:left;
+	text-align:left;
+	color:#909090;
+	@include font-dpr(12px);
+	@include rem((
+		margin-left: 12px,
+		height:50px,
+		line-height: 50px,
+		width:220px,
+		margin-top:9px
+	 ));
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.card-item-subtitle, .goods-price {
+	@include font-dpr($qqw-fontsize-m);
+  -webkit-font-smoothing: antialiased;
+	//color: #5cb531;
+           color:#fe0002;
+	@include rem((
+                   
+		margin-bottom:20px,
+	 ));
+	 @include font-dpr(18px);
+	text-align:left;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.goods-price-hack {
+
+	@include rem((
+		margin-top:18px
+	 ));
+}
+
+.goods-list-container {
+	width: calc((100% - 0.68rem)/2);			// 51
+	width: -webkit-calc((100% - 0.68rem)/2);
+	// @include rem((
+	// 	height:500px
+	//  ));
+}
+
+.goods-brand-more{
+   // @include background-dpr($prompt-more-bg-2 ,$prompt-more-bg-2 , $prompt-more-bg-2 , center,center);
+    // background-size: 110% !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    @include font-dpr($qqw-fontsize-l,16);
+    color: $qqw-common-more-color;
+    z-index: -1;
+    position: static;
+}
+.more-logo{
+   @include background-dpr($prompt-anoyher-more-2, $prompt-anoyher-more-2 , $prompt-anoyher-more-2 , center,center);
+   display: inline-block;
+   	position: relative;
+	@include rem((
+		top: 4px,
+		width: 30px,
+        height: 30px
+	 ));
+
+
+    background-size: 100% !important;
+}

@@ -1,0 +1,51 @@
+$font-size-32     : 16px;
+$font-size-28     : 14px;
+$font-size-30     : 15px;
+
+.countdown{ 
+    background-color: #fff;
+    // @include rem(( height: 155px));
+}
+
+.countdown .more{ 
+    text-align: center;     
+    position: relative;
+    @include rem(( height: 70px));
+}
+
+.more .line {
+    position: absolute;
+    @include rem(( width: 455px,  left:170px,  top: 40px, height: 1px));
+    background: #cfcfcf;
+}
+
+.more .info {
+    @include rem(( width: 320px,   padding: 0 20px,   top: 20px, left: 210px));
+    color: #323232;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+   @include font-dpr($font-size-28,1.3);
+}
+
+
+
+.time-item{ text-align: center; display: none;}
+
+
+.time-item .clock{
+    background:#151515;
+    color:#fff;
+    @include rem((  border-radius:5px,   padding:0 5px));
+    @include font-dpr($font-size-30,2);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+.time-item  .second{
+    background:#d61415;
+    color:#fff;
+    @include rem((  border-radius:5px,   padding:0 5px));
+    @include font-dpr($font-size-30,2);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+}
+ 

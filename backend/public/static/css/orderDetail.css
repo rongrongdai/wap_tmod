@@ -1,0 +1,806 @@
+@charset "UTF-8";
+/*CSS public 2015.12.3*/
+.iconfont {
+  font-size: 0.8rem; }
+
+html {
+  font-size: 20px; }
+
+.cGreen {
+  color: #252525 !important; }
+
+.cRed {
+  color: #f14545 !important; }
+
+input[type=button], input[type=submit], button {
+  -webkit-appearance: none;
+  outline: none; }
+
+/*标签格式化*/
+body {
+  margin: 0;
+  padding: 0;
+  font: 0.33333rem "Helvetica Neue", Helvetica, Arial, 微软雅黑, sans-serif;
+  color: #555555;
+  text-align: center; }
+
+.w {
+  max-width: 16rem;
+  margin: 0 auto; }
+
+input, button, textarea, select {
+  font-family: 微软雅黑,arial; }
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p, figure, button {
+  padding: 0;
+  margin: 0; }
+
+ol, ul {
+  list-style: none; }
+
+li {
+  list-style-type: none; }
+
+img {
+  vertical-align: top;
+  border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal; }
+
+em, i {
+  font-style: normal; }
+
+/*链接样式*/
+a {
+  color: #555555;
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  color: #d01162;
+  text-decoration: none; }
+
+a:active {
+  color: #d01162; }
+
+/*字体颜色*/
+.cGreen, .cGreen:visited, .cGreen a, .green {
+  color: #6b9333; }
+
+.cBlue, .cBlue:visited, .cBlue a {
+  color: #1E50A2; }
+
+/*框架布局*/
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.ovH {
+  overflow: hidden; }
+
+.poR {
+  position: relative; }
+
+/*文本对齐*/
+.tL {
+  text-align: left; }
+
+.tR {
+  text-align: right; }
+
+/*清除浮动*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("http://at.alicdn.com/t/font_1454493199_7901232.eot");
+  /* IE9*/
+  src: url("http://at.alicdn.com/t/font_1454493199_7901232.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1454493199_7901232.woff") format("woff"), url("http://at.alicdn.com/t/font_1454493199_7901232.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1454493199_7901232.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.fIco, .qqw_main .searchPop .topNavTitle .searchBox:before, .qqw_main .topNavTitle .fl:before, .qqw_main .topNavTitle .fr:before, .qqw_main .topNavTitle .moreList a:before, .qqw_main .topNavTitle .moreList span:before, .qqw_main .mainMenu dd:before, .qqw_main .navBtn dd:before, .qqw_leftMenu .leftMainMenuBox .hint:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:before, .qqw_indentInfo .shippingAddress .name:before, .qqw_indentInfo .addInof .list li:first-child:before {
+  font-family: "iconfont" !important;
+  font-size: 0.4rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 23.4px; } }
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  html {
+    font-size: 25.8px; } }
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 32px; } }
+.mt20 {
+  margin-top: 0.5rem; }
+
+.disFlexF {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.disFlexZ {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0; }
+
+.qqw_main {
+  padding-top: 1.925rem;
+  padding-bottom: 2.5rem;
+  text-align: left; }
+  .qqw_main .searchPop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f3f4f5;
+    z-index: 10000;
+    padding-top: 1.95rem;
+    display: none; }
+    .qqw_main .searchPop .topNavTitle .searchBox {
+      margin-left: 0;
+      position: relative;
+      width: 100%; }
+      .qqw_main .searchPop .topNavTitle .searchBox:before {
+        content: '\e600';
+        color: #a6a7a9;
+        font-size: 0.6rem;
+        position: absolute;
+        left: 0.5rem; }
+      .qqw_main .searchPop .topNavTitle .searchBox input {
+        height: 1.25rem;
+        width: 100%;
+        border: 1px solid #cfcfcf;
+        border-radius: 0.15rem;
+        text-indent: 1.3rem; }
+    .qqw_main .searchPop .topNavTitle .text {
+      color: #87898c; }
+    .qqw_main .searchPop .hotS {
+      padding: 0.625rem 0.625rem 0.375rem 2.125rem;
+      background-color: #FFF;
+      border: 1px solid #e4e4e4;
+      border-width: 1px 0;
+      text-align: center;
+      overflow: hidden; }
+      .qqw_main .searchPop .hotS label {
+        float: left;
+        margin-left: -2.125rem;
+        width: 2.125rem;
+        font-size: 0.6rem;
+        line-height: 1.1rem;
+        font-weight: bold; }
+      .qqw_main .searchPop .hotS a {
+        float: left;
+        border: 1px solid #e4e2e2;
+        line-height: 1.05rem;
+        white-space: nowrap;
+        margin-right: 0.375rem;
+        margin-bottom: 0.25rem;
+        font-size: 0.5rem;
+        padding: 0 0.4rem;
+        border-radius: 999px; }
+    .qqw_main .searchPop .historyS {
+      background-color: #FFF;
+      border: 1px solid #e4e4e4;
+      border-width: 1px 0;
+      margin-top: 0.85rem; }
+      .qqw_main .searchPop .historyS .title {
+        line-height: 1.4rem;
+        padding-left: 0.55rem;
+        font-size: 0.6rem;
+        border-bottom: 1px solid #e4e4e4;
+        font-weight: bold; }
+      .qqw_main .searchPop .historyS .list {
+        margin: 0 0.5rem; }
+        .qqw_main .searchPop .historyS .list li {
+          text-indent: 0.2rem;
+          line-height: 1.825rem;
+          border-bottom: 1px solid #e4e4e4;
+          font-size: 0.5rem; }
+          .qqw_main .searchPop .historyS .list li a {
+            color: #76787a; }
+      .qqw_main .searchPop .historyS .btnBox {
+        text-align: center; }
+        .qqw_main .searchPop .historyS .btnBox .btnStyle {
+          width: 10.625rem;
+          height: 1.625rem;
+          margin: 1.05rem auto;
+          border: 1px solid #5c5c5b;
+          background-color: #FFF;
+          border-radius: 0.2rem;
+          color: #5c5c5b;
+          font-size: 0.6rem; }
+  .qqw_main .emptyList {
+    background: url("img/emptyList.png") center center no-repeat;
+    background-size: 7.5rem 7.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .qqw_main .popWindow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    .qqw_main .popWindow .hintWindow {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-color: #FFF;
+      width: 10rem;
+      text-align: center;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      border-radius: 0.25rem;
+      font-size: 0.55rem;
+      box-shadow: 0 0.075rem 0.5rem rgba(0, 0, 0, 0.3); }
+    .qqw_main .popWindow .cont {
+      padding: 1rem 0.5rem;
+      font-size: 0.75rem; }
+    .qqw_main .popWindow .btnBox {
+      border-top: 1px solid #bfbfbf;
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .qqw_main .popWindow .btnBox dd {
+        border-right: 1px solid #bfbfbf;
+        line-height: 1.5rem;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        position: relative; }
+        .qqw_main .popWindow .btnBox dd:last-child {
+          border: 0; }
+  .qqw_main .btnStyle {
+    cursor: pointer; }
+    .qqw_main .btnStyle.btn1 {
+      background-color: #252525;
+      border: 0;
+      border-radius: 0.25rem;
+      color: #FFF; }
+    .qqw_main .btnStyle.btn2 {
+      background-color: #FFF;
+      border: 1px solid #555555;
+      border-radius: 0.25rem;
+      width: 2.35rem;
+      height: 1.15rem;
+      font-size: 0.55rem;
+      color: #555555; }
+  .qqw_main .topNavTitle {
+    text-align: center;
+    background-color: #252525;
+    color: #FFF;
+    line-height: 1.95rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    padding: 0 1.95rem; }
+    .qqw_main .topNavTitle .fl, .qqw_main .topNavTitle .fr {
+      width: 1.95rem;
+      color: #FFF;
+      height: 1.95rem;
+      vertical-align: top; }
+      .qqw_main .topNavTitle .fl.fl, .qqw_main .topNavTitle .fr.fl {
+        margin-left: -1.95rem; }
+      .qqw_main .topNavTitle .fl.fr, .qqw_main .topNavTitle .fr.fr {
+        margin-right: -1.95rem; }
+      .qqw_main .topNavTitle .fl.text, .qqw_main .topNavTitle .fr.text {
+        font-size: 0.5rem; }
+      .qqw_main .topNavTitle .fl:before, .qqw_main .topNavTitle .fr:before {
+        font-size: 0.85rem; }
+      .qqw_main .topNavTitle .fl.return:before, .qqw_main .topNavTitle .fr.return:before {
+        content: '\e621'; }
+      .qqw_main .topNavTitle .fl.install:before, .qqw_main .topNavTitle .fr.install:before {
+        content: '\e622'; }
+      .qqw_main .topNavTitle .fl.picture:before, .qqw_main .topNavTitle .fr.picture:before {
+        content: '\e636'; }
+      .qqw_main .topNavTitle .fl.more:before, .qqw_main .topNavTitle .fr.more:before {
+        content: '\e644'; }
+      .qqw_main .topNavTitle .fl.buyCart:before, .qqw_main .topNavTitle .fr.buyCart:before {
+        content: '\e640'; }
+    .qqw_main .topNavTitle h1 {
+      font-size: 0.65rem; }
+    .qqw_main .topNavTitle.search {
+      padding-right: 0.4rem; }
+      .qqw_main .topNavTitle.search .searchBox {
+        margin-left: 0 !important;
+        position: relative; }
+        .qqw_main .topNavTitle.search .searchBox:before {
+          content: '\e600';
+          color: #a6a7a9;
+          font-size: 0.6rem;
+          position: absolute;
+          left: 0.5rem; }
+        .qqw_main .topNavTitle.search .searchBox input {
+          height: 1.25rem;
+          width: 13.5rem;
+          border: 1px solid #cfcfcf;
+          border-radius: 0.15rem;
+          text-indent: 1.3rem; }
+    .qqw_main .topNavTitle.white {
+      background-color: #fdfdfd;
+      color: #333333;
+      border-bottom: 1px solid #bfbfbf; }
+      .qqw_main .topNavTitle.white .fl, .qqw_main .topNavTitle.white .fr {
+        color: #333333; }
+    .qqw_main .topNavTitle .tabMenu {
+      font-size: 0;
+      line-height: 1.975rem; }
+      .qqw_main .topNavTitle .tabMenu dd {
+        display: inline-block;
+        font-size: 0.65rem;
+        vertical-align: top;
+        padding: 0 0.6rem;
+        position: relative; }
+        .qqw_main .topNavTitle .tabMenu dd.curr {
+          color: #252525; }
+          .qqw_main .topNavTitle .tabMenu dd.curr:before {
+            position: absolute;
+            content: '';
+            font: 0/0 arial;
+            width: 0.85rem;
+            height: 0.075rem;
+            background-color: #252525;
+            bottom: 0.125rem;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%); }
+    .qqw_main .topNavTitle .moreList {
+      position: absolute;
+      top: 1.65rem;
+      right: 0.25rem;
+      line-height: 1.75rem;
+      font-size: 0.55rem;
+      width: 3.875rem;
+      background-color: #474747;
+      border-radius: 0.2rem;
+      box-shadow: 0 0.125rem 0.225rem rgba(0, 0, 0, 0.6);
+      display: none; }
+      .qqw_main .topNavTitle .moreList:before {
+        content: '◆';
+        position: absolute;
+        font-size: 0.75rem;
+        color: #474747;
+        line-height: 1;
+        top: -0.325rem;
+        right: 0.5rem; }
+      .qqw_main .topNavTitle .moreList a, .qqw_main .topNavTitle .moreList span {
+        display: block;
+        color: #FFF;
+        border-bottom: 1px solid #5f5f5f; }
+        .qqw_main .topNavTitle .moreList a:last-child, .qqw_main .topNavTitle .moreList span:last-child {
+          border: 0; }
+        .qqw_main .topNavTitle .moreList a:before, .qqw_main .topNavTitle .moreList span:before {
+          color: #FFF;
+          font-size: 0.65rem;
+          margin-right: 0.25rem; }
+        .qqw_main .topNavTitle .moreList a.home:before, .qqw_main .topNavTitle .moreList span.home:before {
+          content: '\e60d'; }
+        .qqw_main .topNavTitle .moreList a.share:before, .qqw_main .topNavTitle .moreList span.share:before {
+          content: '\e641'; }
+  .qqw_main .topTitle {
+    height: 2.2rem;
+    color: #FFF;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 990;
+    padding: 0 0.625rem 0 2.25rem;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), transparent);
+    transition: all .2s linear; }
+    .qqw_main .topTitle, .qqw_main .topTitle a {
+      color: #FFF; }
+    .qqw_main .topTitle h1 {
+      font-size: 0.8rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1; }
+    .qqw_main .topTitle .fIco, .qqw_main .topTitle .searchPop .topNavTitle .searchBox:before, .qqw_main .searchPop .topNavTitle .topTitle .searchBox:before, .qqw_main .topTitle .topNavTitle .fl:before, .qqw_main .topNavTitle .topTitle .fl:before, .qqw_main .topTitle .topNavTitle .fr:before, .qqw_main .topNavTitle .topTitle .fr:before, .qqw_main .topTitle .topNavTitle .moreList a:before, .qqw_main .topNavTitle .moreList .topTitle a:before, .qqw_main .topTitle .topNavTitle .moreList span:before, .qqw_main .topNavTitle .moreList .topTitle span:before, .qqw_main .topTitle .mainMenu dd:before, .qqw_main .mainMenu .topTitle dd:before, .qqw_main .topTitle .navBtn dd:before, .qqw_main .navBtn .topTitle dd:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li:first-child:before {
+      height: 100%;
+      font-size: 0.925rem;
+      width: 2.2rem;
+      text-align: center; }
+      .qqw_main .topTitle .fIco.fl, .qqw_main .topTitle .topNavTitle .fl:before, .qqw_main .topNavTitle .topTitle .fl:before, .qqw_main .topTitle .mainMenu dd.fl:before, .qqw_main .mainMenu .topTitle dd.fl:before, .qqw_main .topTitle .navBtn dd.fl:before, .qqw_main .navBtn .topTitle dd.fl:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .fl.hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .fl.hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.fl:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd.fl:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .fl.name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .fl.name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li.fl:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li.fl:first-child:before {
+        margin-left: -2.25rem; }
+      .qqw_main .topTitle .fIco.fr, .qqw_main .topTitle .topNavTitle .fr:before, .qqw_main .topNavTitle .topTitle .fr:before, .qqw_main .topTitle .mainMenu dd.fr:before, .qqw_main .mainMenu .topTitle dd.fr:before, .qqw_main .topTitle .navBtn dd.fr:before, .qqw_main .navBtn .topTitle dd.fr:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .fr.hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .fr.hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.fr:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd.fr:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .fr.name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .fr.name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li.fr:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li.fr:first-child:before {
+        margin-right: -2.25rem; }
+      .qqw_main .topTitle .fIco:before, .qqw_main .topTitle .searchPop .topNavTitle .searchBox:before, .qqw_main .searchPop .topNavTitle .topTitle .searchBox:before, .qqw_main .topTitle .topNavTitle .fl:before, .qqw_main .topNavTitle .topTitle .fl:before, .qqw_main .topTitle .topNavTitle .fr:before, .qqw_main .topNavTitle .topTitle .fr:before, .qqw_main .topTitle .topNavTitle .moreList a:before, .qqw_main .topNavTitle .moreList .topTitle a:before, .qqw_main .topTitle .topNavTitle .moreList span:before, .qqw_main .topNavTitle .moreList .topTitle span:before, .qqw_main .topTitle .mainMenu dd:before, .qqw_main .mainMenu .topTitle dd:before, .qqw_main .topTitle .navBtn dd:before, .qqw_main .navBtn .topTitle dd:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li:first-child:before {
+        margin-top: 0.2rem;
+        display: block;
+        line-height: 1.15rem; }
+      .qqw_main .topTitle .fIco.menu:before, .qqw_main .topTitle .searchPop .topNavTitle .menu.searchBox:before, .qqw_main .searchPop .topNavTitle .topTitle .menu.searchBox:before, .qqw_main .topTitle .topNavTitle .menu.fl:before, .qqw_main .topNavTitle .topTitle .menu.fl:before, .qqw_main .topTitle .topNavTitle .menu.fr:before, .qqw_main .topNavTitle .topTitle .menu.fr:before, .qqw_main .topTitle .topNavTitle .moreList a.menu:before, .qqw_main .topNavTitle .moreList .topTitle a.menu:before, .qqw_main .topTitle .topNavTitle .moreList span.menu:before, .qqw_main .topNavTitle .moreList .topTitle span.menu:before, .qqw_main .topTitle .mainMenu dd.menu:before, .qqw_main .mainMenu .topTitle dd.menu:before, .qqw_main .topTitle .navBtn dd.menu:before, .qqw_main .navBtn .topTitle dd.menu:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .menu.hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .menu.hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.menu:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd.menu:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .menu.name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .menu.name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li.menu:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li.menu:first-child:before {
+        content: '\e601'; }
+      .qqw_main .topTitle .fIco.twoDimension:before, .qqw_main .topTitle .searchPop .topNavTitle .twoDimension.searchBox:before, .qqw_main .searchPop .topNavTitle .topTitle .twoDimension.searchBox:before, .qqw_main .topTitle .topNavTitle .twoDimension.fl:before, .qqw_main .topNavTitle .topTitle .twoDimension.fl:before, .qqw_main .topTitle .topNavTitle .twoDimension.fr:before, .qqw_main .topNavTitle .topTitle .twoDimension.fr:before, .qqw_main .topTitle .topNavTitle .moreList a.twoDimension:before, .qqw_main .topNavTitle .moreList .topTitle a.twoDimension:before, .qqw_main .topTitle .topNavTitle .moreList span.twoDimension:before, .qqw_main .topNavTitle .moreList .topTitle span.twoDimension:before, .qqw_main .topTitle .mainMenu dd.twoDimension:before, .qqw_main .mainMenu .topTitle dd.twoDimension:before, .qqw_main .topTitle .navBtn dd.twoDimension:before, .qqw_main .navBtn .topTitle dd.twoDimension:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .twoDimension.hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .twoDimension.hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.twoDimension:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd.twoDimension:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .twoDimension.name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .twoDimension.name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li.twoDimension:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li.twoDimension:first-child:before {
+        content: '\e602'; }
+      .qqw_main .topTitle .fIco span, .qqw_main .topTitle .searchPop .topNavTitle .searchBox:before span, .qqw_main .searchPop .topNavTitle .topTitle .searchBox:before span, .qqw_main .topTitle .topNavTitle .fl:before span, .qqw_main .topNavTitle .topTitle .fl:before span, .qqw_main .topTitle .topNavTitle .fr:before span, .qqw_main .topNavTitle .topTitle .fr:before span, .qqw_main .topTitle .topNavTitle .moreList a:before span, .qqw_main .topNavTitle .moreList .topTitle a:before span, .qqw_main .topTitle .topNavTitle .moreList span:before span, .qqw_main .topNavTitle .moreList .topTitle span:before span, .qqw_main .topTitle .mainMenu dd:before span, .qqw_main .mainMenu .topTitle dd:before span, .qqw_main .topTitle .navBtn dd:before span, .qqw_main .navBtn .topTitle dd:before span, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .hint:before span, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .hint:before span, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:before span, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd:before span, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .name:before span, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .name:before span, .qqw_main .topTitle .qqw_indentInfo .addInof .list li:first-child:before span, .qqw_indentInfo .addInof .list .qqw_main .topTitle li:first-child:before span {
+        font-family: 微软雅黑;
+        font-size: 0.45rem;
+        display: block; }
+    .qqw_main .topTitle .search {
+      padding-top: 0.325rem;
+      position: relative; }
+      .qqw_main .topTitle .search.fIco, .qqw_main .topTitle .searchPop .topNavTitle .search.searchBox:before, .qqw_main .searchPop .topNavTitle .topTitle .search.searchBox:before, .qqw_main .topTitle .topNavTitle .search.fl:before, .qqw_main .topNavTitle .topTitle .search.fl:before, .qqw_main .topTitle .topNavTitle .search.fr:before, .qqw_main .topNavTitle .topTitle .search.fr:before, .qqw_main .topTitle .topNavTitle .moreList a.search:before, .qqw_main .topNavTitle .moreList .topTitle a.search:before, .qqw_main .topTitle .topNavTitle .moreList span.search:before, .qqw_main .topNavTitle .moreList .topTitle span.search:before, .qqw_main .topTitle .mainMenu dd.search:before, .qqw_main .mainMenu .topTitle dd.search:before, .qqw_main .topTitle .navBtn dd.search:before, .qqw_main .navBtn .topTitle dd.search:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .search.hint:before, .qqw_leftMenu .leftMainMenuBox .qqw_main .topTitle .search.hint:before, .qqw_main .topTitle .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.search:before, .qqw_leftMenu .leftMainMenuBox .leftMainMenu .qqw_main .topTitle dd.search:before, .qqw_main .topTitle .qqw_indentInfo .shippingAddress .search.name:before, .qqw_indentInfo .shippingAddress .qqw_main .topTitle .search.name:before, .qqw_main .topTitle .qqw_indentInfo .addInof .list li.search:first-child:before, .qqw_indentInfo .addInof .list .qqw_main .topTitle li.search:first-child:before {
+        width: 100%; }
+      .qqw_main .topTitle .search:before {
+        content: '\e600';
+        font-size: 0.65rem;
+        color: #5a4c4b;
+        position: absolute;
+        margin-left: 0.375rem; }
+      .qqw_main .topTitle .search input {
+        height: 1.5rem;
+        width: 100%;
+        border: 0;
+        font-size: 0.55rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0.2rem;
+        text-indent: 1.5rem; }
+        .qqw_main .topTitle .search input::-webkit-input-placeholder {
+          color: #5a4c4b !important; }
+        .qqw_main .topTitle .search input::-moz-placeholder {
+          color: #5a4c4b !important; }
+    .qqw_main .topTitle.curr {
+      background: -webkit-linear-gradient(top, #1cbf62, rgba(28, 191, 98, 0.86));
+      box-shadow: 0 0.05rem 0.375rem rgba(0, 0, 0, 0.6); }
+      .qqw_main .topTitle.curr .search:before {
+        color: #FFF; }
+      .qqw_main .topTitle.curr .search input {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #FFF; }
+        .qqw_main .topTitle.curr .search input::-webkit-input-placeholder {
+          color: #FFF !important; }
+        .qqw_main .topTitle.curr .search input::-moz-placeholder {
+          color: #FFF !important; }
+  .qqw_main .mainMenu {
+    height: 2.1rem;
+    background-color: #333;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    color: #d4d4d4;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .qqw_main .mainMenu dd {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+      position: relative; }
+      .qqw_main .mainMenu dd .dot {
+        position: absolute;
+        left: 50%;
+        top: 0.3rem;
+        margin-left: 0.625rem;
+        background-color: #d4d4d4;
+        border-radius: 50%;
+        width: 0.2rem;
+        height: 0.2rem; }
+      .qqw_main .mainMenu dd span {
+        font-size: 0.4rem;
+        line-height: 0.85rem; }
+      .qqw_main .mainMenu dd:before {
+        margin: 0.25rem auto 0;
+        display: block;
+        font-size: 0.95rem; }
+      .qqw_main .mainMenu dd.ico1:before {
+        content: '\e60d'; }
+      .qqw_main .mainMenu dd.ico2:before {
+        content: '\e608'; }
+      .qqw_main .mainMenu dd.ico3:before {
+        content: '\e60a'; }
+      .qqw_main .mainMenu dd.ico4:before {
+        content: '\e60b'; }
+      .qqw_main .mainMenu dd.ico5:before {
+        content: '\e60c'; }
+      .qqw_main .mainMenu dd.curr {
+        color: #252525; }
+  .qqw_main .navBtn {
+    border-radius: 0.15rem;
+    overflow: hidden;
+    position: fixed;
+    left: 0.05rem;
+    bottom: 0.25rem;
+    z-index: 999; }
+    .qqw_main .navBtn dd {
+      text-align: center;
+      width: 2.1rem;
+      margin-right: 1px;
+      float: left;
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 1.75rem; }
+      .qqw_main .navBtn dd:before {
+        font-size: 1.1rem;
+        color: #FFF;
+        line-height: 1.75rem; }
+      .qqw_main .navBtn dd.ico1:before {
+        content: '\e610'; }
+      .qqw_main .navBtn dd.ico2:before {
+        content: '\e60e'; }
+      .qqw_main .navBtn dd.ico3:before {
+        content: '\e60f'; }
+      .qqw_main .navBtn dd:last-child {
+        margin: 0; }
+  .qqw_main .popHintBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    line-height: 3;
+    font-size: 0.6rem;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0.075rem solid #FFF;
+    border-radius: 0.35rem;
+    padding: 0 0.5rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    z-index: 99;
+    white-space: nowrap; }
+
+.qqw_leftMenu .leftMainMenuBox {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  opacity: 0; }
+  .qqw_leftMenu .leftMainMenuBox .hint {
+    position: absolute;
+    right: 0.5rem;
+    text-align: center;
+    width: 0.6rem;
+    line-height: 1;
+    color: #FFF;
+    top: 50%;
+    opacity: 0.6;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%); }
+    .qqw_leftMenu .leftMainMenuBox .hint:before {
+      font-size: 0.65rem;
+      color: #FFF;
+      content: '\e611';
+      margin-bottom: 0.2rem;
+      display: block; }
+  .qqw_leftMenu .leftMainMenuBox .close {
+    position: absolute;
+    left: 14.5rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99; }
+  .qqw_leftMenu .leftMainMenuBox .leftMainMenu {
+    position: fixed;
+    left: -14.5rem;
+    top: 0;
+    bottom: 0;
+    width: 14.5rem;
+    background: url("img/leftMenuBg.png") #272c35 no-repeat;
+    background-size: 100% auto;
+    color: #616b7f;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    padding-top: 4.5rem; }
+    .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd {
+      font-size: 0.75rem;
+      line-height: 2.475rem;
+      border-bottom: 1px solid #2e343e;
+      margin-left: 3.75rem;
+      text-indent: 0.7rem; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.curr {
+        color: #252525; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:last-child {
+        border: 0; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd:before {
+        font-size: 0.95rem;
+        float: left;
+        text-indent: 0;
+        margin-left: -2.125rem; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico1:before {
+        content: '\e612'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico2:before {
+        content: '\e613'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico3:before {
+        content: '\e614'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico4:before {
+        content: '\e615'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico5:before {
+        content: '\e616'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico6:before {
+        content: '\e617'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico7:before {
+        content: '\e618'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico8:before {
+        content: '\e619'; }
+      .qqw_leftMenu .leftMainMenuBox .leftMainMenu dd.ico9:before {
+        content: '\e61a'; }
+
+.qqw_indentInfo {
+  padding-bottom: 2.1rem;
+  background-color: #f5f5f5; }
+  .qqw_indentInfo .shippingAddress {
+    height: 3.5rem;
+    line-height: 1.25rem;
+    font-size: 0.575rem;
+    background: url("img/mailAddBg.png") #FFF repeat-x center 0.15rem;
+    background-size: auto 0.15rem;
+    padding: 0 0.625rem;
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden; }
+    .qqw_indentInfo .shippingAddress .name {
+      font-size: 0.575rem;
+      color: #4e4e4e;
+      margin-top: 15px; }
+      .qqw_indentInfo .shippingAddress .name:before {
+        content: '\e642';
+        font-size: 0.65rem;
+        margin-right: 0.1rem; }
+    .qqw_indentInfo .shippingAddress .add {
+      font-size: 0.475rem;
+      color: #848484; }
+  .qqw_indentInfo .addInof, .qqw_indentInfo .goodsInfo {
+    background-color: #FFF;
+    border: 1px solid #e3e3e3;
+    border-width: 1px 0; }
+    .qqw_indentInfo .addInof h2, .qqw_indentInfo .goodsInfo h2 {
+      border-bottom: 1px solid #e3e3e3;
+      line-height: 1.5rem;
+      padding-left: 0.625rem;
+      font-size: 0.55rem; }
+  .qqw_indentInfo .addInof .list {
+    margin-left: 1.125rem;
+    border-left: 2px solid #EEE;
+    padding-left: 0.625rem; }
+    .qqw_indentInfo .addInof .list li {
+      border-bottom: 1px solid #e3e3e3;
+      padding: 0.375rem 0;
+      position: relative;
+      font-size: 0.55rem; }
+      .qqw_indentInfo .addInof .list li:before {
+        content: '';
+        position: absolute;
+        left: -0.9rem;
+        width: 0.25rem;
+        height: 0.25rem;
+        background-color: #999;
+        border: 0.15rem solid #FFF;
+        border-radius: 50%;
+        top: 0.55rem; }
+      .qqw_indentInfo .addInof .list li .time {
+        font-size: 0.45rem;
+        color: #CCC;
+        margin-top: 0.25rem; }
+      .qqw_indentInfo .addInof .list li:first-child {
+        color: #f14545; }
+        .qqw_indentInfo .addInof .list li:first-child:before {
+          width: auto;
+          height: auto;
+          content: '\e62c';
+          font-size: 0.75rem;
+          top: 0.375rem;
+          left: -1.15rem;
+          background-color: #FFF; }
+      .qqw_indentInfo .addInof .list li:last-child {
+        border: 0; }
+  .qqw_indentInfo .goodsInfo .list li {
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+    font-size: 0.5rem;
+    padding: 0.625rem;
+    padding-left: 3.25rem;
+    overflow: hidden;
+    line-height: 0.75rem; }
+    .qqw_indentInfo .goodsInfo .list li .img {
+      float: left;
+      margin-left: -2.625rem;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid #EEE; }
+      .qqw_indentInfo .goodsInfo .list li .img img {
+        width: 100%;
+        height: 100%; }
+    .qqw_indentInfo .goodsInfo .list li .fl {
+      width: 85%; }
+    .qqw_indentInfo .goodsInfo .list li .fr {
+      width: 15%;
+      text-align: right; }
+    .qqw_indentInfo .goodsInfo .list li .attr {
+      color: #CCC; }
+    .qqw_indentInfo .goodsInfo .list li .num {
+      color: #DDD; }
+    .qqw_indentInfo .goodsInfo .list li:last-child {
+      border: 0; }
+  .qqw_indentInfo .indentClearing {
+    font-size: 0.5rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    line-height: 1rem; }
+    .qqw_indentInfo .indentClearing .top {
+      border-bottom: 1px solid #e3e3e3;
+      padding: 0.25rem 0; }
+      .qqw_indentInfo .indentClearing .top li {
+        overflow: hidden; }
+    .qqw_indentInfo .indentClearing .bottom {
+      padding: 0.25rem 0; }
+
+.bottomBtnBox {
+  position: fixed;
+  height: 2.075rem;
+  border-top: 1px solid #e3e3e3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  text-align: center;
+  font-size: 0; }
+  .bottomBtnBox dd {
+    display: inline-block;
+    height: 1.25rem;
+    border: 2px solid #252525;
+    font-size: 0.6rem;
+    line-height: 1.25rem;
+    margin: 0.35rem 0.25rem 0;
+    width: 3.5rem;
+    border-radius: 0.25rem; }
+    .bottomBtnBox dd, .bottomBtnBox dd a {
+      color: #252525; }

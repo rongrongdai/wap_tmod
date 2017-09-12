@@ -1,0 +1,94 @@
+
+$gogle-1:'../img/gold/success1.png';
+$gogle-2:'../img/gold/success2.png';
+$gogle-3:'../img/gold/success3.png';
+
+$gogle1-1:'../img/gold/all.png';
+$gogle1-2:'../img/gold/all2x.png';
+$gogle1-3:'../img/gold/all3x.png';
+
+
+$gogle2-1:'../img/gold/selected.png';
+$gogle2-2:'../img/gold/selected2x.png';
+$gogle2-3:'../img/gold/selected3x.png';
+
+$qqw-fontsize-m: 15px;
+
+
+
+
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-fontsize-xs: 12px;   //24px
+
+
+.gold_ultra{   
+     @include flex-container();
+      justify-content: flex-start;
+ }
+
+.gold_ultra  .gold_ultra-container {
+  width: calc((100% - 0.68rem)/2);      // 51
+  width: -webkit-calc((100% - 0.68rem)/2);
+}
+
+
+.gold_ultra  .gold_ultra-container {
+  overflow: hidden;
+  text-decoration: none;
+  background-color: white;
+  border: 0.03rem solid #e6e6e6;
+  @include rem((
+    border-radius: 10px,
+    margin: 0px 10px 20px,
+    background-size: 100% 270px
+    ));
+  display: inline-block;
+
+}
+.gold_ultra  .gold_ultra-container p{ 
+  @include rem((padding: 0px 16px 0 16px));
+}
+.gold_ultra  .gold_ultra-container--fix {
+  @include rem((margin:20px 12px 0 10px));
+}
+
+
+
+.gold_ultra  .gold_ultra-container-bg {
+     width: 100%;
+    @include rem((height:334px));
+}
+.gold_ultra  .gold_ultra-container-bg img{
+  width:100%;
+  height:100%;
+}
+
+.card-goldname {
+     @include font-dpr($qqw-fontsize-m, null);
+    -webkit-font-smoothing: antialiased;
+    color: $qqw-common-h-color;
+    @include rem((margin-top:18px,
+      font-size: 30px,
+      ));
+    text-align:left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-goldp{
+    @include font-dpr($qqw-fontsize-m, null);
+    -webkit-font-smoothing: antialiased;
+    color: $qqw-common-h-color;
+    @include rem((margin:18px 0,
+      font-size: 30px,
+      ));
+}
+
+
+.card-goldp span{ color: #5cb531;}
+
+
+

@@ -1,0 +1,113 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/button/choicebu.scss';
+@include global-reset;
+
+
+$qqw-fontsize-m: 14px;	//28px;
+$qqw-fontsize-d:17px; //34px;
+
+.choli_title{  
+  @include font-dpr($qqw-fontsize-d); text-align: center;
+  @include rem(( height: 96px, border-bottom: 1px #666666 solid));
+  position:relative;
+}
+.choli_title p{   @include rem(( line-height: 94px )); }
+.choli_title p span{   @include font-dpr($qqw-fontsize-m);  color: #666666; position: absolute;  @include rem(( top:31px, right: 50px));  } 
+
+.chsex_p{
+           color: #323232;
+           @include rem((
+		margin:156px  0  70px  30px 
+	)); 
+	@include font-dpr($qqw-fontsize-m);
+
+}
+.chsex_p_sex{
+           @include rem((
+    margin-top:63px !important
+  )); 
+}
+
+.choiceall  .choicel_tsu{ 
+	@include rem((
+                        margin-top: 94px
+		));
+	
+}
+
+.choiconnen1{
+      text-align: center;
+      width: 100%;
+}
+
+.choiconnen1_time{
+    @include rem((
+                margin: 42px 0px
+      ));
+}
+
+.choiconnen1 .ch_sper{ display: inline-block; 
+    @include rem((
+               width: 122px, height:122px , margin-right: 76px
+    	));
+   
+ }
+
+.choiconnen1 .ch_sper_sex{ display: inline-block; 
+    @include rem((
+               width: 122px, height:122px , margin-right: 120px
+      ));
+   
+ }
+.choiconnen1 .ch_sper1{ 
+     @include rem ((
+                width: 122px, height:122px 
+     	));
+     display: inline-block; 
+     
+}
+
+.choiconnen1 .ch_sperchlick{
+	 display: inline-block; 
+	 @include rem ((
+                width: 180px, height:58px , margin-top: 51px , line-height: 58px , margin-bottom: 25px
+     	));
+   border: 1px #5cb531 solid ;
+   border-radius: 10px;
+}
+
+.choic_but{
+	background-color: #5cb531;
+	width: 100%;
+	@include rem(( margin-top: 130px ,height: 88px , line-height:88px)) ;
+	text-align: center;
+	
+	
+}
+
+.choic_but  span{
+	@include font-dpr($qqw-fontsize-m); color: #ffffff;
+
+}
+
+
+
+.video_list{
+	@include flex-container();
+	justify-content: flex-start;
+}
+
+ .video_list li{
+                   @include rem(( width: 122px));
+                   margin-left: 13%;
+                   margin-top: 5%;
+            }
+
+span.choice_name {
+     @include rem(( padding-left: 8px));
+}

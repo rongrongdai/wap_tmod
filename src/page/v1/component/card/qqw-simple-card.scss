@@ -1,0 +1,60 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 14px;			// 28px
+
+.qqw-simple-card-layout {
+	@include flex-container(left);
+	@include rem(padding, 0 10px 20px);
+	background-color: #fff;
+}
+
+.simple-card-item-container {
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	background-color: #fbfbfb;
+	border: 0.03rem solid #e6e6e6;
+	@include rem((
+		border-radius: 10px,
+		margin: 20px 10px 0,
+		background-size: 100% 270px
+		));
+	text-align: left;
+}
+
+.simple-card-item-container--fix {
+	@include rem(margin, 20px 12px 0 10px);
+}
+
+.simple-card-item-container-bg {
+	position: absolute;
+	width: 100%;
+	@include rem(height, 270px);
+	top: 0;
+}
+
+.simple-card-item-name {
+	@include font-dpr($qqw-fontsize-xs, null, bold);
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	@include rem((
+		margin: 286px 0 0 16px
+		));
+}
+.simple-card-item-tip {
+	@include font-dpr($qqw-fontsize-xs);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-color;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	@include rem((
+		margin: 24px 0 20px 16px,
+
+		));
+}

@@ -1,0 +1,44 @@
+
+$prompt-bg-2: '../img/qqw_min.png';
+$prompt-bg-3: '../img/qqw_min.png';
+
+$font-size-30:15px;
+.mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index:99999;
+}
+.hide{display:none;}
+.maskbox{
+  @include rem((
+    max-width: 960px,
+              min-width: 320px,
+      ));
+      
+      overflow: hidden;
+}
+.prompt{
+       @include rem((
+    width:100%,
+    height:1200px,
+      ));
+    background-size:88%  !important;
+    @include background-dpr($prompt-bg-2 , $prompt-bg-2 , $prompt-bg-3 , center,center);
+}
+
+
+.close{
+    border: 1px #e6e6e6 solid;
+    position: fixed;
+    @include rem(( margin:0 auto, width: 280px , height: 85px, line-height: 85px, border-radius: 40px ,bottom:40px));
+    z-index: 99999;
+    background-color: #fcfbfb;
+    text-align: center;
+    @include font-dpr($font-size-30,3);
+    color: #5cb531;
+    left: 32%;
+}

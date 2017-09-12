@@ -1,0 +1,36 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+        "touid": 10056,
+        "nickname": "昵称",
+        "face": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+        "list": [
+            {
+                "id": "357",
+                "suid": "10002",
+                "snickname": "昵称1",
+                "sface": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+                "touid": "10056",
+                "tonickname": "昵称2",
+                "toface": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+                "content": "你好，认识一下",
+                "dateline": "1481350566",
+                "isSelf": 1
+            },
+            {
+                "id": "356",
+                "suid": "10056",
+                "snickname": "昵称2",
+                "sface": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+                "touid": "10002",
+                "tonickname": "昵称1",
+                "toface": "http://7xp9qs.com1.z0.glb.clouddn.com/57de609fa8410.jpg",
+                "content": "你好，认识一下",
+                "dateline": "1481350556",
+                "isSelf": 0
+            }
+        ]
+    },
+    "timestamp": "1481350566"
+}

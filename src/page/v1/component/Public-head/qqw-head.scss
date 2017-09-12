@@ -1,0 +1,74 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/swiper';
+@import '../../../../sass/share';
+@import '../../../../sass/animation';
+
+$font-size-24 :13px;
+$img-icon-logo : '/static/css/wap/img/shop-celebration/title.gif';
+
+@media only screen
+  and (min-device-width: 961px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.sweephead{
+			 @include rem(( width: 640px))
+	}
+}
+
+.sweephead{
+			 padding-top: 0px !important;
+	}
+.qqw_head_wrap{
+	@include rem((  
+		// height:auto,
+		width:100%,
+	 ))
+}
+.qqw_head_box{
+	  position: fixed; 
+              top:0;
+              z-index:999; 
+              // width:100%;
+}
+.qqw_head{
+        @include rem((  height:77px ))
+        border-bottom: 1px #e6e6e6 solid; 
+        background: white;    
+        z-index: 10000;
+}
+// .sweephead { 
+// 	// overflow: inherit;    
+//        @include rem((		
+// 			height: 60px
+// 	              ))
+// }
+
+.sweephead .header_ul{   @include rem((  height:75px ,min-width:750px  ))    background: white;  }
+.sweephead .header_li { 
+	 @include rem((  height: 74px, line-height: 74px));
+	 @include font-dpr($font-size-24);
+	text-align: center;  
+	flex-shrink: initial;
+	 color: #666666;
+       
+	 }
+.sweephead .header_li  a{ 
+	 @include rem((  height: 74px,  line-height: 74px));
+	 @include font-dpr($font-size-24);
+	text-align: center;  
+	flex-shrink: initial;
+	 color: #666666;
+	 }
+
+.sweephead .header_lpdq{
+	 border-bottom: 4px solid #5cb531; 
+	 color: #5cb531;
+	}
+
+.sweephead .logo_shop_celebration{
+       @include background-dpr($img-icon-logo, $img-icon-logo, $img-icon-logo, center, center);
+       background-size:100% !important;
+	}
+

@@ -1,0 +1,85 @@
+
+$gogle-1:'../img/gold/success1.png';
+$gogle-2:'../img/gold/success2.png';
+$gogle-3:'../img/gold/success3.png';
+
+$gogle1-1:'../img/gold/all.png';
+$gogle1-2:'../img/gold/all2x.png';
+$gogle1-3:'../img/gold/all3x.png';
+
+
+$gogle2-1:'../img/gold/selected.png';
+$gogle2-2:'../img/gold/selected2x.png';
+$gogle2-3:'../img/gold/selected3x.png';
+
+$qqw-fonze-m: 13px;
+
+
+
+.goldsign{ @include rem(( width: 100% ,height: 100%)); background-color: white ;}
+
+.goldsign .signcont{  @include flex-container();  justify-content: flex-start;}
+.goldsign .signcont .conto{ @include rem((width: 450px)); }    
+.goldsign .signcont .conto p{ @include rem(( margin:0 10px 0 20px ));  @include font-dpr($qqw-fonze-m, null); }
+.goldsign .signcont .conto .p2{ color: #666666; }
+.goldsign .signcont .conto span{ color: #5cb531;}
+
+
+.goldsign .signcont .contw{ @include rem(( width: 142px, height: 160px )); }
+.goldsign .signcont .contw .contimg{
+         @include background-dpr($gogle-1,$gogle-2,$gogle-3,center,center);
+         @include rem(( width: 142px, height: 113px , margin-top: 30px ));
+         background-size: 100% 100% !important;
+         boder:none;
+}
+
+
+.goldsign .signcont .conts{}
+.goldsign .signcont .conts span{ 
+     @include rem(( border: 1px #d6d7dc solid , width: 110px , height: 50px , line-height: 45px ,top:-20px ,left: 10px));
+     display: inline-block;
+     text-align:center;
+     position: relative;
+ }
+
+
+
+
+.goldsign  .signcont2{ 
+      @include rem(( width: 715px, height: 125px , margin-bottom: 20px , margin-left: 10px));
+      @include background-dpr($gogle1-1,$gogle1-2,$gogle1-3,center,center);
+      background-size: 100% 100% !important;
+      boder:none;
+      position: relative;
+}
+
+.goldsign  .signcont2 span{ position: absolute; @include rem(( top:40px  , width: 41px, height: 41px)); display: inline-block;}
+.goldsign  .signcont2 .circle1{
+	@include rem(( left: 10px));	
+}
+.goldsign  .signcont2  .circle2{  @include rem(( left: 118px));}
+
+.goldsign  .signcont2  .circle3{  @include rem(( left: 226px));}
+
+.goldsign  .signcont2  .circle4{  @include rem(( left: 335px));}
+
+.goldsign  .signcont2  .circle5{  @include rem(( left: 442px));}
+
+.goldsign  .signcont2  .circle6{  @include rem(( left: 550px));}
+
+.goldsign  .signcont2  .circle7{  @include rem(( left: 660px));}
+
+.goldsign  .signcont2 .spbg{ 
+	 @include rem(( width: 41px , height: 41px ,top:45px)); 
+	 @include background-dpr($gogle2-1,$gogle2-2,$gogle2-3,center,center); 
+	 background-size: 100% 100% !important;
+            boder:none;
+
+	}
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+// @import '../component/button/choicemgerall.scss';
+@import '../component/button/choicemger.scss';
+@import '../component/button/btn-choicemger.scss';
+@include global-reset;
+
+$choicnbg-1: '../img/choic/magert.jpg';
+$choicnbg-2: '../img/choic/magert.jpg';
+$choicnbg-3: '../img/choic/magert.jpg';
+
+
+$chtopbg-1: '../img/choic/ch_banner.jpg';
+$chtopbg-2: '../img/choic/ch_banner.jpg';
+$chtopbg-3: '../img/choic/ch_banner.jpg';
+// $chtopbg-1: '../img/choic/ch_banner1.png';
+// $chtopbg-2: '../img/choic/ch_banner2.png';
+// $chtopbg-3: '../img/choic/ch_banner3.png';
+
+$chcentbg-1: '../img/choic/ch_banbg1.png';
+$chcentbg-2: '../img/choic/ch_banbg2.png';
+$chcentbg-3: '../img/choic/ch_banbg3.png';
+
+
+
+
+$chtailbg-1: '../img/choic/tailbg1.png';
+$chtailbg-2: '../img/choic/tailbg2.png';
+$chtailbg-3: '../img/choic/tailbg3.png';
+
+
+
+$qqw-fontsize-m: 12px;	//24px;
+
+
+$qqw-fontsize-m: 14px;	//28px;
+
+.maer_top{  
+      @include background-dpr($choicnbg-1, $choicnbg-2, $choicnbg-3, center ,center);
+      @include rem((
+           width: 100%, height:1465px
+    )); 
+     background-size: 100% 100% !important;
+      border: none;
+      
+}
+
+.maer_sub{  @include rem((margin-top: 30px)); }
+
+
+.maer_topbg{ 
+    @include background-dpr($chtopbg-1,$chtopbg-2,$chtopbg-3 ,center , center);
+    @include rem((
+              width: 100%, height: 375px
+    	));
+    background-size: 100% 100% !important;
+    border: none;
+}
+
+
+.maer_brief{ 
+	text-align: center;
+           @include rem(( margin: 48px 0 ));
+           color: #000000;
+           @include font-dpr($qqw-fontsize-m ,2);
+}
+
+.maer_brief  .tesu{ @include rem((margin-top: 40px)); }
+
+.maer_contentbg{ 
+    // @include background-dpr($chcentbg-1,$chcentbg-2,$chcentbg-3, center, center);
+    @include rem(( height: 419px, width: 100%));
+    // background-size: 100% 100% !important;
+    // border: none;
+}
+
+.maer_tailbg{
+	overflow: hidden;
+          width: calc(100% - 0.533333rem);
+          width: -webkit-calc(100% - 0.533333rem);
+         @include rem((  border-radius: 10px ,  margin: 20px, height: 280px));
+         @include background-dpr($chtailbg-1,$chtailbg-2,$chtailbg-3, center, center);
+         background-size: 100% 100% !important;
+         border: none;
+}
+
+
+
+

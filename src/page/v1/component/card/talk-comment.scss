@@ -1,0 +1,215 @@
+$font-size-24     : 12px;
+$font-size-20     : 10px;
+$font-size-28     : 14px;
+$font-size-36     : 18px;
+$font-size-20       : 10px;
+$font-size-30       : 15px;
+
+$prompt-bg-1: '../img/baskin/icon_pen2x.png';
+
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+.commentall{
+    @include flex-container();
+    justify-content: flex-start;
+    @include rem((margin:18px 0));
+}
+
+
+// .commen_lefttesu{
+//    @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #e6e6e6 solid, padding-bottom: 30px,height: 400px));
+//     text-align: center;
+    
+// }
+.commen_lefttesu {
+   @include rem(( width: 347px, border-radius: 10px, margin: 0 7px 20px 17px  , padding-bottom: 30px,height: 560px));
+    text-align: center;
+    background-color: #34bdc7;
+    color: white;
+}
+
+.commen_lefttesu .sxuan:after { visibility: hidden;  display: block;  content: " ";   clear: both;  }
+
+.commen_lefttesu .sxuan .sz_left{
+  @include rem(( width:50px,height:50px,border: 5px #e6e6e6 solid));
+  transform:rotate(32deg);
+  -ms-transform:rotate(32deg); /* Internet Explorer */
+  -moz-transform:rotate(32deg); /* Firefox */
+  -webkit-transform:rotate(32deg); /* Safari 和 Chrome */
+  -o-transform:rotate(32deg); /* Opera */
+}
+
+.commen_lefttesu .sxuan .sz_right{
+  @include rem(( width:30px,height:30px,border: 5px #e6e6e6 solid));
+  transform:rotate(32deg);
+  -ms-transform:rotate(32deg); /* Internet Explorer */
+  -moz-transform:rotate(32deg); /* Firefox */
+  -webkit-transform:rotate(32deg); /* Safari 和 Chrome */
+  -o-transform:rotate(32deg); /* Opera */
+}
+
+.commen_lefttesu  .commentcont{ 
+   @include rem(( margin-top: 270px ));
+   @include font-dpr($font-size-36);
+
+}
+
+
+// .commen_left{
+//    @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #e6e6e6 solid, padding-bottom: 30px,height: 400px));
+//     text-align: center;
+    
+// }
+.commen_left {
+   @include rem(( width: 347px, border-radius: 10px, margin: 0 7px 20px 17px  , padding-bottom: 30px,height: 560px));
+    text-align: center;
+    background-color: #34bdc7;
+    color: white;
+}
+.intro{  
+  @include rem(( height: 590px));
+
+}
+
+.blue{
+   @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #96bdff solid, padding-bottom: 30px));
+    text-align: center;  
+}
+.purple{
+  @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #d7c4ff solid, padding-bottom: 30px));
+    text-align: center; 
+}
+.orange{
+  @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #fed0aa solid, padding-bottom: 30px));
+    text-align: center; 
+}
+.young{
+  @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #86e1ef solid, padding-bottom: 30px));
+    text-align: center; 
+}
+.red{
+  @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #feaad2 solid, padding-bottom: 30px));
+    text-align: center; 
+}
+.green{
+  @include rem(( width: 326px, border-radius: 10px, margin: 0 7px 20px 17px  ,border: 10px #b3da9f solid, padding-bottom: 30px));
+    text-align: center; 
+}
+
+
+
+.commen_left .sxuan:after { visibility: hidden;  display: block;  content: " ";   clear: both;  }
+
+.commen_left .sxuan .sz_left{
+  @include rem(( width:50px,height:50px,border: 5px #e6e6e6 solid));
+  transform:rotate(32deg);
+  -ms-transform:rotate(32deg); /* Internet Explorer */
+  -moz-transform:rotate(32deg); /* Firefox */
+  -webkit-transform:rotate(32deg); /* Safari 和 Chrome */
+  -o-transform:rotate(32deg); /* Opera */
+}
+
+.commen_left .sxuan .sz_right{
+  @include rem(( width:30px,height:30px,border: 5px #e6e6e6 solid));
+  transform:rotate(32deg);
+  -ms-transform:rotate(32deg); /* Internet Explorer */
+  -moz-transform:rotate(32deg); /* Firefox */
+  -webkit-transform:rotate(32deg); /* Safari 和 Chrome */
+  -o-transform:rotate(32deg); /* Opera */
+}
+
+.commen_left .sxuan{
+   @include rem(( margin-top:20px));
+}
+
+.sxuan .cons_share{
+    float: right;
+    @include rem((  width:32px,   height:35px ,  margin-right:25px));
+}
+
+
+.commentop{
+  @include rem(( margin:10px 37px 20px 0 ));
+}
+.commentop img{ 
+   @include rem((width:62px, height:62px,  margin:0 20px));
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px #e6d6e6 solid;
+}
+.commentop span{
+  display: inline-block;
+  @include font-dpr($font-size-24);
+  // color: #323232;
+  position:relative;
+  @include rem(( top:-20px,    width:140px));
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.commentcont{ 
+   @include rem(( margin-top: 40px ));
+   @include font-dpr($font-size-36);
+
+}
+
+
+
+.commentcont .cont_img{
+    @include rem(( height:30px, width: 24px , margin-right: 10px));
+    @include background-dpr($prompt-bg-1 ,$prompt-bg-1,$prompt-bg-1 , center, center);
+    background-size: 100% 100% !important;
+    display: inline-block;
+}
+
+.commentcont span{
+    font-weight: bold;
+}
+
+
+.commentcont .alone{
+    @include rem((margin: 0 20px ,height: 310px));
+    text-align: left;
+    display: inline-block;
+    font-weight: 300;
+    word-break: break-all;
+     @include font-dpr($font-size-30);
+     overflow: auto;
+}
+
+
+.commentcont  .cont_pli{
+    @include rem(( width: 283px, height: 255px));
+    border: 1px #e6e6e6 solid;
+}
+
+.thumbs_up{
+     @include rem((  width: 223px,  margin: 10px auto, padding:10px 0, border-radius: 5px));
+    border: 1px #ffffff solid;
+   
+}
+
+
+
+
+
+.thumbs_up img{ @include rem((width: 35px, height: 35px, margin-left: 15px));
+  background-size: 100% 100% !important;
+}
+
+.thumbs_up span{
+   @include font-dpr($font-size-28);
+   display: inline-block;
+   @include rem(( top:-5px));
+   position: relative;
+}

@@ -1,0 +1,28 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+        "count": 2,
+        "list": [
+            {
+                "butler_id": "287",
+                "nickname": "吴东东",
+                "picture": "http://wx.qlogo.cn/mmopen/mEnTMqBUMkBAl6SRE8wTVSYicwVNriag5hw7HRngVYXOh9SQjjFlfG2Dlj4ov5fiaE0jzJ4ze4iagvK38MknFU5LZm7EIasjZjGk/0",
+                "butler_desc": "看了连起来",
+                "sex": "1",
+                "create_time": "1477972911"
+            },
+            {
+                "butler_id": "297",
+                "nickname": "闺秀了不好有",
+                "picture": "",
+                "butler_desc": "硒鼓",
+                "sex": "0",
+                "create_time": "1474625255"
+            }
+        ],
+         "video_pic": "http://wx.qlogo.cn/mmopen/mEnTMqBUMkBAl6SRE8wTVSYicwVNriag5hw7HRngVYXOh9SQjjFlfG2Dlj4ov5fiaE0jzJ4ze4iagvK38MknFU5LZm7EIasjZjGk/0",
+        "video_url": "http://1212.long-vod.cdn.aodianyun.com/u/1212/m3u8/1280x720/14a17e3a946abd26afba845c7e816d24/14a17e3a946abd26afba845c7e816d24.m3u8"
+    },
+    "timestamp": 1482128887
+}

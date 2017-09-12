@@ -1,0 +1,231 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/animation';
+@import '../component/card/special-goods-list';
+@include global-reset;
+
+$up-2: '../img/up2@2x.png';
+$up-3: '../img/up2@3x.png';
+$down-2: '../img/up1@2x.png';
+$down-3: '../img/up1@3x.png';
+$geek-recruit-img-1: '../img/homepage/img_03.png';
+$geek-recruit-img-2: '../img/homepage/img_03@2x.png';
+$geek-recruit-img-3: '../img/homepage/img_03@3x.png';
+$geek-recruit-img-webp: '../img/homepage/img_03.webp';
+
+$qqw-color-category-bg: #f3f3f3;
+
+$qqw-fontsize-category-name: 17px;
+$qqw-fontsize-category-ads: 12px;
+$qqw-fontsize-c:13px;   //26px
+$qqw-color-category-font: #323232;
+
+@include keyframes(sliderlist-open) {
+  from { width: 0%; }
+  to { width: 72%; }
+}
+
+@include keyframes(sliderlist-close) {
+  from { width: 72%; }
+  to { width: 0%; }
+}
+// .geek-article {
+// 	@include rem((
+// 		margin-bottom: 20px
+// 		));
+// }
+html {
+  @include rem-baseline;
+}
+
+body {
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+@media only screen
+  and (min-device-width: 961px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+	body{
+		width: 640px;
+	}
+}
+// body {
+// 	background: #f3f3f3;
+// 	text-align: center;
+// }
+
+.special-article {
+	background-color: #fff;
+	@include rem((
+		margin-bottom: 20px
+		))
+}
+
+.article-facecard-item-container {
+	overflow: hidden;
+	width: calc((100% - 0.68rem)/2);			// 51
+	width: -webkit-calc((100% - 0.58rem)/2);
+}
+
+.article-special-btn {
+	border: none;
+	display: inline-block;
+	@include rem((
+		margin: 0 auto 20px,
+		width: 50px,
+		height: 50px,
+		background-size: 50px 50px !important
+		));
+}
+
+.article-special-btn--up {
+	@include background-dpr($up-2, $up-2, $up-3, center, center)
+}
+
+.article-special-btn--down {
+	@include background-dpr($down-2, $down-2, $down-3, center, center)
+}
+
+@include keyframes(fadeInDown) {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@include keyframes(fadeOutUp) {
+	from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.article-special-more {
+	height: 0;
+	overflow: hidden;
+}
+
+.article-facecard-more--active {
+	@include animation('fadeInDown 1s 1');
+}
+.article-facecard-more--inactive {
+	@include animation('fadeOutUp 600ms 1');
+}
+//加载更多
+.qqw-push-more{
+	@include font-dpr($qqw-fontsize-m, null);
+	text-align:center;
+}
+//底部banner达人
+.homepage-geek-recruit-container {
+	background: #fff;
+	// @include rem((
+	// 	margin-top: 20px
+	// 	));
+}
+
+.homepage-edoyen-aside {
+	display: block;
+	overflow: hidden;
+	width: calc(100% - 0.533333rem);		// 40px
+	width: -webkit-calc(100% - 0.533333rem);
+	@include rem((
+			height: 320px,
+			margin: 20px,
+			border-radius: 10px
+		));
+	@include background-dpr($geek-recruit-img-1, $geek-recruit-img-2, $geek-recruit-img-3, 0, 0);
+	background: url($geek-recruit-img-webp) 0 0 no-repeat;
+	background-size: 100% !important;
+}
+
+.goods-category-picture{
+	    width: 100%;
+	    @include rem((
+	    height: 375px
+		));
+}
+
+.selecte-imgbg{
+	position: relative;
+	display:flex;
+	z-index: 10;
+}
+
+.special-title{ 
+	position: absolute !important; 
+	@include rem(( top:150px !important));
+	text-align:center;
+	width:100%;
+	color: #ffffff; 
+	}
+.special-title .tit1{ 
+    border-bottom: 2px #ffffff solid;
+    border-top: 2px #ffffff solid;
+    @include rem((padding:15px));
+    @include font-dpr($qqw-fontsize-category-name);
+    text-align: center;
+}
+.special-title .tit2{
+    @include rem((padding-top:24px));
+    @include font-dpr($qqw-fontsize-c);
+    text-align: center;
+ }
+
+
+.special-picture{
+	    margin: auto;
+    display: block;
+    border-radius: 15px;
+     @include rem((
+	    height: 352px,
+	     width: 705px
+		));
+}
+.special-category{
+	 color: $qqw-color-category-font;
+	text-align:center;
+
+     .cate-name{
+     	@include font-dpr($qqw-fontsize-category-name, null);
+     	@include rem((
+	    margin-top:47px
+		));
+     }
+     .ads{
+     	@include font-dpr($qqw-fontsize-category-ads, null);
+     	     @include rem((
+	    margin-top:20px,
+	    margin-bottom: 49px
+		));
+     }
+
+
+
+}
+
+.a-edoyen-aside{
+	display:none;
+}
+.special-category-line{
+	width:100%;
+	@include rem((
+          height: 10px
+		));
+	background-color:$qqw-color-category-bg;
+
+
+}

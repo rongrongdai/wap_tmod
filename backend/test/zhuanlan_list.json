@@ -1,0 +1,81 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "count": "2",
+    "list": [
+      {
+        "cate_id": "35",
+        "name": "星座",
+        "ads": "阿斯打死打伤打发",
+        "images": "http://7xp9qs.com1.z0.glb.clouddn.com/58773549a2c59.jpg",
+        "logo": "http://7xp9qs.com1.z0.glb.clouddn.com/5877354ccbc8d.png",
+        "logo_name": "",
+        "slogan": "",
+        "article_num": "1",
+        "intro": "阿呆沙发撒旦发上的发上帝发誓地方",
+        "articleList": [
+          {
+            "id": "77",
+            "picurl1": "http://7xp9qs.com1.z0.glb.clouddn.com/587736d1b1b8b.jpg",
+            "title": "我是鸭子座，你呢？",
+            "love_num": "0",
+            "cate_id": "35",
+            "brand_id": "0",
+            "doyen_name": "星座",
+            "logo": "",
+            "islove": "0"
+          },
+          {
+            "id": "75",
+            "picurl1": "http://7xp9qs.com1.z0.glb.clouddn.com/587736324458f.jpg",
+            "title": "星座可以坤你一百年",
+            "love_num": "0",
+            "cate_id": "35",
+            "brand_id": "0",
+            "doyen_name": "星座",
+            "logo": "",
+            "islove": "0"
+          }
+        ]
+      },
+      {
+        "cate_id": "36",
+        "name": "作死",
+        "ads": "阿斯顿公司法定告诉对方告诉对方感受到 ",
+        "images": "http://7xp9qs.com1.z0.glb.clouddn.com/5877356d8fc3f.jpg",
+        "logo": "http://7xp9qs.com1.z0.glb.clouddn.com/58773570a7358.jpg",
+        "logo_name": "",
+        "slogan": "",
+        "article_num": "1",
+        "intro": "阿斯大法上的咖色如嘎瓦尔公司的",
+        "articleList": [
+          {
+            "id": "78",
+            "picurl1": "http://7xp9qs.com1.z0.glb.clouddn.com/587737ac05512.jpg",
+            "title": "看了这个后，男人动容，女人流泪，老人隔屁",
+            "love_num": "0",
+            "cate_id": "36",
+            "brand_id": "0",
+            "doyen_name": "作死",
+            "logo": "",
+            "islove": "0"
+          },
+          {
+            "id": "76",
+            "picurl1": "http://7xp9qs.com1.z0.glb.clouddn.com/5877366d5bdf2.jpg",
+            "title": "不作死，无兄弟",
+            "love_num": "0",
+            "cate_id": "36",
+            "brand_id": "0",
+            "doyen_name": "作死",
+            "logo": "",
+            "islove": "0"
+          }
+        ]
+      }
+    ],
+    "pagecount": "10"
+  },
+  "timestamp": 1484208080
+}

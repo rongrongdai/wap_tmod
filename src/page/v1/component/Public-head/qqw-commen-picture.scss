@@ -1,0 +1,26 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+
+$font-size-24 :13px;
+
+.pictall{ 
+   @include flex-container();
+   @include rem((padding-bottom:10px,margin-bottom: 20px))
+   background-color: white;
+}
+
+.pictall .items1{  
+     @include rem(( width: 475px,  height: 230px  , margin: 7px));
+
+  }
+
+.pictall .item {
+    @include rem(( width: 230px,  height: 230px  , margin: 7px));
+
+}
+
+.pictall .items2{  
+     @include rem(( width: 352px,  height: 175px  , margin: 7px)); 
+  }

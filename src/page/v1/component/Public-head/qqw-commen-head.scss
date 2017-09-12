@@ -1,0 +1,75 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+// @import '../../../../sass/swiper';
+@import '../../../../sass/share';
+// @import '../../../../sass/animation';
+
+$font-size-24 :13px;
+
+
+.qqw_head{ position: fixed; 
+        bottom: 0; top:0;  
+        @include rem((  height:77px ))
+        border-bottom: 1px #e6e6e6 solid;    
+        z-index: 10000;
+}
+
+
+.qqw_special_head{
+	@include rem(( height: 60px , width: 100%));
+  z-index: 2000;
+}
+
+.head_fix{
+	position: fixed; 
+	@include rem(( height: 60px , width: 100%));
+	@include flex-container();
+           justify-content: flex-start;
+           background-color: white;
+           border-bottom: 1px solid #e6e6e6;
+      z-index: 10000;     
+}
+
+.head_cto{
+     p{
+      @include rem(( height: 44px ,padding:0px 10px)); 
+      display: inline-block;
+     }
+	@include rem(( height: 40px ,line-height:40px, width: 50%)); 
+  text-align: center;
+  position: relative;
+  text-align: center;
+
+   .line{
+      color: #666666;
+      @include font-dpr($font-size-24);
+   }
+}
+
+.head_cto_4_cow{
+    width: 25% !important;
+}
+
+.head_cto_3_cow{
+    width: 33% !important;
+}
+
+.choose_line{
+      border-bottom:2px #5cb531 solid;
+      color: #5cb531;
+      @include font-dpr($font-size-24);
+
+   }
+
+
+.head_cto .head_img{ @include rem(( height: 147px , width: 50% ,border-radius: 10px)); }
+
+
+
+
+
+
+
+
+

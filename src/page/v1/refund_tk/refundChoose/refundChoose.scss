@@ -1,0 +1,134 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/share';
+@import '../../../../sass/animation'; 
+@import '../../component/card/goods-list';
+@include global-reset;
+// 定义样式
+$check-2: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjUyRENENjNDMzE3OTExRTdCRTMyQUNGQ0M3QzNFREVCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjUyRENENjNEMzE3OTExRTdCRTMyQUNGQ0M3QzNFREVCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTJEQ0Q2M0EzMTc5MTFFN0JFMzJBQ0ZDQzdDM0VERUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTJEQ0Q2M0IzMTc5MTFFN0JFMzJBQ0ZDQzdDM0VERUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6dN7xxAAACg0lEQVR42sSXTU8TURSGL5NgVBRwQShLU/xYoYGFwbIxbLCtboiJuvYPuFFkIy4kssIf4BpdaGLCh2yIG6qJCzRN8Ks0LokxRAqiRja+J3kmGevETEt7PcmTdmY65317750757S8fbfmEsYhkRPnxGlxVHRwrSI+iTfiuZgX35IkbUlgoFfcFFdEW0KzO+KhmBJr9RrYLybEdbGPc+/5dy/FB/65YyROiEFG6STnf4n74rb4WYuBtHjMUFs8E5NiOeEIDIlxcZ5jm5pLcaMRxNzcLwqIb4iLIluDuOO3We7dINcyuf9pwOZ7UXSLVXFGzLr6Y5Ycq+RcRCPWwAGGvYshy4iy23uUyfWa3E/Q+suALbhT4jPDV3GNiwqL03L3ofWHgTSr3eKaWHeNj3VyO7R6owbGRCurfc41Lyz3AlpjoYHDbDIWd13zY5LPy6YdMN9tbCwFDwYKaJlm1gwMc+Gp8xeh1nDAqrR45dFAqNUX8ARYlDwaCLXSZqCdg68eDYRa7YH7z2EGtvh+xKNuqLUVRPb7Yx4NhFplM1DkYNCjgVCraAaWOLjg0UCez6WAvXmHkuqsB/EMJdt30zYD2+IRF8c9GLjFpxWt2+FjeE/s8s7ON3noc2hNRV/HVixO8/2BSDVBPEVuR6VciquIitRu85GmoxHRQc5uNCbiSrIfYlR8oXq1p6OnAeI95Oon9ygLMLYqtqkYoXYbECvMWb2RI8cAOUeqe4O4d8EKjUWReQvLqEyNj9oC96bINUTumlqzOxSQrVWt2QvxUWxyvlMcZx+Jtma7LO6aW7PqffuGuCoOJhwBW08zPGqlvXbH0fY8X9Wed3Jts6o9n0vanv8WYADBipv8fRHMGgAAAABJRU5ErkJggg==';
+$check-3: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjUwMjhFNkEyMzE3OTExRTc4MkEzQkEyREYwNzY1NzMwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjUwMjhFNkEzMzE3OTExRTc4MkEzQkEyREYwNzY1NzMwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTAyOEU2QTAzMTc5MTFFNzgyQTNCQTJERjA3NjU3MzAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTAyOEU2QTEzMTc5MTFFNzgyQTNCQTJERjA3NjU3MzAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4FY1GFAAADvElEQVR42rxYWUwTURQ9Q1tAoIIbZZFEbI1xFzBAjBEIbqmIGr9MxIhg+OZH/ORT+dFPjRC3RP8UZRETDSaAYAwoRKKBAZS1AkZB2Sn1vuFNLXXaTkvxJidt0zf3njn33vfujHCuKgFeWBjhOCGDsJcQTwjn/40ReggfCLWEKsJvTw4fmFugVRncRCginCWEulgTyZFCKCBMEB4RrhFEd84DPAQPJlwltBPy3RBQslB+TTsnEuwLCSOhkSsQCN+NXXuZ+zJ5QyKR0MDz7i9jvuq5b48kGNsaggH+NwP3vUQRwWaz2X/kVCeu4rLtESDABhtWyNoIqYQp1h3OShQzAtoAHQRBwArabh7Lng6Bq8AKsVBY/IkF2wJW2ArltDASsuZXCDr2xbow75co7IaYqgGCYv3reMzFmiAV9PR9yMt9wK1pBC0SDWkwRuxEx49WtA7Xw2r75+bYhhYt75hmfxNIiT6MLGMu4vQmaL88xMfRRlit80obmlkmkeko4XK6gsmfZEhHtikPsWGbYZn4ip6xT+5SnKl1qFbIRbkcAvsMGTi9pQAxYfEYnuxHRdcdvLO8pFRYXXaK1mGLVlRAI2ig0wTDRt0yY51ym4LkqEM4acrnBAZQLpbi7dALzFpn3HE3yiRWu1oRqzciNfqoVFR1/RXS3SkRZTWQbbooERghAk/F22oISLE9HuWRIbHYH2uGXheB1YFrUNl9TwqytAiPEIFcqgGjRPKZWIbGwRrMLcyqSqPcwOOuFlgm+vD5ezMCNUE4uDEb5vgcbCBicg04ErBM9EoE3gw+V02AxZaV6CKsV1rR/0tEdc99BFFdJEVlIC3uFEk8jfqBSkST9CeMF+wKVHbfRQMRmFdPQIqtdThQUlyt6h3vwOPOm1L/JEWlS0SMEbugp/TEhG3iNVBKCtR4S0CKLafjlaeVfaTIE/EWmi21CNHpsXVtgkSAKVBORdhERegDASm2TKKab6FujSnC2q7Z8lpqWdaGrAaa1HWBkk2y2PZ5gs6PUvrIU3NlfPg2bF+XjNGpQbwfrpNqxEcro3ki37FF2UB7Xj5J3RnbhhmWaXN8AP471BAjNpZfx/+zG4ROpRmzmHfKSlub82Tl+DTEDoczhBGlAcVPNsJjTNoPPipI50UsLcd4x9gnbj8Nvd/47CKqee5oIRzwc2rauM8Wb57ARL6LlvBKXk4XlHBfoi/PotP8MXAHodQxjyqM1VcZv7aI+1IehlQ6ZK10iY/pWU6vBiL4mp9OrwYq1bwaYPZHgAEAhcBNt9GZBhkAAAAASUVORK5CYII=';
+$qqw-fontsize-xs: 12px;			// 24px文字尺寸设置
+$qqw-fontsize-s: 14px;			// 28px
+$qqw-fontsize-m: 15px;			// 30px
+
+body {
+	background: #f3f3f3;
+	margin:0;
+}
+.goodslist {
+	background-color: #fff;
+	@include rem((
+		margin-bottom: 100px,
+		))
+}
+.goodcon {
+	background-color: #fff;
+	@include rem((
+		border-bottom: 1px solid #e7e7e7,
+		padding:18px 28px,
+		))
+	overflow:hidden;
+} 
+.checked{
+	@include background-dpr($check-3, $check-3, $check-3, center, center)
+	@include rem((
+		height:32px,
+		width: 32px,
+		background-size: 100%,
+		margin-right: 36px,
+		margin-top:50px,
+		))
+}
+.checkbox{
+	@include background-dpr($check-2, $check-2, $check-2, center, center)
+	@include rem((
+		height:32px,
+		width: 32px,
+		background-size: 100%,
+		margin-right: 36px,
+		margin-top:50px,
+		))
+}
+.goodsphoto{
+	@include rem((
+		height:130px,
+		width: 130px,
+		border: 1px solid #d6d7dc,
+		border-radius: 5px,
+		margin-right:14px,
+		))
+	overflow: hidden;
+}
+.goodsphoto img{
+	@include rem((
+		width:100%,
+		height:100%,
+		))
+}
+.detail{
+	@include rem((
+		width:470px,
+		))
+}
+.goodsname{
+	@include font-dpr($qqw-fontsize-s, null);
+	color:#333;
+	@include rem((
+		width:470px,
+		height:44px,
+		line-height: 44px !important,
+		))
+	    overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+}
+.guige{
+	@include font-dpr($qqw-fontsize-xs, null);
+	color:#999;
+	@include rem((
+		width:470px,
+		height:40px,
+		line-height: 40px !important,
+		))
+	    overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+}
+.pricebox{
+	@include rem((
+		height:50px,
+		line-height: 50px !important,
+		))
+}
+.pricebox .price{
+	color:#ab2b2b;
+	@include font-dpr($qqw-fontsize-m, null);
+	@include rem((
+		height:50px,
+		line-height: 50px !important,
+		))
+}
+.pricebox .num{
+	color:#333;
+	@include font-dpr($qqw-fontsize-m, null);
+	@include rem((
+		height:50px,
+		line-height: 50px !important,
+		))
+}
+.fotbar{
+	background-color: #5cb531;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	@include font-dpr($qqw-fontsize-s, null);
+	@include rem((
+		width:100%,
+		height: 88px,
+		line-height: 88px !important,
+		bottom: 0,
+		left: 0,
+		))
+}

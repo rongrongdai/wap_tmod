@@ -1,0 +1,101 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-like-sign-fontsize: 11px;   // 22px
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 14px;			// 28px
+
+.qqw-article-facecard-layout {
+	@include flex-container(left);
+	@include rem(padding, 0 10px 20px);
+	background-color: #fff;
+}
+
+.article-facecard-item-container {
+  @include rem((
+          margin: 0px 10px 0,
+  ));
+  background: #ffffff;
+}
+.article-facecard-item{
+  position: relative;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  border: 0.03rem solid #e6e6e6;
+  @include rem((
+          border-radius: 10px,
+          background-size: 100% 201px,
+          height:201px
+  ));
+  text-align: center;
+  overflow: hidden;
+}
+.article-facecard-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+.article-facecard-mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 16;
+  background: rgba(59,59,59,0.4);
+}
+.aticle-facecard-desc{
+  text-align: left;
+  color: #323232;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @include font-dpr(13px,0.9rem );
+  @include rem((
+          height:70px,
+          line-height:70px,
+  ));
+  @include font-dpr(11px, 0.933333rem);
+}
+
+.article-facecard-item-container--fix {
+	@include rem(margin, 20px 12px 0 10px);
+}
+
+.article-facecard-item-container-bg {
+	position: absolute;
+	width: 100%;
+	@include rem(height, 270px);
+	top: 0;
+}
+.item-info{
+  @include rem((
+          margin-top: 60px
+  ));
+
+}
+.article-facecard-item-logo {
+	z-index: 9;
+	position: relative;
+    border: none;
+	@include rem((
+			width: 42px,
+			height: 42px,
+		));
+}
+
+
+.tit{
+   width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased;
+  color: $qqw-common-h-color;
+  color: #ffffff;
+  @include font-dpr(13px,1.08rem);
+}

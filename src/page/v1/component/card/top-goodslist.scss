@@ -1,0 +1,131 @@
+$qqw-common-color: #909090;
+$qqw-common-h-color: #323232;
+
+$qqw-fontsize-l: 15px;			// 30px
+$qqw-fontsize-xs: 12px; 	//24px
+$qqw-fontsize-m: 14px;			// 28px
+
+.goods-list-layout {
+	@include flex-container(left);
+	@include rem(padding, 0 30px);
+	background-color: #fff;
+}
+.newgoods-list{
+	@include rem((
+		padding-top: 20px,
+		));
+}
+.goods-list{
+	background:#fff;
+}
+.goods-list-container {
+	overflow: hidden;
+	text-decoration: none;
+	@include rem((
+		padding:26px 20px,
+		border-bottom: 1px solid #e6e6e6,
+		));
+	// text-align: center;
+	display: inline-block;
+	float:left;
+	width:100%;
+}
+.goods-list-container p{ 
+	@include rem(padding, 0px 16px 0 16px);
+}
+.goods-list-container--fix {
+	@include rem(margin, 20px 12px 0 10px);
+}
+
+
+
+.goods-list-container-bg {
+	float:left;
+	@include rem((
+		width:250px,
+		height:250px,
+		));
+}
+.goodsinfo{
+	float:right;
+	@include rem((
+			width: 320px,
+		));
+}
+.goods-list-container-bg img{
+	width:100%;
+	height:100%;
+}
+
+.user-face {
+	float: left;
+	border-radius: 50%;
+	@include rem((
+			width: 50px,
+			height: 50px,
+		));
+}
+.card-goodsname {
+	   @include font-dpr($qqw-fontsize-l, null);
+	@include rem((margin-top:18px,
+		font-size: 30px,
+		));
+	color:#323232;
+	  text-align:left;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+}
+.card-item-title {
+	@include font-dpr($qqw-fontsize-m, null, bold);
+  -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+	@include rem(margin-top, 18px);
+}
+.goods-item-user {
+	@include font-dpr($qqw-fontsize-xs, null);
+	@include rem(( margin: 18px 0px, 
+		height:80px,
+	            line-height:40px !important,
+	 ));
+	color:#999999;
+	text-align:left;
+	 overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+}
+.goods-item-user .user-name{
+	float:left;
+	text-align:left;
+	color:#909090;
+	@include font-dpr(13px);
+	@include rem((
+		margin-left: 12px,
+		height:50px,
+		line-height: 50px,
+		width:220px,
+	 ));
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.card-item-subtitle, .goods-price {
+	@include font-dpr($qqw-fontsize-m);
+           -webkit-font-smoothing: antialiased;
+	color: #5cb531;
+	@include rem((
+		font-size:30px,
+		margin-bottom:20px,
+	 ));
+	text-align:left;
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.goods-list-container {
+	// width: calc((100% - 0.68rem)/2);			// 51
+	// width: -webkit-calc((100% - 0.68rem)/2);
+}

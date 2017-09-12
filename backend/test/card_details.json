@@ -1,0 +1,40 @@
+{
+"ret": "0",
+"msg": "操作成功",
+"data": {
+"order_sn": "6666666666",
+"nickname": "林嘉权",
+"card_name": "青年卡",
+"score":"100",
+"card_amount": "2000.00",
+"card_type": "1",
+"quantity": "3",
+"get_num": "2",
+"order_amount": "6000.00",
+"message": "留言信息5555555555555555",
+"pay_time": "2017-04-10 15:29:44",
+"order_time": "2017-04-10 15:29:44",
+"get_time": "2017-04-10 15:29:44",
+"list": [
+{
+"card_id": "2",
+"get_uid": "646",
+"get_code": "214538",
+"get_state": "1",
+"nickname": "原冰",
+"face": "http://wx.qlogo.cn/mmopen/FMajU52WvbFpfODjcWVFNBuVEfdD6vcr4s9oTFy6TmE6yAiayFiciaibvHUicEstOvHaEMibhBrMiazIxjeaYDtfwktGtQrBqicXk1gr/0",
+"picture": "http://wx.qlogo.cn/mmopen/FMajU52WvbFpfODjcWVFNBuVEfdD6vcr4s9oTFy6TmE6yAiayFiciaibvHUicEstOvHaEMibhBrMiazIxjeaYDtfwktGtQrBqicXk1gr/0"
+},
+{
+"card_id": "2",
+"get_uid": "646",
+"get_code": "564582",
+"get_state": "0",
+"nickname": "原冰",
+"face": "http://wx.qlogo.cn/mmopen/FMajU52WvbFpfODjcWVFNBuVEfdD6vcr4s9oTFy6TmE6yAiayFiciaibvHUicEstOvHaEMibhBrMiazIxjeaYDtfwktGtQrBqicXk1gr/0",
+"picture": "http://wx.qlogo.cn/mmopen/FMajU52WvbFpfODjcWVFNBuVEfdD6vcr4s9oTFy6TmE6yAiayFiciaibvHUicEstOvHaEMibhBrMiazIxjeaYDtfwktGtQrBqicXk1gr/0"
+}
+]
+},
+"timestamp": "1491990159"
+}

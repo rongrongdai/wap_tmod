@@ -1,0 +1,70 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "title": "阿呆沙发撒旦发上的",
+    "doyen_id": "0",
+    "doyen_name": null,
+    "face": null,
+    "cate_name": "星座文章",
+    "clumun_name": "专栏",
+    "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5875e0ac4a290.jpg",
+    "uid": "1076345",
+    "create_time": "2017-01-12 11:48:08",
+    "content": "阿斯顿发生大法是大法师大法发",
+    "love_num": "0",
+    "comment_num": "0",
+    "share_num": "0",
+    "reward_num": "0",
+    "article_type": "1",
+    "brand_id": "0",
+    "isdoyen": "1",
+    "list": [
+      {
+        "goods_id": "234",
+        "goods_name": "成美洋甘菊舒缓修护面膜",
+        "shop_price": "31.80",
+        "goods_brief": "啊打撒手的",
+        "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/57496bb07d50e.jpg",
+        "favorite_number": "50",
+        "uid": "64",
+        "face": "http://wx.qlogo.cn/mmopen/VQFoNSkUUwN4SSfyZ5ibkMHFe5Fdib2g5yXOtp4XK9ibbUsPRSzRAtGDA9UCDcbkgKXgD4zW40zClKj2xdEQeaiagqWoVBcOU0He/0",
+        "nickname": "张生"
+      }
+    ],
+    "rec": [
+      {
+        "id": "74",
+        "picurl1": "http://7xp9qs.com1.z0.glb.clouddn.com/5875ddcbf1889.jpg",
+        "title": "测试星座文章标题1",
+        "doyen_name": "星座文章",
+        "logo": "http://7xp9qs.com1.z0.glb.clouddn.com/5875da7a2015f.png"
+      }
+    ],
+    "cate": {
+      "cate_id": "33",
+      "name": "星座文章",
+      "picture": "",
+      "slogan": "",
+      "article_num": "2"
+    },
+    "brand": [
+      
+    ],
+    "doyen": [
+      
+    ],
+    "islove": "0",
+    "reward": [
+      
+    ],
+    "butler_userinfo": {
+      "uid": "1076345",
+      "nickname": "zou 123",
+      "lv": "1",
+      "sex": "0",
+      "face": "http://7xp9qs.com1.z0.glb.clouddn.com/584629e9e9100.png"
+    }
+  },
+  "timestamp": 1484192888
+}

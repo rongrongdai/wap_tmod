@@ -1,0 +1,435 @@
+// // @import '../../../../sass/_utilities';
+// // @import '../../../../sass/_rem';
+// // @import '../../../../sass/common';
+// // @import './order_detail_item';
+
+// .shipping-good-item {
+//   padding: 0;
+// }
+
+// // @import '../../../../sass/old_common.css';
+// // @import '../../../../sass/old_main';
+
+// $font-size: 12px;
+// $font-size-m: 13px;
+// $font-size-l: 14px;
+// $font-size-xl: 15px;
+// $font-size-xxl: 16px;
+
+// $font-size-heading: 18px;
+
+// $bGray: #f3f4f5;
+// $bBlack: #272729;
+// $cGreen: #252525;
+// $cRed: #f14545;
+// $qqw-common-h-color: #323232;
+// $qqw-common-strong-color: #5cb531;
+// $text-color-light: #ccc;
+// $text-color-666: #666;
+// $boxshadow-color-e3: #e3e3e3;
+// $bg-split-line: #e6e6e6;
+// $border-color: #999999;
+// $text-color-32: #323232;
+// $text-color-90: #909090;
+
+// $icon-addr-2: '../../img/order/my/my_checkexpress_icon_location@2x.png';
+// $icon-addr-3: '../../img/order/my/my_checkexpress_icon_location@3x.png';
+// $icon-tel-2: '../../img/order/my/my_orderdetail_icon_phone@2x.png';
+// $icon-tel-3: '../../img/order/my/my_orderdetail_icon_phone@3x.png';
+
+// // @include global-reset;
+
+// // html {
+// //   @include rem-baseline;
+// // }
+
+// body {
+//   background-color: #f9f9f9;
+//   margin: 0 auto;
+// }
+
+// @media only screen
+//   and (min-device-width: 961px)
+//   and (max-device-width: 1920px)
+//   and (-webkit-min-device-pixel-ratio: 1) {
+//   body, .qqw-nav, .order-nav{
+//     width: 640px;
+//   }
+// }
+
+// .fIco {
+//   font-family:"iconfont" !important;
+//   font-size: 0.4rem;
+//   font-style: normal;
+//   -webkit-font-smoothing: antialiased;
+//   -webkit-text-stroke-width: 0.2px;
+//   -moz-osx-font-smoothing:grayscale;
+// }
+
+// .qqw-nav {
+//   position: relative;
+//   background-color: #fff;
+// }
+
+// .qqw-nav-return {
+//   position: absolute;
+//   z-index: 9;
+//   display: inline-block;
+//   @include rem((
+//     width: 88px,
+//     height: 88px,
+//   ));
+//   color: #000;
+//   &:before {
+//     position: absolute;
+//     width: auto;
+//     height: auto;
+//     @include rem((
+//       top: 28px,      // (88 - 16) / 2
+//       left: 16px,
+//     ));
+//     content:'\e621';
+//     @extend .fIco;
+//     @include font-dpr($font-size-xxl);
+//     background-color:#FFF;
+//   }
+// }
+
+// .qqw-nav-title {
+//   position: relative;
+//   z-index: 8;
+//   text-align: center;
+//   @include font-dpr($font-size-xl, 1.173333rem, bold);
+// }
+
+// .hr-header-1px {
+//   position: absolute;
+//   z-index: 199;
+//   margin: 0;
+//   @include rem(top, 88px);
+//   width: 100%;
+//   background-color: #e6e6e6;
+// }
+
+// .order-nav {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   background: #fff;
+//   border-bottom: 0.03rem solid #e3e3e3;
+//   @include flex-container();
+// }
+// .order-nav-item {
+//   @include rem((
+//     padding: 20px 0,
+//     width: 125px,
+//     margin: 0 10px
+//     ));
+//   @include font-dpr($font-size-xl);
+//   color: #85888f;
+//   text-align: center;
+// }
+// .order-nav-item--active {
+//   border-bottom: 0.03rem #5cb591 solid;
+//   color: #333333;
+// }
+
+// .orderReason{
+//   .or_item1{
+//     border: 1px #999999 solid;
+//     float: right;
+//     @include rem((
+//             width: 33px,
+//             height: 33px,
+//             margin: 28px 30px 0 0
+//     ));
+//     border-radius: 50%;
+//     outline-style: none;
+//     -webkit-appearance: none;
+//   }
+//   p{
+//     span{ @include rem((margin-left: 30px));}
+//     @include rem(( height:88px, line-height:90px));
+//     border-bottom: 1px #E6E6E6 solid;
+//   }
+//   input[type=radio]:checked{
+//     @include rem(( width: 33px, height: 33px));
+//     background: url(../../img/order/my_orderdetail_icon_service_sel@3x.png) no-repeat center center; background-size: 100% 100%;
+//     border: none;
+//     position: relative;
+//   }
+// }
+
+// .order-list-container {
+//   @include rem((
+//     margin: 88px 0 10px
+//     ));
+// }
+
+// .shipping-good-info-container {
+//   margin-bottom: 0 !important;
+//   background: transparent;
+//   padding: 0;
+//   @include rem((
+//   ));
+// }
+// .shipping-good-item {
+//   background-color: #fff;
+//   @include rem((
+//     padding: 0 16px,
+//     margin-bottom: 20px
+//     ));
+//   -webkit-box-shadow: 0.04rem 0.04rem 0.04rem $boxshadow-color-e3;
+//   box-shadow: 0.04rem 0.04rem 0.04rem $boxshadow-color-e3;
+//   // border-bottom: 0.03rem solid
+// }
+
+// // .qqw_main qqw_goodsList {
+
+// // }
+
+
+// // //购物车
+// // .qqw_goodsList{
+// //   padding-bottom:u(20px)!important;background-color:#f5f5f5;
+// //   .goodsList{
+// //     li{
+// //       background-color:#FFF;padding:0 u(20px);overflow:hidden;border-bottom:1px solid #e3e3e3;font-size:u(14px);
+// //       .top{
+// //         border-bottom:1px solid #e3e3e3;line-height:u(50px);
+// //         .state{
+// //           color:#CCC;
+// //         }
+// //         .opLeft{ float: left;}
+// //         .opRight{ float: right;}
+// //       }
+// //       .list{
+// //         padding:u(15px) 0;overflow:auto;
+// //         table{
+// //           td{
+// //             img{
+// //               width:u(80px);height:u(80px);margin-right:u(20px);border-radius:u(10px);
+// //             }
+// //           }
+// //         }
+// //       @include flex-container(());
+// //        border-bottom:1px solid #e3e3e3;
+// //       .imgs{ width:u(80px);height:u(80px);margin-right:u(20px);border-radius:u(10px); }
+// //       .listDs{ @include rem(( margin-top:40px , line-height:45px, font-size:26px));
+// //            color: #333333;
+// //            .p1{  @include rem(( font-size:24px)); color: #85888f;}
+// //          }
+// //       }
+
+// //       .prices{
+// //         .p1{ float: left;}
+// //         .p2{float: right;}
+// //         @include rem((line-height: 88px));
+// //         input{
+// //           border: 1px #d6d7dc solid;
+// //           background: white;
+// //           @include rem(( width:128px , height:48px , font-size:24px));
+// //           text-align: center;
+// //         }
+// //         .od_special{ border: 1px #5cb531 solid;  color: #5cb531;}
+// //         span{ color: #5cb531;}
+// //       }
+
+// //       .bottom{
+// //         border-top:1px solid #e3e3e3;padding:u(10px) 0;color:#85888f;line-height:u(42px);
+// //         .delete{
+// //           border:1px solid $cGreen;color:$cGreen;background:none;padding:u(8px) u(8px);
+// //         }
+// //       }
+// //     }
+// //   }
+// //   .list-menu-item{
+// //     background: white;
+// //     border-bottom:1px solid #e3e3e3;
+// //    @include flex-container(());
+// //     .list-item{
+// //       @include rem((
+// //       padding: 20px 0,
+// //       width: 125px,
+// //       margin: 0 10px
+// //     ));
+// //       font-size: 14px;
+// //       color: #85888f;
+// //       text-align: center;
+// //     }
+// //     .addItem{
+// //       border-bottom: 1px #5cb591 solid;
+// //       color: #333333;
+// //     }
+// //   }
+
+//   //选择订单的理由
+// .cancelOrder{
+//   position:fixed;
+//   left:0;right:0;bottom:0;top:0;
+//   background-color:rgba(0,0,0,0.4);
+//   //opacity: 0.9;
+//   z-index: 1000;
+// }
+// .orderAll{
+//   @include rem((
+//     width:520px,
+//     top:338px,
+//     border-radius: 8px,
+//     height: 520px,
+//     font-size: 26px
+//   ));
+//   position: relative;
+//   margin: 0 auto;
+//   background: white;
+// }
+// .clickReason{
+//   @include font-dpr($font-size-l);
+//   @include rem(( height:78px, line-height: 88px));
+//   border-bottom:1px solid #e3e3e3;
+//   text-align: center;
+// }
+
+// .orderReason{
+//   .or_item1{
+//     border: 1px #999999 solid;
+//     float: right;
+//     @include rem((
+//       width: 33px,
+//       height: 33px,
+//       margin: 28px 30px 0 0
+//     ));
+//     border-radius: 50%;
+//     outline-style: none;
+//     -webkit-appearance: none;
+//   }
+//   p{
+//     @include font-dpr($font-size-m);
+//     span{
+//       @include font-dpr($font-size-m);
+//       @include rem((margin-left: 30px));
+//     }
+//     @include rem(( height:88px, line-height:90px));
+//     border-bottom: 1px #E6E6E6 solid;
+//   }
+//   input[type=radio]:checked{
+//     @include rem(( width: 33px, height: 33px));
+//     background: url(../../img/order/my_orderdetail_icon_service_sel@3x.png) no-repeat center center; background-size: 100% 100%;
+//     border: none;
+//     position: relative;
+//   }
+// }
+
+// .but_confirm{
+//   @include flex-container(());
+//   input{
+//     @include font-dpr($font-size-m);
+//     @include rem(( width: 258px, height: 90px));
+//     text-align: center;
+//     border: none;
+//     background: white;
+//   }
+//     .but1{ border-right:1px #E6E6E6 solid; }
+//     .but:active{ color: #5cb591;}
+// }
+
+// // ===========================================================
+// #cancelOk {
+//   text-align: center;
+// }
+
+// .apply-ok-img, .custom-service-apply-ok-title, .custom-service-apply-ok-tel, .check-detail--btn, .check-order-detail--btn {
+//   display: inline-block;
+// }
+
+// .apply-ok-img {
+//   @include rem((
+//     margin-top: 124px,
+//     margin-bottom: 20px,
+//     width: 120px,
+//     height: 98px
+//     ));
+// }
+
+// .custom-service-apply-ok-title {
+//   vertical-align: top;
+//   @include font-dpr($font-size-heading);
+//   @include rem((
+//     margin-top: 154px,
+//     margin-bottom: 46px,
+//     padding-left: 46px
+//     ));
+//   color: $qqw-common-strong-color;
+// }
+// .custom-service-apply-ok-line {
+//   border-top: 0.03rem solid $bg-split-line;
+//     @include rem((
+//       padding-top: 22px
+//     ));
+// }
+// .custom-service-apply-ok-desc {
+//   @include font-dpr($font-size);
+//   @include rem((
+//     margin: 0 10% 20px
+//     ));
+//   color: $text-color-32;
+// }
+// .custom-service-apply-ok-tel {
+//   color: $qqw-common-strong-color;
+// }
+// .check-detail--btn, .check-order-detail--btn {
+//   @include font-dpr($font-size-l, 1.173333rem);
+//   @include rem((
+//     margin-top: 56px,     // 76 - 20
+//     width: 222px,
+//     height: 88px,
+//     border-radius: 6px,
+//     ));
+//   text-align: center;
+// }
+// .check-detail--btn {
+//   @include rem((
+//     margin-right: 54px
+//     ));
+//   background-color: $qqw-common-strong-color;
+//   color: #fff;
+// }
+// .check-order-detail--btn {
+//   border: 0.03rem solid $qqw-common-strong-color;
+//   background-color: #fff;
+//   color: $qqw-common-strong-color;
+// }
+
+// // //是否确认取消订单
+// // .confirmOrder{
+// //   position:fixed;
+// //   left:0;right:0;bottom:0;top:0;
+// //   background-color:rgba(0,0,0,0.4);
+// //   z-index: 1002;
+// //   .orderAll2{
+// //     @include rem((
+// //             width:580px,
+// //             top:496px,
+// //             border-radius: 8px,
+// //             height:220px,
+// //             font-size: 26px
+// //     ));
+// //     position: relative;
+// //     margin: 0 auto;
+// //     background: white;
+// //     .clickReason2{
+// //       @include rem(( height:130px, line-height: 130px));
+// //       border-bottom:1px solid #e3e3e3;
+// //       text-align: center;
+// //     }
+// //     .but_confirm2{
+// //       @include flex-container(());
+// //       input{  @include rem(( width: 260px, height:88px, font-size:26px));
+// //         text-align: center; border: none; background: white; }
+// //       .but1{ border-right:1px #E6E6E6 solid; }
+// //       .but2:active{ color: #5cb591;}
+// //     }
+// // }}
+
+// // }

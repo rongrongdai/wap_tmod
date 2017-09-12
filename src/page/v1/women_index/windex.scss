@@ -1,0 +1,132 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import './item-list';
+@import'./block';
+@include global-reset;
+
+$qqw-fontsize-l: 17px;			// 34px
+$qqw-fontsize-s: 12px;			// 24px
+// .geek-article {
+// 	@include rem((
+// 		margin-bottom: 20px
+// 		));
+// }
+body {
+	background: #fff;
+	text-align: center;
+}
+.headwrap{
+	overflow: hidden;
+	@include rem((
+		width:100%,
+		));
+}
+.headbox{
+	// position:fixed;
+	// @include rem((
+	// 	top:0,
+	// 	));
+}
+.bannerbox{
+	margin: 0;
+	padding:0;
+	@include rem((
+		width: 100%,
+		height: auto,
+		));
+	position:relative;
+}
+.bannerbox img{
+	@include rem((
+		width: 100%,
+		height: auto,
+		));
+}
+.timebox{
+	position:absolute;
+	display:none;
+	@include rem((
+		bottom: 110px,
+		width: 100%,
+		height: 70px,
+		));
+}
+.timetit{
+	@include font-dpr($qqw-fontsize-s);
+	 text-align:center;
+	@include rem((
+			width:100%,
+			height:60px,
+			line-height: 60px !important,
+			));
+}
+.time{
+	@include rem((
+		width:400px,
+		margin:0 auto,
+		));
+	overflow:hidden;
+}
+.navbox{
+	@include rem((
+			width: 100%,
+			height:118px,
+			margin-top: -2px,
+			));
+	overflow: hidden;
+}
+.fixednav{
+	position:fixed;
+	@include rem((
+		top:0,
+		left:0,
+		));
+}
+.navbox .navbtn{
+	float: left;
+	@include rem((
+			width: 123px,
+			height:118px,
+			border-right: 1px solid #fff,
+			));
+	background-color:#404040;
+	
+}
+.navbox .navbtn span{
+	@include font-dpr($qqw-fontsize-m);
+	color: #fff;
+	display: inline-block;
+	@include rem((
+			width: 70px,
+			height:70px,
+			line-height: 38px !important,
+			margin:20px auto,
+			));
+}
+.navbox .active{
+	background-color:#f43f6c;
+}
+.navbox .navbtn.last{
+	border: none;
+}
+.bt_banner{
+	display:block;
+	@include rem((
+		width: 100%,
+		height:auto,
+		padding:0,
+		));
+}
+.bt_banner img{
+	border:none;
+	@include rem((
+		width: 100%,
+		height:100%,
+		margin-bottom:-3px,
+		padding:0,
+		));
+}

@@ -1,0 +1,102 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/share';
+@import '../../../sass/animation';
+@import '../component/card/gold_sign.scss';
+@import '../component/card/gold_ultra.scss';
+
+
+
+$qqw-common-h-color: #323232;
+$choicnbg-1: '../img/clubmember/bg.webp';
+$choicnbg-2: '../img/clubmember/bg.webp';
+$choicnbg-3: '../img/clubmember/bg.webp';
+
+$gogle-1:'../img/gold/icon_gm1x.png';
+$gogle-2:'../img/gold/icon_gm2x.png';
+$gogle-3:'../img/gold/icon_gm3x.png';
+
+$qqw-fontsize-m: 15px;	//30px;
+$qqw-fontsize-d: 15px;	//36px;
+
+.clubmemall{
+        @include background-dpr($choicnbg-1, $choicnbg-2, $choicnbg-3, center ,center);
+        @include rem((
+           width: 100%, height:375px
+        )); 
+       background-size: 100% 100% !important;
+      border: none;
+}
+
+// .goldbg{
+//       @include background-dpr($choicnbg-1, $choicnbg-2, $choicnbg-3, center ,center);
+//       @include rem((
+//            width: 100%, height:345px
+//     )); 
+//      background-size: 100% 100% !important;
+//       border: none;
+//  }
+
+// .goldmoney{  text-align: center; 
+//      @include rem(( height: 88px , line-height: 88px));
+//      background: white;
+//      @include font-dpr($qqw-fontsize-m, null);
+//      color: #323232;
+// }
+
+
+// .goldmoney .sp_bg{ 
+//     @include background-dpr($gogle-1,$gogle-2,$gogle-3,center,center);
+//     @include rem(( width: 55px, height: 50px ,  margin-top: 20px, margin-right: 20px));
+//     background-size: 100% 100% !important;
+//     boder:none;
+//     display: inline-block;
+
+// }
+
+// .goldmoney .sp_p{ @include rem (( margin-top:20px  , top:-16px));  display: inline-block; position: relative;  }
+
+// .goldmoney .sp_p1{ @include rem (( margin-left: 22px));}
+
+// .goldblank{ @include rem(( height: 20px)) ;}
+
+.goldgame{ 
+	@include rem(( height: 230px , width: 100%, background-color: white)); 
+           @include flex-container();
+           justify-content: flex-start;
+}
+
+
+.goldgame .goldgaleft{ @include rem((  width: 374px ,border-right: 1px #e6e6e6 solid , height: 230px , line-height: 200px));  text-align: center; }
+.goldgame .goldgaleft   img{ @include rem(( margin-top:70px , width: 78px, height: 78px))}
+.goldgame .goldgaleft   span{ position: relative; @include rem(( top:-30px , left: 23px)); 
+	@include font-dpr($qqw-fontsize-d, null); 
+          -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color; }
+
+.goldgame .goldgarigth{@include rem(( height: 230px ,width: 374px)); text-align: center; }
+
+
+
+
+.goldgame  .goldgarigth .goldup{ @include rem(( height: 114px , border-bottom: 1px #e6e6e6 solid)) }
+.goldgame  .goldgarigth .goldup img  ,  .goldgame .goldgarigth .golddown img { @include rem(( margin-top:20px  , width: 78px, height: 78px ))}
+
+.goldgame  .goldgarigth .goldup span ,  .goldgame .goldgarigth .golddown span{ position: relative; 
+	 @include rem(( top:-25px , left: 23px)); 
+           @include font-dpr($qqw-fontsize-d, null);
+           -webkit-font-smoothing: antialiased;
+	color: $qqw-common-h-color;
+  }
+
+
+
+.goldultaall{ background-color:#fff;}
+
+.goldultaall .ulta_p{  
+	@include font-dpr($qqw-fontsize-m, null);
+          color: #323232;
+          @include rem (( margin-left: 20px ,height:60px ,padding-top: 20px));
+ }

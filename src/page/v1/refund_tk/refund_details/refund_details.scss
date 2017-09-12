@@ -1,0 +1,221 @@
+@import '../../../../sass/_utilities';
+@import '../../../../sass/_rem';
+@import '../../../../sass/common';
+@import '../../../../sass/share';
+@import '../../../../sass/common_header_v1';
+@import '../../../../sass/common_header_v1';
+@include global-reset;
+
+
+
+$bg-top1            : '../../img/refund/ref_top1.png';
+$bg-top1x            : '../../img/refund/ref_top1x.png';
+
+$bg-top2            : '../../img/refund/ref_top2.png';
+$bg-top2x            : '../../img/refund/ref_top2x.png';
+
+
+$bg-top3            : '../../img/refund/ref_top3.png';
+$bg-top3x            : '../../img/refund/ref_top3x.png';
+
+
+$bg-top4            : '../../img/refund/ref_top4.png';
+$bg-top4x            : '../../img/refund/ref_top4x.png';
+
+
+$bg-top5            : '../../img/refund/ref_top5.png';
+$bg-top5x            : '../../img/refund/ref_top5x.png';
+
+
+$bg-top6            : '../../img/refund/ref_top6.png';
+$bg-top6x            : '../../img/refund/ref_top6x.png';
+
+$bg-rg          :'../../img/icon_back@2x.png';
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+$font-size-22     : 11px;
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+$font-size-32    : 16px;
+
+body {
+	background: #f3f3f3;
+	
+}
+
+.fl{ float: left;}
+.fr{ float: right;}
+
+.top_nav{
+    display: block;
+    @include rem((height:90px,   line-height:90px !important));
+    text-align: center;
+    background: #ffffff;
+    color:#323232;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1222;
+    @include font-dpr($font-size-32,2.8);
+    font-size: 0.46rem;
+    text-align: center;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.top_nav .header_left {
+     @include rem((height:90px,   line-height:90px  !important  ,width: 90px,  background-size: 25px 35px !important));
+      display: block;
+      position: absolute;
+      background: url("../../img/category_second/nav_icon_back@2x.png") no-repeat center center;
+}
+.top_as{ @include rem((height:90px));}
+
+
+
+
+
+
+.refund_top1{
+   @include background-dpr($bg-top1,$bg-top1,$bg-top1x, center,center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 100%, height: 221px)); 
+}
+
+.refund_top2{
+   @include background-dpr($bg-top2,$bg-top2,$bg-top2x, center,center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 100%, height: 221px)); 
+}
+.refund_top3{
+   @include background-dpr($bg-top3,$bg-top3,$bg-top3x, center,center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 100%, height: 221px)); 
+}
+.refund_top4{
+   @include background-dpr($bg-top4,$bg-top4,$bg-top4x, center,center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 100%, height: 221px)); 
+}
+.refund_top5{
+   @include background-dpr($bg-top5,$bg-top5,$bg-top5x, center,center);
+    background-size: 100% 100% !important;
+    @include rem(( width: 100%, height: 221px)); 
+}
+.refund_top6{
+   @include background-dpr($bg-top6,$bg-top6,$bg-top6x, center,center);
+    background-size: 100% 100% !important;
+   @include rem(( width: 100%, height: 221px)); 
+}
+
+.top_cont{ 
+      color: #ffffff;
+      @include font-dpr($font-size-28,1.5);
+      @include rem(( 
+        // padding:50px 0 0 40px
+        padding: 50px 320px 0 50px
+        ));
+    }
+
+.top_cont1{
+      color: #ffffff;
+      @include font-dpr($font-size-28,1.5);
+      @include rem(( padding:20px 0 0 40px));
+      span{ @include rem(( margin-left: 15px));  }
+      .tes{color: #fe0002;}
+}
+
+
+.refu_con:after{ content:".";  height:0;  visibility:hidden;  display:block;  clear:both; }
+.refu_con{
+    @include rem(( height: 88px, margin-bottom: 20px));
+     background-color: #ffffff;
+    .re_left{ 
+          float: left;  color: #323232;
+          @include font-dpr($font-size-30,2.8); 
+          @include rem((margin-left: 20px));    }
+
+    .re_arrow{ 
+      float: right;   background-size: 100% 100% !important;
+      @include background-dpr($bg-rg,$bg-rg,$bg-rg, center,center);
+      @include rem(( width: 22px, height: 25px, margin-right: 20px, margin-top: 30px));     }
+    
+}
+
+
+
+
+//组件里面的样式
+.conm_all .ovH{ 
+  @include rem((height: 20px, width: 100%));   background-color: #ffffff;
+}
+
+.com_public:after{ content:".";  height:0;  visibility:hidden;  display:block;  clear:both;}
+.com_public{  @include rem(( height: 180px));}
+
+.com_public .p_left{  
+    float: left;
+    @include rem(( width: 140px, height: 140px, margin:10px 0 0 20px));
+    border: 1px solid #EEE;
+    img{ width: 100%; height: 100% }
+ }
+
+
+.com_public .p_Middle{ 
+   float: left;
+   @include rem((  margin:50px 0 0 20px));  
+   .p1{  @include font-dpr($font-size-26); color: #323232;}
+   .p2{  @include font-dpr($font-size-24); color: #909090; }
+}
+
+
+.com_public .p_right{
+  float: right;
+  @include rem((  margin:50px 20px 0 0));  
+  .p1{  @include font-dpr($font-size-28); color: #323232;}
+  .p2{  @include font-dpr($font-size-24); color: #909090; float: right; }
+}
+
+
+.ref_well{
+   background-color: #ffffff;
+   @include rem((  min-height: 500px));
+   
+   .well_cont{ width: 96%; margin: 0 auto;
+       p{ @include font-dpr($font-size-28,2); color: #909090; }
+
+       .cont_img{    
+           @include rem((padding:20px 0));   
+           img{ @include rem(( width: 128px, height: 128px , margin-right: 10px));}
+       }
+   }
+}
+
+
+
+
+.refu_but{ 
+     text-align: center;
+     position: relative;
+     p{
+       position: absolute; 
+       @include rem((width: 170px, height: 50px, line-height: 50px , top:20px, left: 275px))
+       text-align: center;
+       border: 1px #5CB531 solid;
+       color: #5CB531; 
+      
+
+     }
+}
+
+
+
+

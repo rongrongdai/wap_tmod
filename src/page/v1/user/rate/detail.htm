@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>全球蛙 -- 订单评价</title>
+    <script type="text/javascript">window.startTime = new Date().getTime();</script>
+    <script type="text/javascript">
+        !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("欢迎来到全球蛙！");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body class="qqw_main qqw_evaluate">
+<!--顶部导航-->
+<header class="topNavTitle white">
+    <a href="javascript:G.gotoBack()" class="fl return"></a>
+    <!--<a   class="fr text" id="J-btnComment">发表</a>-->
+    <h1>发表评价</h1>
+</header>
+<!--顶部导航End-->
+
+
+<div class="evaluateAll" style="display: block;">
+<!--评价-->
+<div class="evaluate ovH">
+    <!---评论功能--->
+    <!--<div class="top">-->
+        <!--&lt;!&ndash;<div class="img"><img src="/static/css/img/goods_2.png" id="J-orderGooodsImg"/></div>&ndash;&gt;-->
+        <!--<input type="hidden" id="J-hiddenId-{$data['goods_id']}" name="rank_{$data['goods_id']}" value=""/>-->
+        <!--<dl class="star" id="J-starList">-->
+            <!--<dd data-star="{$data['goods_id']}_1_太差了_不好不好，要改进">★</dd>-->
+            <!--<dd data-star="{$data['goods_id']}_2_不太好_勉强，怎么说好呢">★</dd>-->
+            <!--<dd data-star="{$data['goods_id']}_3_还可以_说说它的优缺点吧">★</dd>-->
+            <!--<dd data-star="{$data['goods_id']}_4_不错呀！_不错就夸一下吧">★</dd>-->
+            <!--<dd data-star="{$data['goods_id']}_5_太棒了！_这么棒，表扬下吧">★</dd>-->
+        <!--</dl>-->
+        <!--<span class="text" id="J-msgtitle-{$data['goods_id']}"></span>-->
+        <!--<input type="hidden">-->
+    <!--</div>-->
+    <!---评论功能--->
+
+
+    <!--<textarea placeholder="说说他的优缺点吧!" class="inputsText" id="J-content-{$data['goods_id']}"></textarea>-->
+    <!--<p class="maxTextNum">0/500</p>-->
+
+
+    <!--拍照功能先行注释-->
+    <!--<div class="upImg" id="imglist_{$data['goods_id']}">-->
+              <!--<div class="btn fl poR" id="file_info_{$data['goods_id']}" >-->
+                <!--<div id="file_{$data['goods_id']}" style="width:100%;height:100%;position:absolute;"></div>-->
+              <!--</div>-->
+
+               <!--<span id="picmsg_{$data['goods_id']}">拍个照，晒一下</span>-->
+               <!--<div class="cb"></div>-->
+     <!--</div>-->
+    <!--拍照功能先行注释End-->
+
+    <div id="goodsListDiv" ></div>
+    <script id="goodsListScript" type="text/html" charset="UTF-8">
+        {[each goods_list as value i]}
+    <div class="ratedImg">
+        <a class="shipping-good-item" href="http://localhost:9001/mobile-goods/detail?id={[value.goods_id]}">
+            <img src="{[value.goods_thumb]}" class="shipping-good-item-img"/>
+            <div class="shipping-good-item-info">
+                <p class="shipping-good-item-info-name">{[value.goods_name]}</p>
+                <p class="shipping-good-item-info-spec">规格:{[value.goods_attr]}</p>
+            </div>
+        </a>
+        <p class="ratedV1"></p>
+        <p class="ratedV2" name="{[i]}">评价:
+            <!--<img  class="choose_mark" src="/static/css/product_funding/funding/app_img/my_order_icon_evaluate@2x.png" />-->
+            <img  class="not_choose_mark" name="{[i]}" data="0" src="/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png" />
+            <img  class="not_choose_mark" name="{[i]}" data="1" src="/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png" />
+            <img  class="not_choose_mark" name="{[i]}" data="2"  src="/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png" />
+            <img  class="not_choose_mark" name="{[i]}" data="3" src="/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png" />
+            <img  class="not_choose_mark" name="{[i]}" data="4" src="/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png" />
+        </p>
+        <textarea placeholder="说说他的优缺点吧!" class="ratedText"></textarea>
+    </div>
+        {[/each]}
+  </script>
+</div>
+<!--评价End-->
+<!--尾部点击-->
+     <div class="tailAdd"></div>
+      <div class="tailAll">
+          <div class="ni_click">
+              <p><input class="or_item1" type="checkbox" name="item" value="0"><span>匿名评价</span></p>
+          </div>
+          <div class="but_click"><input type="button" id="J-btnComment" value="发表评价"></div>
+      </div>
+<!--尾部点击End-->
+
+</div>
+
+
+<!--订单评论成功-->
+    <div class="evaluateSu" style="display: none">
+             <p class="evP1"><img src="/static/css/product_funding/funding/app_img/icon_sucessed@2x.png"><span>评价成功！</span></p>
+             <p class="evP2">感谢你对本次购物的评价</p>
+             <a class="evA1" href="javascript:G.gotoBack()">返回我的订单</a>
+    </div>
+<!--订单评论成功End-->
+
+
+<script src="/static/js/zepto-1.2.0.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/webuploader.min.js"></script>
+<script src="/static/js/quanqiuwa.public.min.js"></script>
+
+</body>
+</html>
+
+<script>
+    $(function(){
+        "use strict";
+        var e = {
+            state:{
+                p:1,
+                ps:10,
+                id:10,//文章ID
+                enableGetNextPage:true,
+                enablePostComment:true,
+                dataHaveReturn:true,
+                goodsList:[],
+                data:{
+                    "goods_list": [
+                        {
+                            "rec_id": "288",
+                            "uid": "206",
+                            "order_id": "287",
+                            "order_sn": "1602100785581005",
+                            "sku_id": "479",
+                            "goods_id": "327",
+                            "product_id": "30148",
+                            "goods_name": "可口原味干捞快熟面",
+                            "goods_number": "1",
+                            "shop_price": "13.80",
+                            "goods_attr": "",
+                            "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/56c56e9ae2945.jpg",
+                            "package_id": "0",
+                            "is_gift": "0",
+                            "activity_id": "0",
+                            "activity_price": "0.00",
+                            "fav_price": "0.00",
+                            "fav_type": "2",
+                            "is_after_sales" : "0"
+                        },
+                        {
+                            "rec_id": "288",
+                            "uid": "206",
+                            "order_id": "287",
+                            "order_sn": "1602100785581005",
+                            "sku_id": "479",
+                            "goods_id": "327",
+                            "product_id": "30148",
+                            "goods_name": "可口原味干捞快熟面",
+                            "goods_number": "1",
+                            "shop_price": "13.80",
+                            "goods_attr": "",
+                            "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/56c56e9ae2945.jpg",
+                            "package_id": "0",
+                            "is_gift": "0",
+                            "activity_id": "0",
+                            "activity_price": "0.00",
+                            "fav_price": "0.00",
+                            "fav_type": "2",
+                            "is_after_sales" : "0"
+                        },
+                        {
+                            "rec_id": "288",
+                            "uid": "206",
+                            "order_id": "287",
+                            "order_sn": "1602100785581005",
+                            "sku_id": "479",
+                            "goods_id": "327",
+                            "product_id": "30148",
+                            "goods_name": "可口原味干捞快熟面",
+                            "goods_number": "1",
+                            "shop_price": "13.80",
+                            "goods_attr": "",
+                            "goods_thumb": "http://7xp9qs.com1.z0.glb.clouddn.com/56c56e9ae2945.jpg",
+                            "package_id": "0",
+                            "is_gift": "0",
+                            "activity_id": "0",
+                            "activity_price": "0.00",
+                            "fav_price": "0.00",
+                            "fav_type": "2",
+                            "is_after_sales" : "0"
+                        }
+                    ],
+                    "user_address": {
+                        "order_sn": "1602100785581005",
+                        "consignee": "邓海",
+                        "province": "广东省",
+                        "city": "深圳市",
+                        "district": "龙华新区",
+                        "details": "民治街道创业花园鑫荣大厦",
+                        "mobile": "15814419177"
+                    },
+                }
+            },
+            init: function () {
+                var e = this;
+                e.bind();
+                e.getUrlReg();
+                e.rederData(e.state.data);
+                e.state.goodsList= e.state.data.goods_list;
+//                e.getData();
+            },
+            getQueryString:function(name) {
+                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return unescape(r[2]);
+                }
+                return null;
+            },
+            getUrlReg:function(){
+                e.state.id=parseInt(e.getQueryString("id"));
+            },
+            bind:function() {
+                $("#J-btnComment").unbind("click").click(function () {
+                    e.summitComment();
+                })
+                $(".ratedV2").find("img").click(function () {
+                    var j=parseInt($(this).attr("name"));
+                    var index = parseInt($(this).attr("data"));
+                    if ($(this).hasClass("choose_mark")) {
+                        for (var i = index; i < 5; i++) {
+                            $(".ratedV2").eq(j).find("img").eq(i).removeClass("choose_mark").addClass("not_choose_mark").attr("src",'/static/css/product_funding/funding/app_img/my_order_icon_nor@2x.png');
+                        }
+                        return;
+                    }
+                    if ($(this).hasClass("not_choose_mark")) {
+                        for (var i = 0; i <= index; i++) {
+                            $(".ratedV2").eq(j).find("img").eq(i).removeClass("not_choose_mark").addClass("choose_mark").attr("src",'/static/css/product_funding/funding/app_img/my_order_icon_evaluate@2x.png');
+
+                        }
+                    }
+                })
+            },
+            summitComment:function(){
+                var param ={};
+//                if( param.content.length<10){
+//                    G.Imsg("评论内容至少为10个字");
+//                    return;
+//                }
+                var isHide=0;
+                if($(".or_item1").prop("checked")){
+                    isHide=1
+                }
+                param.order_num= e.state.id;
+                param.ishide=isHide;
+                param.data= e.state.goodsList;
+                var length=parseInt(e.state.goodsList.length);
+                for(var i =length;length>0;length--){
+                    param.data[i-1].content=$(".ratedImg").eq(i-1).find(".ratedText").val();
+                    param.data[i-1].level=$(".ratedImg").eq(i-1).find(".choose_mark").length;
+                }
+                if(e.state.enablePostComment==false){
+                    return;
+                }
+                e.state.enablePostComment==false;
+                console.log("publishComment");
+                ajaxButlerData('post', '/user-order/goodsComment', //发表商品评论
+                        param,
+                        function(succ){
+                            G.Imsg("发表评论成功");
+                            $(".evaluateSu").show();
+                            $(".evaluateAll").hide();
+                            $('h1').html("订单评价");
+                            e.state.enableGetNextPage=true;
+                            e.state.enablePostComment==true;
+                        },function(err){
+                            if(err.ret==100001){
+                                Global.sendToGoLogin();
+                            }
+                            e.state.enablePostComment==true;
+                            G.Imsg("发表评论失败");
+                        });
+
+            },
+            getData: function (me) {
+                var param={};
+                param.order_sn= e.state.order_sn;
+                ajaxButlerData('get', '/index.php?c=userOrder&a=detail', //获取订单详情
+                        param,
+                        function(succ){
+                            e.rederData( succ);
+                            var length=succ.goods_list.length;
+                            while (length){
+                                length--;
+                                e.state.goodsList[length].goods_id=succ.goods_list.goods_id;
+                            }
+
+
+                        },function(){
+                        });
+            },
+            rederData: function (data) {
+                var e=this;
+                var html = template('goodsListScript', data);
+                document.getElementById('goodsListDiv').innerHTML = html;
+                e.bind();
+            }
+        }
+        e.init();
+    });
+</script>
+
+
+<!--<script type="text/javascript" src="/static/js/zepto.touch.template.min.js"></script>-->
+<!--<script type="text/javascript" src="/static/js/common.js?v=1.0"></script>-->
+<!--<script type="text/javascript" src="/static/js/webuploader.min.js"></script>-->
+<!--<script type="text/javascript" src="/static/js/user/rate.js?v=1.0"></script>-->
+<!--<script>-->
+<!--//detail.init({$data['order_sn']}, {$data['goods_id']});-->
+<!--</script>-->

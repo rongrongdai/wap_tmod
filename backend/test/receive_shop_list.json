@@ -1,0 +1,47 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "list": [
+      {
+        "address_id": "32464",
+        "uid": "0",
+        "name": "美特好B店",
+        "province": "山西省",
+        "province_code": "140000",
+        "city": "太原市",
+        "city_code": "140100",
+        "district": "小店区",
+        "district_code": "140105",
+        "details": "电子街十号阳煤化工机械有限公司",
+        "mobile": "15296638615",
+        "is_default": "0",
+        "create_time": "1475908779",
+        "lat": "0.000000",
+        "lng": "0.000000",
+        "area": "",
+        "type": "1"
+      },
+      {
+        "address_id": "32465",
+        "uid": "0",
+        "name": "美特好A店",
+        "province": "山西省",
+        "province_code": "140000",
+        "city": "太原市",
+        "city_code": "140100",
+        "district": "小店区",
+        "district_code": "140105",
+        "details": "山西省太原市小店区龙堡街鑫福华园4号楼2205",
+        "mobile": "13934240779",
+        "is_default": "0",
+        "create_time": "1475906314",
+        "lat": "0.000000",
+        "lng": "0.000000",
+        "area": "",
+        "type": "1"
+      }
+    ]
+  },
+  "timestamp": "1492589035"
+}

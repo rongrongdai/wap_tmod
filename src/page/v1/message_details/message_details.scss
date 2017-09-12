@@ -1,0 +1,66 @@
+@import '../../../sass/_utilities';
+@import '../../../sass/_rem';
+@import '../../../sass/common';
+@import '../../../sass/share';
+@import '../../../sass/common_header_v1';
+@import '../../../sass/common_header_v1';
+@import '../component/card/message-img-alert';
+@include global-reset;
+@import '../component/card/bask-comment.scss';
+
+$bg-1            : '../img/baskin/baskbg.png';
+$bg-2            : '../img/baskin/baskbg1.png';
+
+$bgx-1            : '../img/baskin/icon_peo1x.png';
+$bgtiem-1       : '../img/baskin/timebg2x.png';
+
+$iconba-1       : '../img/baskin/icon_xia2x.png';
+$iconpic-1       : '../img/baskin/icon_pic2x.png';
+
+
+
+
+
+$color-line    : #e6e6e6;
+$color-font-90 : #909090;
+$color-font-66 : #666666;
+$color-btn-bg  : #5bc531;
+$color-white   : #ffffff;
+
+$font-size-26     : 13px;
+$font-size-24     : 12px;
+$font-size-28     : 14px;
+$font-size-40     : 20px;
+$font-size-36     : 18px;
+$font-size-30     : 15px;
+
+body {
+	background: #f3f3f3;
+	
+}
+
+.mess_p{ 
+    width: 100%;
+    text-align: center;
+    @include rem(( margin:45px 0 20px 0));
+}
+.mess_p span{ 
+   display: inline-block;
+   background-color: #cdcdcd;
+   @include rem(( padding:10px 15px, border-radius: 4px));
+   color: #fff;
+ }
+
+.mess_cont{
+  width: 94%;
+  @include rem(( margin:0 auto, border-radius: 10px));
+   background-color: #fff;
+   border: 1px solid #fff;
+}
+
+
+.mess_cont p{ 
+   @include rem(( margin:15px ));
+   @include font-dpr($font-size-26,1.7);
+   color: #323232;
+ } 

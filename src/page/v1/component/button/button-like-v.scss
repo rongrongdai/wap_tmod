@@ -1,0 +1,39 @@
+.button-like {
+  position: absolute;
+  display: inline-block;
+  @include rem((
+          width: 70px,
+          height: 90px,
+          right: 20px,
+          padding-top: 52px,      // 10 + 42 + 10
+          padding-bottom: 6px,
+          border-bottom-right-radius: 6px,
+          border-bottom-left-radius: 6px
+  ));
+  top: 0;
+  text-align: center;
+  background-color: rgba(98,98,98, 0.6);
+  border: none;
+  z-index:100;
+}
+
+.button-like-text {
+  vertical-align: bottom;
+  color: #fff;
+  @include font-dpr($geek-like-sign-fontsize, 0.373333rem);      // line-height: 28px
+  -webkit-font-smoothing: antialiased;
+}
+
+.button-like-sign{
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  @include rem((
+          top: 10px,
+          left: 14px,
+          width: 41px,
+          height: 42px
+  ));
+  background-size: 80% !important;
+  // @include background-dpr($icon-like-sign-1, $icon-like-sign-2, $icon-like-sign-3, center, 0.133333rem);
+}

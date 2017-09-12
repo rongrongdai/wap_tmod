@@ -1,0 +1,19 @@
+
+.qqw_women_day_containt{
+    @include flex-container();
+    @include rem(( height: 939px,padding: 0px 7px,padding-bottom:5px,padding-top:17px));
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+  .item{
+    @include rem((margin: 0px 7px,width:350px,height:220px));
+  }
+  // .item_hack{
+  //   @include rem((margin-top:13px));
+  // }
+}
+
+
+
+
+
+

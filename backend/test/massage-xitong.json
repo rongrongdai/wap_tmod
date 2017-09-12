@@ -1,0 +1,90 @@
+{
+    "ret": "0",
+    "msg": "操作成功",
+    "data": {
+       "pagecount": 10,
+        "list": [
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "394",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            },
+            {
+                  "id": "395",
+                  "uid": "394",
+                  "content": "韩福特贵族炒锅系列富贵金",
+                  "dateline": "09-28 18:01",
+                  "is_read": 0,
+                  "is_delete": 0
+            }
+        ]
+    },
+    "timestamp": 1480498548
+}

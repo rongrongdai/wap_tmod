@@ -1,0 +1,85 @@
+{
+  "ret": "0",
+  "msg": "操作成功",
+  "data": {
+    "pagecount":10,
+    "page":1,
+    "list":[
+    {
+       "tid": "5",
+        "type": 1,
+        "module_name": "123123",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+        "joins": "123",
+        "description": "asdfadfa",
+        "content": "dadfasdfqwer2344124234234",
+        "addmsg": "adsfadfa",
+        "btnmsg": "asdfads",
+        "btncolor": "",
+        "visible": "1",
+        "starttime": "1483372800",
+        "endtime": "1489075200",
+        "addtime": "0",
+        "starttime_format": "2017-01-03 00:00:00",
+        "endtime_format": "2017-03-10 00:00:00"
+    },
+     {
+       "tid": "6",
+        "type": 2,
+        "module_name": "123123",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+        "joins": "123",
+        "description": "asdfadfa",
+        "content": "dadfasdfqwer2344124234234",
+        "addmsg": "adsfadfa",
+        "btnmsg": "asdfads",
+        "btncolor": "",
+        "visible": "1",
+        "starttime": "1483372800",
+        "endtime": "1489075200",
+        "addtime": "0",
+        "starttime_format": "2017-01-03 00:00:00",
+        "endtime_format": "2017-03-10 00:00:00"
+     },
+      {
+        "tid": "6",
+        "type": 1,
+        "module_name": "123123",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+        "joins": "123",
+        "description": "asdfadfa",
+        "content": "dadfasdfqwer2344124234234",
+        "addmsg": "adsfadfa",
+        "btnmsg": "asdfads",
+        "btncolor": "",
+        "visible": "1",
+        "starttime": "1483372800",
+        "endtime": "1489075200",
+        "addtime": "0",
+        "starttime_format": "2017-01-03 00:00:00",
+        "endtime_format": "2017-03-10 00:00:00"
+      },
+    
+      {
+        "tid": "6",
+        "type": 2,
+        "module_name": "123123",
+        "picture": "http://7xp9qs.com1.z0.glb.clouddn.com/5870b5af0a7e0.jpg",
+        "joins": "123",
+        "description": "asdfadfa",
+        "content": "dadfasdfqwer2344124234234",
+        "addmsg": "adsfadfa",
+        "btnmsg": "asdfads",
+        "btncolor": "",
+        "visible": "1",
+        "starttime": "1483372800",
+        "endtime": "1489075200",
+        "addtime": "0",
+        "starttime_format": "2017-01-03 00:00:00",
+        "endtime_format": "2017-03-10 00:00:00"
+      }
+     
+    ]
+  },
+  "timestamp": 1483950533
+}
